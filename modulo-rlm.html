@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo RLM Descomplicado | Dayana Maia - FHCGV Auxiliar Administrativo</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="scroll-progress-container"><div id="scroll-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <a href="index.html" class="brand-icon" title="Voltar ao início">←</a>
+        <div class="brand-info">
+          <div class="brand-title">Raciocínio Lógico <span>(0,5 Pt)</span></div>
+          <span class="user-badge">⭐ Dayana Maia de Jesus • Cargo 01</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="font-decrease" class="btn-icon" title="Diminuir fonte">A-</button>
+        <button id="font-increase" class="btn-icon" title="Aumentar fonte">A+</button>
+        <button id="theme-toggle" class="btn-icon" title="Alternar modo">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="reading-container">
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="badge badge-primary" style="font-size: 0.8rem; margin-bottom: 0.5rem;">5 QUESTÕES NO EDITAL • MACETES VISUAIS & TABELA-VERDADE</span>
+        <h1>Raciocínio Lógico-Matemático para Dayana</h1>
+        <p style="color: var(--text-muted);">
+          Dayana, esqueça o trauma da matemática da escola! Aqui nós vamos direto aos macetes da Consulplan que resolvem questões em menos de 2 minutos.
+        </p>
+      </div>
+
+      <!-- Seletor dos 3 Níveis -->
+      <nav class="pedagogic-tabs" aria-label="Níveis de Estudo">
+        <button class="tab-btn active" data-level="1">
+          <span class="tab-badge">Nível 1</span>
+          <span class="tab-name">🌱 Base Descomplicada</span>
+        </button>
+        <button class="tab-btn" data-level="2">
+          <span class="tab-badge">Nível 2</span>
+          <span class="tab-name">🌿 Conteúdo Mediado</span>
+        </button>
+        <button class="tab-btn" data-level="3">
+          <span class="tab-badge">Nível 3</span>
+          <span class="tab-name">🌳 Domínio 100% Edital</span>
+        </button>
+      </nav>
+
+      <!-- ====================================================================
+           NÍVEL 1: BASE DESCOMPLICADA
+           ==================================================================== -->
+      <section id="level-content-1" class="level-content active">
+        
+        <div class="callout callout-base">
+          <div class="callout-icon">🌱</div>
+          <div class="callout-body">
+            <strong>O Segredo dos Conectivos Lógicos:</strong>
+            Pense nos conectivos como regras de um contrato:
+            <ul>
+              <li><strong>Conjunção (E / ^):</strong> É o conectivo exigente! Só é verdade se TUDO for verdade. Se tiver uma mentirinha, vira falso.</li>
+              <li><strong>Disjunção (OU / v):</strong> É o conectivo bonzinho! Basta UM ser verdade para a frase inteira ser verdadeira.</li>
+              <li><strong>Condicional (Se... então / →):</strong> A famosa <em>Vera Fischer é Falsa</em> (V → F dá F). Em qualquer outro caso, é Verdade!</li>
+            </ul>
+          </div>
+        </div>
+
+        <article class="card-content">
+          <h2>1. Negação do "SE... ENTÃO" (Macete do MANÉ)</h2>
+          <p>
+            A Consulplan ama pedir a negação de uma condicional (Se P, então Q):
+          </p>
+          <div class="callout callout-tip">
+            <div class="callout-icon">💡</div>
+            <div class="callout-body">
+              <strong>Regra do MA-NÉ:</strong>
+              Para negar <em>"Se P, então Q"</em>:
+              <br>
+              <strong>MA</strong>ntém a primeira parte <strong>E</strong> <strong>NE</strong>ga a segunda!
+              <br><br>
+              Exemplo: <em>"Se Dayana estuda, então é aprovada."</em>
+              <br>
+              Negação: <em>"Dayana estuda <strong>E</strong> <strong>NÃO</strong> é aprovada."</em> (Simples assim!).
+            </div>
+          </div>
+        </article>
+
+        <article class="card-content">
+          <h2>2. Regra de Três Simples sem Decorar Fórmulas</h2>
+          <p>
+            No almoxarifado do hospital: <em>"Se 4 caixas contêm 200 frascos de soro, quantas caixas serão necessárias para 500 frascos?"</em>
+          </p>
+          <p>
+            Basta montar a proporção cruzada:
+            <br>
+            <code>4 / x = 200 / 500</code> → <code>200 * x = 2000</code> → <code>x = 10 caixas</code>.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- ====================================================================
+           NÍVEL 2: CONTEÚDO MEDIADO (A PONTE PRÁTICA)
+           ==================================================================== -->
+      <section id="level-content-2" class="level-content">
+        
+        <div class="callout callout-hospital">
+          <div class="callout-icon">🌿</div>
+          <div class="callout-body">
+            <strong>Equivalência Lógica da Condicional (Contrapositiva):</strong>
+            Dizer que <em>"Se chove, a rua molha"</em> é exatamente a mesma coisa que dizer: <em>"Se a rua NÃO molhou, então NÃO choveu"</em>.
+          </div>
+        </div>
+
+        <article class="card-content">
+          <h2>1. Como achar a frase equivalente no concurso</h2>
+          <p>
+            A banca pede: <em>"Assinale a proposição logicamente equivalente a: Se o paciente tem febre, então há infecção."</em>
+          </p>
+          <p>
+            <strong>Passo a passo da Contrapositiva:</strong>
+            <br>
+            1. Inverte a ordem das frases.
+            <br>
+            2. Nega as duas!
+            <br>
+            Resultado: <em>"Se NÃO há infecção, então o paciente NÃO tem febre."</em>
+          </p>
+        </article>
+
+      </section>
+
+      <!-- ====================================================================
+           NÍVEL 3: DOMÍNIO 100% EDITAL (NÍVEL CONSULPLAN)
+           ==================================================================== -->
+      <section id="level-content-3" class="level-content">
+        
+        <div class="callout callout-pegadinha">
+          <div class="callout-icon">🚨</div>
+          <div class="callout-body">
+            <strong>Diagramas de Venn (Conjuntos):</strong>
+            Em problemas de pesquisa com 2 conjuntos (A e B):
+            <br>
+            <code>Total = N(A) + N(B) - N(A ∩ B) + Nenhum</code>
+            <br>
+            Lembre-se sempre de subtrair a interseção para não contar as mesmas pessoas duas vezes!
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ====================================================================
+           BANCO DE QUESTÕES RLM
+           ==================================================================== -->
+      <section class="quiz-section">
+        <div class="quiz-header">
+          <h3><span>🎯</span> Questões de Raciocínio Lógico</h3>
+          <span class="quiz-badge">Consulplan • 5 Questões no Edital</span>
+        </div>
+
+        <div class="question-card" data-qid="rlm_q1" data-correct="D">
+          <div class="question-meta">
+            <span class="banca-tag">CONSULPLAN • SIMULADO OFICIAL</span>
+            <span>Assunto: Negação Lógica da Condicional</span>
+          </div>
+          <p class="question-text">
+            1. Considere a afirmação: "Se Dayana Maia é nomeada na FHCGV, então assume o cargo de Auxiliar Administrativo." De acordo com a lógica proposicional, a negação lógica dessa afirmação é expressa por:
+          </p>
+          <div class="options-list">
+            <div class="option-item" data-opt="A">
+              <span class="option-letter">A</span>
+              <span class="option-text">Se Dayana Maia não é nomeada na FHCGV, então não assume o cargo de Auxiliar Administrativo.</span>
+            </div>
+            <div class="option-item" data-opt="B">
+              <span class="option-letter">B</span>
+              <span class="option-text">Se Dayana Maia não assume o cargo, então não é nomeada na FHCGV.</span>
+            </div>
+            <div class="option-item" data-opt="C">
+              <span class="option-letter">C</span>
+              <span class="option-text">Dayana Maia não é nomeada na FHCGV ou não assume o cargo de Auxiliar Administrativo.</span>
+            </div>
+            <div class="option-item" data-opt="D">
+              <span class="option-letter">D</span>
+              <span class="option-text">Dayana Maia é nomeada na FHCGV e não assume o cargo de Auxiliar Administrativo.</span>
+            </div>
+            <div class="option-item" data-opt="E">
+              <span class="option-letter">E</span>
+              <span class="option-text">Dayana Maia não é nomeada e não assume o cargo.</span>
+            </div>
+          </div>
+          <div class="quiz-feedback">
+            <div class="feedback-status"></div>
+            <div class="explanation-title">📖 Comentário Detalhado:</div>
+            <p>
+              Gabarito: <strong>Letra D</strong>. Aplicação do macete do <strong>MA-NÉ</strong>: <br>
+              A negação da condicional <code>P → Q</code> é dada formalmente por <code>P ∧ ~Q</code>. Mantém-se a primeira proposição ("Dayana é nomeada na FHCGV"), troca-se o "se... então" por "e", e nega-se a segunda ("não assume o cargo de Auxiliar Administrativo").
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <div style="text-align: center; margin: 3rem 0 1rem;">
+        <button class="btn btn-primary" onclick="markModuleComplete('rlm')">
+          ✅ Concluir Módulo de RLM & Salvar Progresso
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="nav-icon">🏠</span>
+      <span>Início</span>
+    </a>
+    <a href="modulo-especificos.html" class="bottom-nav-item">
+      <span class="nav-icon">📁</span>
+      <span>Específicas</span>
+    </a>
+    <a href="modulo-sus.html" class="bottom-nav-item">
+      <span class="nav-icon">🏥</span>
+      <span>SUS</span>
+    </a>
+    <a href="modulo-discursiva.html" class="bottom-nav-item">
+      <span class="nav-icon">✍️</span>
+      <span>Redação</span>
+    </a>
+    <a href="simulados.html" class="bottom-nav-item">
+      <span class="nav-icon">🏆</span>
+      <span>Simulados</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

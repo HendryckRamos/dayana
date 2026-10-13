@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Aprovação | Dayana Maia de Jesus - FHCGV Auxiliar Administrativo</title>
+  
+  <!-- Fontes Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de Progresso Superior de Leitura -->
+  <div id="scroll-progress-container"><div id="scroll-progress-bar"></div></div>
+
+  <!-- Header Superior Fixo -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <div class="brand-icon">GV</div>
+        <div class="brand-info">
+          <div class="brand-title">Portal da Aprovação <span>FHCGV</span></div>
+          <span class="user-badge">⭐ Aluna: Dayana Maia de Jesus</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="font-decrease" class="btn-icon" title="Diminuir fonte" aria-label="Diminuir fonte">A-</button>
+        <button id="font-increase" class="btn-icon" title="Aumentar fonte" aria-label="Aumentar fonte">A+</button>
+        <button id="theme-toggle" class="btn-icon" title="Alternar modo escuro" aria-label="Alternar modo escuro">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner de Contagem Regressiva para a Prova -->
+  <section class="countdown-banner">
+    <div class="countdown-content">
+      <div class="target-contest">
+        <span class="target-badge">Cargo 01 • Edital C-223</span>
+        <span><strong>Auxiliar Administrativo</strong> • Belém/PA</span>
+      </div>
+      <div class="countdown-timer-wrap">
+        <div class="time-box"><span id="cd-days" class="num">00</span><span class="label">Dias</span></div>
+        <div class="time-box"><span id="cd-hours" class="num">00</span><span class="label">Horas</span></div>
+        <div class="time-box"><span id="cd-mins" class="num">00</span><span class="label">Min</span></div>
+        <div class="time-box"><span id="cd-secs" class="num">00</span><span class="label">Seg</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-wrapper">
+    <div class="reading-container">
+
+      <!-- Hero Personalizado para a Dayana -->
+      <section class="hero-card">
+        <div class="hero-subtitle">
+          <span>🎯 ROTA DE APROVAÇÃO EXCLUSIVA</span>
+        </div>
+        <h1 class="hero-title">Bem-vinda ao seu Centro de Estudos, Dayana Maia!</h1>
+        <p class="hero-desc">
+          Esta plataforma foi construída especificamente para garantir a sua aprovação no <strong>Cargo 01 - Auxiliar Administrativo da Fundação Hospital de Clínicas Gaspar Vianna (FHCGV)</strong>. Todo o conteúdo programático do edital foi dividido no <strong>Método dos 3 Níveis</strong>: a base mais simples e intuitiva, a ponte prática mediada e o domínio 100% da Consulplan.
+        </p>
+
+        <div class="hero-stats-grid">
+          <div class="stat-box">
+            <span class="val">67 Vagas</span>
+            <span class="desc">43 Ampla + Cotas + CR</span>
+          </div>
+          <div class="stat-box">
+            <span class="val">30 Horas</span>
+            <span class="desc">Carga Horária Semanal</span>
+          </div>
+          <div class="stat-box">
+            <span class="val">R$ 1.467,15</span>
+            <span class="desc">Base + Vantagens Estaduais</span>
+          </div>
+          <div class="stat-box">
+            <span class="val">13/12/2026</span>
+            <span class="desc">Turno Tarde (15h00)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Painel Estratégico do Edital (Onde estão os pontos) -->
+      <section class="card-content">
+        <h2>📊 A Estratégia dos 10 Pontos da Prova Objetiva</h2>
+        <p>
+          Dayana, para ser aprovada, você precisa acertar no mínimo <strong>50% (5,0 pontos)</strong> no total e <strong>NÃO PODE ZERAR Língua Portuguesa</strong>. Veja onde você deve concentrar mais tempo:
+        </p>
+
+        <div class="callout callout-hospital">
+          <div class="callout-icon">💡</div>
+          <div class="callout-body">
+            <strong>O Segredo da Aprovação da Dayana:</strong>
+            As matérias de <strong>Conhecimentos Específicos (4,5 pontos)</strong> e <strong>Políticas de Saúde Pública / SUS (3,0 pontos)</strong> representam juntas <strong>75% de toda a sua nota objetiva</strong>! Domine essas duas e garanta os pontos básicos para estar entre os 172 classificados na Discursiva!
+          </div>
+        </div>
+
+        <div style="margin: 1.5rem 0;">
+          <div style="display: flex; justify-content: space-between; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.35rem;">
+            <span>Específicos + SUS (75%)</span>
+            <span>Básicas (25%)</span>
+          </div>
+          <div style="height: 14px; border-radius: var(--radius-full); background: var(--bg-subtle); overflow: hidden; display: flex;">
+            <div style="width: 45%; background: var(--gold);" title="Específicos: 4,5 pts"></div>
+            <div style="width: 30%; background: var(--accent);" title="SUS: 3,0 pts"></div>
+            <div style="width: 10%; background: var(--primary);" title="Português: 1,0 pt"></div>
+            <div style="width: 5%; background: #64748b;" title="RLM: 0,5 pt"></div>
+            <div style="width: 5%; background: #a855f7;" title="Ética: 0,5 pt"></div>
+            <div style="width: 5%; background: #ec4899;" title="Legislação: 0,5 pt"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Grid de Páginas / Módulos de Estudo -->
+      <section>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+          <h2>📚 Módulos Oficiais do Concurso FHCGV</h2>
+          <span class="badge badge-accent">Método 3 Níveis</span>
+        </div>
+
+        <div class="modules-grid">
+
+          <!-- 1. Conhecimentos Específicos -->
+          <a href="modulo-especificos.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-high">⭐ MAIOR PESO: 4,5 PONTOS</span>
+                <span class="badge badge-primary">15 Questões (Peso 0.3)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #fef3c7; color: #b45309;">📁</div>
+              <h3>1. Conhecimentos Específicos do Cargo</h3>
+              <p class="module-summary">
+                Redação Oficial, Arquivologia Hospitalar e Prontuários, Almoxarifado e Suprimentos, Nova Lei de Licitações (Lei 14.133/21), Faturamento SUS, Informática e Noções Constitucionais.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Trilha Base → Mediado → Consulplan</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 2. Políticas de Saúde Pública / SUS -->
+          <a href="modulo-sus.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-high">⭐ CRUCIAL: 3,0 PONTOS</span>
+                <span class="badge badge-accent">10 Questões (Peso 0.3)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #ccfbf1; color: #0f766e;">🏥</div>
+              <h3>2. Políticas de Saúde Pública (SUS)</h3>
+              <p class="module-summary">
+                Constituição Federal (Arts. 196 a 200), Leis Orgânicas 8.080/90 e 8.142/90, Decreto Federal nº 7.508/2011, Redes de Atenção e PNAB (Portaria 2/2017).
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Descomplicado para Leigos até a Letra de Lei</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 3. Língua Portuguesa -->
+          <a href="modulo-portugues.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-regular">NÃO PODE ZERAR! (1,0 PT)</span>
+                <span class="badge badge-primary">10 Questões (Peso 0.1)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #e0f2fe; color: #0369a1;">✍️</div>
+              <h3>3. Língua Portuguesa</h3>
+              <p class="module-summary">
+                Interpretação textual, Tipologia, Sintaxe descomplicada, Regência, Concordância, Crase e Pontuação sem decoreba chata.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Macetes Diretos & Questões da Banca</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 4. Legislação Estadual -->
+          <a href="modulo-legislacao.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-regular">LEIS DO PARÁ (0,5 PT)</span>
+                <span class="badge badge-primary">5 Questões (Peso 0.1)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #fae8ff; color: #86198f;">⚖️</div>
+              <h3>4. Legislação Estadual</h3>
+              <p class="module-summary">
+                Lei nº 5.810/1994 (RJU dos Servidores do Pará: posse, férias, estabilidade, deveres), Lei Estadual nº 6.304/2000 (FHCGV) e Lei nº 9.341/2021.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Tabelas Comparativas e Artigos mais cobrados</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 5. Ética e Qualidade no Serviço Público -->
+          <a href="modulo-etica.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-regular">ATENDIMENTO & CONDUTA (0,5 PT)</span>
+                <span class="badge badge-primary">5 Questões (Peso 0.1)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #fef9c3; color: #854d0e;">🤝</div>
+              <h3>5. Ética e Qualidade no Serviço Público</h3>
+              <p class="module-summary">
+                Diferença de Ética e Moral, Conduta Ética, Qualidade no Atendimento ao Paciente/Cidadão, Trabalho em Equipe e Resolução de Conflitos.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Pontos garantidos com bom senso e técnica</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 6. Raciocínio Lógico-Matemático -->
+          <a href="modulo-rlm.html" class="module-card">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag weight-regular">LÓGICA DESCOMPLICADA (0,5 PT)</span>
+                <span class="badge badge-primary">5 Questões (Peso 0.1)</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #f1f5f9; color: #334155;">🧠</div>
+              <h3>6. Raciocínio Lógico-Matemático</h3>
+              <p class="module-summary">
+                Tabela-verdade sem trauma, Sequências lógicas, Regra de três, Porcentagem, Probabilidade e Análise Combinatória com métodos visuais.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Passo a passo mastigado para não travar</span>
+              <span class="action-arrow">Estudar Módulo →</span>
+            </div>
+          </a>
+
+          <!-- 7. Laboratório da Prova Discursiva / Redação -->
+          <a href="modulo-discursiva.html" class="module-card" style="border-color: #f59e0b; background: linear-gradient(to bottom right, var(--bg-surface), #fffbeb);">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag" style="background: #fde68a; color: #78350f;">⭐ ELIMINATÓRIA: 5,0 PONTOS</span>
+                <span class="badge badge-gold">20 a 30 Linhas</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #fef08a; color: #713f12;">📝</div>
+              <h3>7. Laboratório de Redação Nota Máxima</h3>
+              <p class="module-summary">
+                Espelho dos critérios da banca Consulplan, estrutura do texto dissertativo, temas previstos na área da saúde pública e simulador com contagem de linhas em tempo real.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Modelos Prontos Prontos para Adaptar</span>
+              <span class="action-arrow" style="color: #b45309;">Praticar Redação →</span>
+            </div>
+          </a>
+
+          <!-- 8. Central de Simulados Oficiais -->
+          <a href="simulados.html" class="module-card" style="border-color: var(--accent); background: linear-gradient(to bottom right, var(--bg-surface), #f0fdf4);">
+            <div>
+              <div class="module-badge-top">
+                <span class="weight-tag" style="background: #bbf7d0; color: #14532d;">🎯 TREINAMENTO REAL</span>
+                <span class="badge badge-accent">50 Questões Ponderadas</span>
+              </div>
+              <div class="module-icon-wrap" style="background: #dcfce7; color: #166534;">🏆</div>
+              <h3>8. Simulador Oficial Completo</h3>
+              <p class="module-summary">
+                Treine com cronômetro de 4h30, cálculo automático de notas, verificação de linha de corte (50%) e conferência de gabarito comentado.
+              </p>
+            </div>
+            <div class="module-footer-info">
+              <span>Medir sua Nota de Corte Hoje</span>
+              <span class="action-arrow" style="color: var(--accent-dark);">Iniciar Simulado →</span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Checklist de Prazos Importantes do Edital para a Dayana -->
+      <section class="card-content" style="margin-top: 2rem;">
+        <h2>📅 Linha do Tempo e Datas Decisivas</h2>
+        <p>Acompanhe os prazos cruciais extraídos diretamente do Anexo II do edital para não perder nenhuma etapa:</p>
+
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: var(--bg-subtle); border-radius: var(--radius-sm);">
+            <div>
+              <strong>Período de Inscrições:</strong>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Pagamento do DAE até 23/10/2026</div>
+            </div>
+            <span class="badge badge-primary">24/09 a 22/10/2026</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: var(--bg-subtle); border-radius: var(--radius-sm);">
+            <div>
+              <strong>Locais de Prova Divulgados:</strong>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Edital de Convocação e Cartão de Inscrição</div>
+            </div>
+            <span class="badge badge-primary">04/12/2026</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.75rem; background: #ecfdf5; border: 1px solid var(--accent); border-radius: var(--radius-sm);">
+            <div>
+              <strong style="color: #065f46;">🔥 O GRANDE DIA DA SUA PROVA:</strong>
+              <div style="font-size: 0.85rem; color: #047857;">Fechamento dos portões: 15h00 | 4h30min de prova em Belém/PA</div>
+            </div>
+            <span class="badge badge-accent" style="font-size: 0.88rem;">13/12/2026</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer">
+    <p>Plataforma Desenvolvida Exclusivamente para a Aprovação de <strong>Dayana Maia de Jesus</strong></p>
+    <p style="font-size: 0.78rem; margin-top: 0.3rem;">Fundação Hospital de Clínicas Gaspar Vianna (FHCGV) • Concurso Público C-223 • Edital nº 01/SEPLAD-FHCGV</p>
+  </footer>
+
+  <!-- Menu Inferior Mobile First -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item active">
+      <span class="nav-icon">🏠</span>
+      <span>Início</span>
+    </a>
+    <a href="modulo-especificos.html" class="bottom-nav-item">
+      <span class="nav-icon">📁</span>
+      <span>Específicas</span>
+    </a>
+    <a href="modulo-sus.html" class="bottom-nav-item">
+      <span class="nav-icon">🏥</span>
+      <span>SUS</span>
+    </a>
+    <a href="modulo-discursiva.html" class="bottom-nav-item">
+      <span class="nav-icon">✍️</span>
+      <span>Redação</span>
+    </a>
+    <a href="simulados.html" class="bottom-nav-item">
+      <span class="nav-icon">🏆</span>
+      <span>Simulados</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

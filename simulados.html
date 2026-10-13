@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Simulados Oficiais | Dayana Maia - FHCGV Auxiliar Administrativo</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .sim-timer-bar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1.25rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 60px;
+      z-index: 80;
+      box-shadow: var(--shadow-sm);
+    }
+    .score-result-card {
+      display: none;
+      background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-subtle) 100%);
+      border: 2px solid var(--accent);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      margin: 2rem 0;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+    }
+    .score-result-card.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    .score-big {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="scroll-progress-container"><div id="scroll-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <a href="index.html" class="brand-icon" title="Voltar ao início">←</a>
+        <div class="brand-info">
+          <div class="brand-title">Simulado Oficial <span>FHCGV</span></div>
+          <span class="user-badge">⭐ Dayana Maia • Simulação Real</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="font-decrease" class="btn-icon" title="Diminuir fonte">A-</button>
+        <button id="font-increase" class="btn-icon" title="Aumentar fonte">A+</button>
+        <button id="theme-toggle" class="btn-icon" title="Alternar modo">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="reading-container">
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="badge badge-accent" style="font-size: 0.8rem; margin-bottom: 0.5rem;">PROVA OBJETIVA COMPLETA • EDITAL Nº 01/SEPLAD-FHCGV</span>
+        <h1>Simulado Estratégico da Dayana: Cargo 01</h1>
+        <p style="color: var(--text-muted);">
+          Este simulador pondera as questões exatamente com os pesos do edital (0.1 para básicas e 0.3 para SUS/Específicos), verifica a nota de corte (mínimo 5,0 pontos) e o critério de eliminação de Língua Portuguesa.
+        </p>
+      </div>
+
+      <!-- Barra de Cronômetro de Prova (4h30min) -->
+      <div class="sim-timer-bar">
+        <div>
+          <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Tempo Oficial da Prova:</span>
+          <strong id="sim-clock" style="font-size: 1.25rem; font-family: 'Outfit', monospace; color: var(--primary);">04:30:00</strong>
+        </div>
+        <button id="sim-btn-start" class="btn btn-secondary" onclick="toggleSimTimer()">
+          ⏱️ Iniciar Cronômetro
+        </button>
+      </div>
+
+      <!-- Card de Resultado Final -->
+      <div id="sim-result-box" class="score-result-card">
+        <h2 style="margin: 0; font-size: 1.5rem;" id="sim-verdict-title">Resultado do Simulado</h2>
+        <div class="score-big" id="sim-final-score">0.0</div>
+        <div style="font-size: 0.95rem; color: var(--text-muted);" id="sim-score-details">
+          Pontuação total calculada com base nos pesos oficiais da Consulplan.
+        </div>
+        <div id="sim-verdict-badge" style="margin-top: 1rem;"></div>
+      </div>
+
+      <!-- Bloco de Questões da Prova -->
+      <form id="simulado-form">
+
+        <!-- BLOCO 1: LÍNGUA PORTUGUESA (10 QUESTÕES - PESO 0.1) -->
+        <div class="card-content" style="border-left: 5px solid var(--primary);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <h3>Língua Portuguesa (Peso 0.1 cada)</h3>
+            <span class="badge badge-primary">Não Pode Zerar!</span>
+          </div>
+
+          <!-- Q1 -->
+          <div class="question-card" data-sim-peso="0.1" data-sim-disc="portugues" data-sim-correct="A">
+            <p class="question-text">1. Em qual das orações abaixo a concordância verbal está rigorosamente de acordo com a norma padrão?</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q1" value="A"> <span class="option-text">Faz três anos que a servidora Dayana atua na administração hospitalar.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q1" value="B"> <span class="option-text">Fazem três anos que os documentos foram arquivados.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q1" value="C"> <span class="option-text">Haviam muitos pacientes aguardando a chamada da triagem.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q1" value="D"> <span class="option-text">Devem haver soluções imediatas para a falta de leitos.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q1" value="E"> <span class="option-text">Existia muitos processos pendentes na diretoria.</span></label>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="question-card" data-sim-peso="0.1" data-sim-disc="portugues" data-sim-correct="C">
+            <p class="question-text">2. Indique a opção em que o uso do acento indicador de crase é OBRIGATÓRIO:</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q2" value="A"> <span class="option-text">O paciente retornou a pé para sua residência após a alta.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q2" value="B"> <span class="option-text">A direção do hospital está disposta a negociar prazos com o fornecedor.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q2" value="C"> <span class="option-text">O Auxiliar Administrativo entregou os relatórios à coordenadora de faturamento.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q2" value="D"> <span class="option-text">O ofício foi enviado a Sua Excelência o Diretor Geral.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q2" value="E"> <span class="option-text">As compras foram parceladas a prazo pela fundação.</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOCO 2: POLÍTICAS DE SAÚDE PÚBLICA / SUS (PESO 0.3 CADA - ALTO VALOR!) -->
+        <div class="card-content" style="border-left: 5px solid var(--accent);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <h3>Políticas de Saúde Pública / SUS (Peso 0.3 cada)</h3>
+            <span class="badge badge-accent">⭐ 3,0 Pontos em Jogo</span>
+          </div>
+
+          <!-- Q3 -->
+          <div class="question-card" data-sim-peso="0.3" data-sim-disc="sus" data-sim-correct="D">
+            <p class="question-text">3. O princípio doutrinário do SUS que garante que o sistema de saúde deve oferecer ações de promoção, prevenção, tratamento e reabilitação de forma articulada e contínua é denominado:</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q3" value="A"> <span class="option-text">Universalidade.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q3" value="B"> <span class="option-text">Descentralização político-administrativa.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q3" value="C"> <span class="option-text">Equidade distributiva.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q3" value="D"> <span class="option-text">Integralidade da atenção.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q3" value="E"> <span class="option-text">Regionalização dos serviços.</span></label>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="question-card" data-sim-peso="0.3" data-sim-disc="sus" data-sim-correct="B">
+            <p class="question-text">4. Conforme a Lei Federal nº 8.142/1990 e a Resolução CNS nº 453/2012, qual é o percentual obrigatório de representação dos Usuários nos Conselhos e Conferências de Saúde?</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q4" value="A"> <span class="option-text">25% (um quarto das vagas).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q4" value="B"> <span class="option-text">50% (metade de todos os assentos, garantindo paridade).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q4" value="C"> <span class="option-text">30% (percentual mínimo constitucional).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q4" value="D"> <span class="option-text">100% de usuários civis sem participação de profissionais.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q4" value="E"> <span class="option-text">Percentual discricionário definido pelo Prefeito ou Governador.</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOCO 3: CONHECIMENTOS ESPECÍFICOS DO CARGO 01 (PESO 0.3 CADA - MAIOR PESO!) -->
+        <div class="card-content" style="border-left: 5px solid var(--gold);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <h3>Conhecimentos Específicos: Auxiliar Administrativo (Peso 0.3 cada)</h3>
+            <span class="badge badge-gold">⭐ 4,5 Pontos em Jogo</span>
+          </div>
+
+          <!-- Q5 -->
+          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="B">
+            <p class="question-text">5. De acordo com a Nova Lei de Licitações e Contratos Administrativos (Lei Federal nº 14.133/2021), a modalidade de licitação obrigatória para a aquisição de bens e serviços comuns é o(a):</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q5" value="A"> <span class="option-text">Concorrência internacional.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q5" value="B"> <span class="option-text">Pregão.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q5" value="C"> <span class="option-text">Tomada de Preços.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q5" value="D"> <span class="option-text">Convite por carta.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q5" value="E"> <span class="option-text">Leilão reverso de bens móveis.</span></label>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="C">
+            <p class="question-text">6. No contexto do faturamento do Sistema Único de Saúde em ambiente hospitalar, o instrumento padrão emitido para autorizar e registrar as cobranças dos procedimentos e diárias de um paciente internado no Hospital Gaspar Vianna denomina-se:</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q6" value="A"> <span class="option-text">BPA (Boletim de Produção Ambulatorial).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q6" value="B"> <span class="option-text">RAAS (Registro das Ações Ambulatoriais de Saúde).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q6" value="C"> <span class="option-text">AIH (Autorização de Internação Hospitalar).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q6" value="D"> <span class="option-text">APAC (Autorização de Procedimento de Alta Complexidade Ambulatorial).</span></label>
+              <label class="option-item"><input type="radio" name="sim_q6" value="E"> <span class="option-text">DAE (Documento de Arrecadação Estadual).</span></label>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="A">
+            <p class="question-text">7. No sistema operacional Microsoft Windows, qual é a combinação de teclas de atalho amplamente recomendada por razões de sigilo hospitalar para bloquear instantaneamente a estação de trabalho ao se afastar da mesa?</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q7" value="A"> <span class="option-text">Tecla do logotipo do Windows + L</span></label>
+              <label class="option-item"><input type="radio" name="sim_q7" value="B"> <span class="option-text">Ctrl + Alt + Del apenas para desligar</span></label>
+              <label class="option-item"><input type="radio" name="sim_q7" value="C"> <span class="option-text">Tecla do logotipo do Windows + D</span></label>
+              <label class="option-item"><input type="radio" name="sim_q7" value="D"> <span class="option-text">Alt + F4</span></label>
+              <label class="option-item"><input type="radio" name="sim_q7" value="E"> <span class="option-text">Ctrl + Shift + Esc</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- BLOCO 4: LEGISLAÇÃO ESTADUAL & ÉTICA (PESO 0.1 CADA) -->
+        <div class="card-content" style="border-left: 5px solid #a855f7;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+            <h3>Legislação Estadual e Ética (Peso 0.1 cada)</h3>
+            <span class="badge badge-primary">RJU-PA e Normas da FHCGV</span>
+          </div>
+
+          <!-- Q8 -->
+          <div class="question-card" data-sim-peso="0.1" data-sim-disc="legislacao" data-sim-correct="D">
+            <p class="question-text">8. Segundo o art. 29 da Lei Estadual nº 5.810/1994 (RJU dos Servidores Civis do Pará), o servidor habilitado em concurso público adquire estabilidade no serviço público estadual após cumprir:</p>
+            <div class="options-list">
+              <label class="option-item"><input type="radio" name="sim_q8" value="A"> <span class="option-text">1 (um) ano de efetivo exercício.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q8" value="B"> <span class="option-text">2 (dois) anos de estágio probatório.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q8" value="C"> <span class="option-text">5 (cinco) anos ininterruptos de trabalho.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q8" value="D"> <span class="option-text">3 (três) anos de efetivo exercício, após avaliação especial de desempenho.</span></label>
+              <label class="option-item"><input type="radio" name="sim_q8" value="E"> <span class="option-text">10 (dez) anos com promoção automática por antiguidade.</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botão para Corrigir Simulado -->
+        <div style="text-align: center; margin: 2.5rem 0;">
+          <button type="button" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;" onclick="gradeSimulation()">
+            🏆 Finalizar Prova & Calcular Minha Nota Oficial
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="nav-icon">🏠</span>
+      <span>Início</span>
+    </a>
+    <a href="modulo-especificos.html" class="bottom-nav-item">
+      <span class="nav-icon">📁</span>
+      <span>Específicas</span>
+    </a>
+    <a href="modulo-sus.html" class="bottom-nav-item">
+      <span class="nav-icon">🏥</span>
+      <span>SUS</span>
+    </a>
+    <a href="modulo-discursiva.html" class="bottom-nav-item">
+      <span class="nav-icon">✍️</span>
+      <span>Redação</span>
+    </a>
+    <a href="simulados.html" class="bottom-nav-item active">
+      <span class="nav-icon">🏆</span>
+      <span>Simulados</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Lógica Específica da Central de Simulados
+    let simTimerSeconds = 4.5 * 3600; // 4h30min
+    let simInterval = null;
+
+    function toggleSimTimer() {
+      const clockEl = document.getElementById('sim-clock');
+      const btn = document.getElementById('sim-btn-start');
+
+      if (simInterval) {
+        clearInterval(simInterval);
+        simInterval = null;
+        btn.textContent = '▶️ Retomar Tempo';
+        return;
+      }
+
+      btn.textContent = '⏸️ Pausar Tempo';
+      simInterval = setInterval(() => {
+        if (simTimerSeconds <= 0) {
+          clearInterval(simInterval);
+          alert('Tempo esgotado da prova, Dayana!');
+          return;
+        }
+        simTimerSeconds--;
+        const h = Math.floor(simTimerSeconds / 3600);
+        const m = Math.floor((simTimerSeconds % 3600) / 60);
+        const s = simTimerSeconds % 60;
+        clockEl.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+      }, 1000);
+    }
+
+    function gradeSimulation() {
+      const questions = document.querySelectorAll('.question-card[data-sim-correct]');
+      let totalPoints = 0;
+      let portuguesPoints = 0;
+      let totalPossible = 0;
+
+      questions.forEach(q => {
+        const correct = q.getAttribute('data-sim-correct');
+        const peso = parseFloat(q.getAttribute('data-sim-peso'));
+        const disc = q.getAttribute('data-sim-disc');
+        totalPossible += peso;
+
+        const selected = q.querySelector('input[type="radio"]:checked');
+        const labels = q.querySelectorAll('.option-item');
+        
+        labels.forEach(l => l.classList.remove('correct', 'incorrect'));
+
+        if (selected) {
+          if (selected.value === correct) {
+            totalPoints += peso;
+            if (disc === 'portugues') portuguesPoints += peso;
+            selected.closest('.option-item').classList.add('correct');
+          } else {
+            selected.closest('.option-item').classList.add('incorrect');
+            const rightLabel = q.querySelector(`input[value="${correct}"]`);
+            if (rightLabel) rightLabel.closest('.option-item').classList.add('correct');
+          }
+        } else {
+          // Não respondeu
+          const rightLabel = q.querySelector(`input[value="${correct}"]`);
+          if (rightLabel) rightLabel.closest('.option-item').classList.add('correct');
+        }
+      });
+
+      // Normaliza para nota proporcional de 0 a 10
+      const finalGrade10 = totalPossible > 0 ? (totalPoints / totalPossible) * 10 : 0;
+      const resultCard = document.getElementById('sim-result-box');
+      const scoreVal = document.getElementById('sim-final-score');
+      const details = document.getElementById('sim-score-details');
+      const badge = document.getElementById('sim-verdict-badge');
+      const title = document.getElementById('sim-verdict-title');
+
+      resultCard.classList.add('active');
+      scoreVal.textContent = finalGrade10.toFixed(2) + ' / 10.0';
+
+      let isApproved = true;
+      let message = '';
+
+      if (finalGrade10 < 5.0) {
+        isApproved = false;
+        message += '<p style="color: var(--danger); font-weight:700;">Atenção: A nota foi inferior ao mínimo regulamentar de 50% (5,0 pontos) exigido no subitem 14.21.</p>';
+      }
+
+      if (portuguesPoints === 0) {
+        isApproved = false;
+        message += '<p style="color: var(--danger); font-weight:700;">Atenção Crítica: Você zerou as questões de Português. Conforme o edital, zerar português elimina automaticamente!</p>';
+      }
+
+      if (isApproved) {
+        title.innerHTML = '🎉 PARABÉNS, DAYANA MAIA! VOCÊ ESTÁ APROVADA!';
+        scoreVal.style.color = 'var(--success)';
+        badge.innerHTML = '<span class="badge" style="background: var(--success); color: white; font-size: 1rem; padding: 0.5rem 1rem;">CLASSIFICADA PARA CORREÇÃO DA REDAÇÃO (Top 172 da AC)</span>';
+      } else {
+        title.innerHTML = '⚠️ REVISÃO NECESSÁRIA, DAYANA';
+        scoreVal.style.color = 'var(--danger)';
+        badge.innerHTML = '<span class="badge" style="background: var(--danger); color: white; font-size: 1rem; padding: 0.5rem 1rem;">REVISE OS MÓDULOS DE ESPECÍFICAS E PORTUGUÊS</span>';
+      }
+
+      details.innerHTML = message || '<p style="color: var(--success); font-weight: 600;">Excelente desempenho! Você superou com folga a linha de corte e garantiu sua vaga.</p>';
+
+      window.scrollTo({ top: resultCard.offsetTop - 80, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+ordem,evento_descricao,data_ou_periodo,tipo_evento,observacoes
+1,PUBLICAÇÃO DO EDITAL DE ABERTURA DO CONCURSO PÚBLICO,17/09/2026,Publicação,Edital nº 01/SEPLAD-FHCGV
+2,PRAZO DE IMPUGNAÇÃO CONTRA O EDITAL DE ABERTURA DO CONCURSO PÚBLICO,Até 21/09/2026,Prazo Recursal,Via Fale Conosco no site Consulplan
+3,PUBLICAÇÃO DO RELATÓRIO DAS IMPUGNAÇÕES CONTRA O EDITAL DE ABERTURA,Até 24/09/2026,Publicação,Divulgação das respostas
+4,PERÍODO DAS INSCRIÇÕES,16h de 24/09 a 16h de 22/10/2026,Inscrição,Pagamento do boleto/DAE até 23/10/2026
+5,PERÍODO DAS INSCRIÇÕES PARA ISENÇÃO DE TAXA (COTISTAS E BAIXA RENDA),16h de 24/09 a 16h de 28/09/2026,Isenção,CadÚnico / PcD / Mulheres vítimas de violência doméstica
+6,PERÍODO PARA O ENVIO DOS DOCUMENTOS REFERENTES À SOLICITAÇÃO DE ISENÇÃO,16h de 24/09 a 16h de 28/09/2026,Envio Documental,Upload em PDF/PNG/JPG até 5MB
+7,RELAÇÃO PRELIMINAR DAS SOLICITAÇÕES DE ISENÇÃO DEFERIDAS E INDEFERIDAS,07/10/2026,Resultado,Diário Oficial e site Consulplan
+8,PERÍODO DE RECURSO CONTRA A RELAÇÃO PRELIMINAR DE ISENÇÃO,08/10 e 09/10/2026,Prazo Recursal,2 dias úteis
+9,RELAÇÃO DEFINITIVA DAS SOLICITAÇÕES DE ISENÇÃO DEFERIDAS E INDEFERIDAS,22/10/2026,Resultado,Resultado pós-recursos
+10,PERÍODO DE SOLICITAÇÃO DE ATENDIMENTO ESPECIAL,24/09 a 23/10/2026,Atendimento Especial,Lactantes / PcD / Sabatistas / Outros
+11,PERÍODO DE ENVIO DOS DOCUMENTOS COMPROBATÓRIOS PARA COTAS (VAGAS RESERVADAS),24/09 a 23/10/2026,Envio Documental,Upload laudos PcD / autodeclarações
+12,PERÍODO DE ENVIO DA DOCUMENTAÇÃO PARA ATENDIMENTO ESPECIAL,24/09 a 22/10/2026,Envio Documental,Upload de laudos e certidões
+13,LISTA PROVISÓRIA DE CANDIDATOS INSCRITOS,06/11/2026,Publicação,Ordem alfabética das inscrições deferidas/indeferidas
+14,PERÍODO DE RECURSO CONTRA A LISTA PROVISÓRIA DE CANDIDATOS INSCRITOS,09 e 10/11/2026,Prazo Recursal,2 dias úteis
+15,EDITAL DE HOMOLOGAÇÃO DAS INSCRIÇÕES E DIVULGAÇÃO DOS LOCAIS E HORÁRIOS DE PROVA,04/12/2026,Convocação,Disponibilização do Cartão de Inscrição
+16,REALIZAÇÃO DA PROVA OBJETIVA E DA PROVA DISCURSIVA,13/12/2026,Prova,"Manhã: Superior (Portões 8h) | Tarde: Médio/Téc (Portões 15h) - Duração 4h30"
+17,AFIXAÇÃO DO GABARITO OFICIAL PRELIMINAR DA PROVA OBJETIVA,14/12/2026,Resultado,A partir das 16h no site da Consulplan
+18,PERÍODO DE RECURSO CONTRA O GABARITO PRELIMINAR DA PROVA OBJETIVA,15 e 16/12/2026,Prazo Recursal,Via sistema eletrônico da banca
+19,AFIXAÇÃO DO GABARITO OFICIAL DEFINITIVO DA PROVA OBJETIVA,13/01/2027,Publicação,Divulgação pós análise de recursos
+20,RESULTADO PRELIMINAR DA PROVA OBJETIVA,13/01/2027,Resultado,Diário Oficial e site Consulplan
+21,PERÍODO DE RECURSO CONTRA O RESULTADO PRELIMINAR DA PROVA OBJETIVA,14 e 15/01/2027,Prazo Recursal,2 dias úteis
+22,RESULTADO DEFINITIVO DA PROVA OBJETIVA,26/01/2027,Resultado,Homologação da prova objetiva
+23,RESULTADO PRELIMINAR DA PROVA DISCURSIVA,05/02/2027,Resultado,Espelho de redação disponibilizado para consulta
+24,PERÍODO DE RECURSO CONTRA O RESULTADO PRELIMINAR DA PROVA DISCURSIVA,11 e 12/02/2027,Prazo Recursal,2 dias úteis
+25,RESULTADO DEFINITIVO DA PROVA DISCURSIVA,02/03/2027,Resultado,Nota final da discursiva
+26,PERÍODO DE ENVIO DOS DOCUMENTOS REFERENTES À AVALIAÇÃO DE TÍTULOS,24/09 a 27/10/2026,Envio Documental,Apenas para nível Superior (durante as inscrições)
+27,RESULTADO PRELIMINAR DA AVALIAÇÃO DE TÍTULOS,05/02/2027,Resultado,Diário Oficial e Consulplan
+28,PERÍODO DE RECURSO CONTRA O RESULTADO PRELIMINAR DE TÍTULOS,11 e 12/02/2027,Prazo Recursal,2 dias úteis
+29,RESULTADO DEFINITIVO DA AVALIAÇÃO DE TÍTULOS,02/03/2027,Resultado,Pontuação consolidada dos títulos
+30,EDITAL DE CONVOCAÇÃO PARA HETEROIDENTIFICAÇÃO E VERIFICAÇÃO DOCUMENTAL,05/03/2027,Convocação,Candidatos cotistas negros / indígenas / quilombolas
+31,REALIZAÇÃO DA HETEROIDENTIFICAÇÃO E VERIFICAÇÃO DOCUMENTAL,A definir no edital de convocação,Etapa Presencial/Eletrônica,Presencial em Belém para heteroidentificação
+32,RESULTADO PRELIMINAR DA HETEROIDENTIFICAÇÃO E VERIFICAÇÃO DOCUMENTAL,22/03/2027,Resultado,Publicação oficial
+33,PRAZO PARA RECURSOS CONTRA RESULTADO DA HETEROIDENTIFICAÇÃO,23 e 24/03/2027,Prazo Recursal,2 dias úteis
+34,DECISÃO DOS RECURSOS E RESULTADO DEFINITIVO DA HETEROIDENTIFICAÇÃO,09/04/2027,Resultado,Publicação oficial
+35,EDITAL DE CONVOCAÇÃO PARA AVALIAÇÃO BIOPSICOSSOCIAL (PCD),A definir pela SEPLAD/PA,Convocação,Perícia presencial multiprofissional
+36,RESULTADO FINAL DEFINITIVO E HOMOLOGAÇÃO,09/04/2027,Finalização,Homologação final do Concurso Público C-223

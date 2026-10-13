@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo SUS e Saúde Pública | Dayana Maia - FHCGV Auxiliar Administrativo</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="scroll-progress-container"><div id="scroll-progress-bar"></div></div>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-wrapper">
+        <a href="index.html" class="brand-icon" title="Voltar ao início">←</a>
+        <div class="brand-info">
+          <div class="brand-title">Políticas de Saúde Pública <span>(3,0 Pts)</span></div>
+          <span class="user-badge">⭐ Dayana Maia de Jesus • Cargo 01</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="font-decrease" class="btn-icon" title="Diminuir fonte">A-</button>
+        <button id="font-increase" class="btn-icon" title="Aumentar fonte">A+</button>
+        <button id="theme-toggle" class="btn-icon" title="Alternar modo">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="reading-container">
+
+      <div style="margin-bottom: 1.5rem;">
+        <span class="badge badge-accent" style="font-size: 0.8rem; margin-bottom: 0.5rem;">30% DA SUA NOTA: 10 QUESTÕES • PESO 0.3</span>
+        <h1>Políticas de Saúde Pública e Legislação do SUS</h1>
+        <p style="color: var(--text-muted);">
+          Dayana, o Sistema Único de Saúde é o pilar que sustenta o Hospital Gaspar Vianna. Dominar essas 10 questões é garantia de aprovação entre as primeiras vagas!
+        </p>
+      </div>
+
+      <!-- Seletor dos 3 Níveis -->
+      <nav class="pedagogic-tabs" aria-label="Níveis de Estudo">
+        <button class="tab-btn active" data-level="1">
+          <span class="tab-badge">Nível 1</span>
+          <span class="tab-name">🌱 Base Descomplicada</span>
+        </button>
+        <button class="tab-btn" data-level="2">
+          <span class="tab-badge">Nível 2</span>
+          <span class="tab-name">🌿 Conteúdo Mediado</span>
+        </button>
+        <button class="tab-btn" data-level="3">
+          <span class="tab-badge">Nível 3</span>
+          <span class="tab-name">🌳 Domínio 100% Edital</span>
+        </button>
+      </nav>
+
+      <!-- ====================================================================
+           NÍVEL 1: BASE DESCOMPLICADA
+           ==================================================================== -->
+      <section id="level-content-1" class="level-content active">
+        
+        <div class="callout callout-base">
+          <div class="callout-icon">🌱</div>
+          <div class="callout-body">
+            <strong>O SUS em Palavras Simples:</strong>
+            Antes da Constituição de 1988, quem não tinha carteira de trabalho assinada era considerado "indigente" e dependia de caridade para ser atendido. O SUS foi criado para dizer: <em>"A saúde é um direito de TODO mundo, do milionário ao morador de rua, e dever do Estado!"</em>
+          </div>
+        </div>
+
+        <article class="card-content">
+          <h2>1. Os Três Princípios Doutrinários (O Trio Sagrado do SUS)</h2>
+          <p>
+            Toda prova de concurso cobra a distinção entre estes 3 pilares éticos:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="background: var(--level-base-bg); padding: 1rem; border-radius: var(--radius-sm); border-left: 5px solid var(--level-base);">
+              <h3 style="margin: 0 0 0.3rem 0; color: #047857;">1. Universalidade (Para Todos)</h3>
+              <p style="margin: 0; font-size: 0.95rem;">
+                Nenhum brasileiro ou estrangeiro pode ter o atendimento negado por não ter dinheiro, endereço ou documento. O acesso é universal em todos os níveis de assistência.
+              </p>
+            </div>
+            <div style="background: var(--level-mediado-bg); padding: 1rem; border-radius: var(--radius-sm); border-left: 5px solid var(--level-mediado);">
+              <h3 style="margin: 0 0 0.3rem 0; color: #0369a1;">2. Integralidade (O Cuidado Completo)</h3>
+              <p style="margin: 0; font-size: 0.95rem;">
+                O paciente é visto como um ser humano inteiro, não apenas como uma doença isolada. O SUS cuida da prevenção (vacinas, orientações), do tratamento (remédios, consultas) e da reabilitação (fisioterapia, prótese).
+              </p>
+            </div>
+            <div style="background: var(--level-avancado-bg); padding: 1rem; border-radius: var(--radius-sm); border-left: 5px solid var(--level-avancado);">
+              <h3 style="margin: 0 0 0.3rem 0; color: #6d28d9;">3. Equidade (Tratar Desigual os Desiguais)</h3>
+              <p style="margin: 0; font-size: 0.95rem;">
+                Equidade <strong>NÃO É</strong> dar tudo igual para todos! É dar mais atenção para quem tem maior necessidade social ou vulnerabilidade física para diminuir as desigualdades.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-content">
+          <h2>2. Princípios Organizativos (Como a Máquina Funciona)</h2>
+          <ul>
+            <li><strong>Descentralização:</strong> A saúde não é mandada de Brasília! O município é o responsável mais próximo pelo cidadão (postos de saúde e UBS), o Estado cuida dos grandes hospitais de referência (como o Gaspar Vianna) e a União dita as diretrizes nacionais e financia.</li>
+            <li><strong>Regionalização e Hierarquização:</strong> O atendimento começa na atenção primária (Postinho de Saúde) e, se o caso for complexo (ex: infarto, hemodiálise), o paciente é encaminhado aos hospitais especializados.</li>
+            <li><strong>Participação da Comunidade:</strong> O povo fiscaliza o SUS através dos Conselhos de Saúde e das Conferências de Saúde!</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- ====================================================================
+           NÍVEL 2: CONTEÚDO MEDIADO (A PONTE PRÁTICA)
+           ==================================================================== -->
+      <section id="level-content-2" class="level-content">
+        
+        <div class="callout callout-hospital">
+          <div class="callout-icon">🌿</div>
+          <div class="callout-body">
+            <strong>O Papel da FHCGV na Rede de Atenção à Saúde (RAS):</strong>
+            O Hospital de Clínicas Gaspar Vianna é uma unidade hospitalar de <strong>Alta Complexidade</strong>, referência estadual no Pará em três eixos vitais: <strong>Cardiologia, Psiquiatria e Nefrologia</strong>. O Auxiliar Administrativo lida diretamente com a regulação de leitos e acolhimento desses pacientes referenciados!
+          </div>
+        </div>
+
+        <article class="card-content">
+          <h2>1. Decreto Federal nº 7.508/2011: Organização das Redes</h2>
+          <p>
+            O Decreto 7.508 regulamentou a Lei 8.080/90 e introduziu termos que a Consulplan adora:
+          </p>
+          <ul>
+            <li><strong>Região de Saúde:</strong> Espaço geográfico contínuo formado por agrupamentos de municípios limítrofes para integrar a organização e o planejamento das ações de saúde.</li>
+            <li><strong>Portas de Entrada do SUS:</strong> São os serviços onde o usuário tem acesso inicial sem precisar de encaminhamento prévio. São 4 portas:
+              <ol>
+                <li>Atenção Primária à Saúde (UBS / Postos de Saúde);</li>
+                <li>Serviços de Atenção de Urgência e Emergência (UPAs, Prontos-Socorros);</li>
+                <li>Atenção Psicossocial (CAPS);</li>
+                <li>Serviços Especiais de Acesso Aberto.</li>
+              </ol>
+              <em>Pegadinha: Hospital terciário e cirúrgico NÃO é porta de entrada aberta, depende de regulação/encaminhamento!</em>
+            </li>
+            <li><strong>RENAME:</strong> Relação Nacional de Medicamentos Essenciais.</li>
+            <li><strong>RENASES:</strong> Relação Nacional de Ações e Serviços de Saúde.</li>
+            <li><strong>COAP (Contrato Organizativo da Ação Pública da Saúde):</strong> Acordo de colaboração firmado entre entes federativos (União, Estado e Município) para organizar a rede da Região de Saúde.</li>
+          </ul>
+        </article>
+
+        <article class="card-content">
+          <h2>2. Controle Social e a Lei Federal nº 8.142/1990</h2>
+          <p>
+            A Lei 8.142 é curta, mas cai em praticamente todas as provas de concurso da área da saúde no Brasil:
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1rem 0;">
+            <div style="background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+              <h3 style="margin-top: 0; color: var(--primary-dark);">Conferência de Saúde</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                Reúne-se a cada <strong>4 (quatro) anos</strong> com representação dos vários segmentos sociais, para avaliar a situação de saúde e propor as diretrizes para as políticas públicas nos níveis correspondentes.
+              </p>
+              <span class="badge badge-primary">Convocada pelo Executivo ou extraordinariamente pelo Conselho</span>
+            </div>
+            <div style="background: var(--bg-subtle); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+              <h3 style="margin-top: 0; color: var(--accent-dark);">Conselho de Saúde</h3>
+              <p style="font-size: 0.92rem; margin-bottom: 0.5rem;">
+                Possui caráter <strong>permanente e deliberativo</strong>. É um colegiado que atua na formulação de estratégias e no controle da execução da política de saúde, <strong>inclusive nos aspectos econômicos e financeiros</strong>!
+              </p>
+              <span class="badge badge-accent">Paritário: 50% de Usuários!</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- ====================================================================
+           NÍVEL 3: DOMÍNIO 100% EDITAL (NÍVEL CONSULPLAN AVANÇADO)
+           ==================================================================== -->
+      <section id="level-content-3" class="level-content">
+        
+        <div class="callout callout-pegadinha">
+          <div class="callout-icon">🚨</div>
+          <div class="callout-body">
+            <strong>O Foco dos Artigos de Lei da Consulplan:</strong>
+            A Consulplan exige conhecimento literal dos artigos da Constituição Federal (196 a 200) e da Lei Orgânica 8.080/90. Memorize a redação exata dos dispositivos abaixo.
+          </div>
+        </div>
+
+        <article class="card-content">
+          <h2>1. Constituição Federal de 1988: Artigos 196 a 200 Literais</h2>
+          
+          <div class="callout callout-lei">
+            <div class="callout-icon">⚖️</div>
+            <div class="callout-body">
+              <strong>Artigo 196:</strong>
+              "A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação."
+            </div>
+          </div>
+
+          <div class="callout callout-lei">
+            <div class="callout-icon">⚖️</div>
+            <div class="callout-body">
+              <strong>Artigo 198 - Diretrizes Constitucionais do SUS:</strong>
+              <p>As ações e serviços públicos de saúde integram uma rede regionalizada e hierarquizada e constituem um sistema único, organizado de acordo com as seguintes diretrizes:</p>
+              <ol>
+                <li><strong>I - Descentralização:</strong> com direção única em cada esfera de governo;</li>
+                <li><strong>II - Atendimento Integral:</strong> com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais;</li>
+                <li><strong>III - Participação da Comunidade.</strong></li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="callout callout-lei">
+            <div class="callout-icon">⚖️</div>
+            <div class="callout-body">
+              <strong>Artigo 199 - Participação Complementar da Iniciativa Privada:</strong>
+              <p>A assistência à saúde é livre à iniciativa privada. As instituições privadas poderão participar de forma <strong>complementar</strong> do SUS, mediante contrato de direito público ou convênio, <strong>tendo preferência as entidades filantrópicas e as sem fins lucrativos</strong>.</p>
+              <p class="highlight-danger">É VEDADA a destinação de recursos públicos para auxílios ou subvenções a instituições privadas com fins lucrativos!</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-content">
+          <h2>2. Composição Paritária da Resolução CNS nº 453/2012 (Lei 8.142)</h2>
+          <p>
+            A composição dos Conselhos de Saúde e Conferências de Saúde obedece à regra paritária:
+          </p>
+          <ul>
+            <li><span class="badge-law">50%</span> de representantes de <strong>Usuários</strong> do SUS (sociedade civil, associações, sindicatos).</li>
+            <li><span class="badge-law">25%</span> de representantes de <strong>Trabalhadores da Saúde</strong> (médicos, enfermeiros, administrativos).</li>
+            <li><span class="badge-law">25%</span> de representantes de <strong>Governo e Prestadores de Serviços</strong> privados conveniados ou sem fins lucrativos.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- ====================================================================
+           BANCO DE QUESTÕES INTERATIVAS DO MÓDULO SUS
+           ==================================================================== -->
+      <section class="quiz-section">
+        <div class="quiz-header">
+          <h3><span>🎯</span> Banco de Questões de SUS da Dayana</h3>
+          <span class="quiz-badge">Estilo Consulplan • 10 Questões no Edital</span>
+        </div>
+
+        <!-- Questão 1 SUS -->
+        <div class="question-card" data-qid="sus_q1" data-correct="B">
+          <div class="question-meta">
+            <span class="banca-tag">CONSULPLAN • SIMULADO OFICIAL</span>
+            <span>Assunto: Diretrizes Constitucionais do SUS (CF/88 Art. 198)</span>
+          </div>
+          <p class="question-text">
+            1. De acordo com o art. 198 da Constituição Federal de 1988, as ações e serviços públicos de saúde integram uma rede regionalizada e hierarquizada, constituindo o Sistema Único de Saúde (SUS). Dentre as diretrizes constitucionais expressas no referido dispositivo, assinale a correta:
+          </p>
+          <div class="options-list">
+            <div class="option-item" data-opt="A">
+              <span class="option-letter">A</span>
+              <span class="option-text">Centralização com comando exclusivo na esfera federal.</span>
+            </div>
+            <div class="option-item" data-opt="B">
+              <span class="option-letter">B</span>
+              <span class="option-text">Atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais.</span>
+            </div>
+            <div class="option-item" data-opt="C">
+              <span class="option-letter">C</span>
+              <span class="option-text">Prioridade absoluta para o atendimento hospitalar cirúrgico curativo sobre as ações de saneamento.</span>
+            </div>
+            <div class="option-item" data-opt="D">
+              <span class="option-letter">D</span>
+              <span class="option-text">Participação exclusiva de servidores públicos nos colegiados de fiscalização do sistema.</span>
+            </div>
+            <div class="option-item" data-opt="E">
+              <span class="option-letter">E</span>
+              <span class="option-text">Direção colegiada múltipla e concorrente em cada município.</span>
+            </div>
+          </div>
+          <div class="quiz-feedback">
+            <div class="feedback-status"></div>
+            <div class="explanation-title">📖 Comentário Detalhado:</div>
+            <p>
+              Gabarito: <strong>Letra B</strong>. O art. 198, II, da CF/88 estabelece textualmente: <em>"atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais"</em>. As outras opções erram ao falar em centralização (a diretriz é descentralização com direção única em cada esfera) e ao excluir a comunidade.
+            </p>
+          </div>
+        </div>
+
+        <!-- Questão 2 SUS -->
+        <div class="question-card" data-qid="sus_q2" data-correct="E">
+          <div class="question-meta">
+            <span class="banca-tag">CONSULPLAN • SIMULADO OFICIAL</span>
+            <span>Assunto: Controle Social no SUS (Lei Federal nº 8.142/1990)</span>
+          </div>
+          <p class="question-text">
+            2. A Lei nº 8.142/1990 regulamenta a participação da comunidade na gestão do Sistema Único de Saúde (SUS) e as transferências intergovernamentais de recursos financeiros. Em relação aos Conselhos de Saúde, é correto afirmar que:
+          </p>
+          <div class="options-list">
+            <div class="option-item" data-opt="A">
+              <span class="option-letter">A</span>
+              <span class="option-text">Reúnem-se a cada quatro anos unicamente para elaborar o relatório de prestação de contas governamental.</span>
+            </div>
+            <div class="option-item" data-opt="B">
+              <span class="option-letter">B</span>
+              <span class="option-text">Possuem função meramente consultiva e opinativa, não podendo interferir na gestão financeira dos hospitais públicos.</span>
+            </div>
+            <div class="option-item" data-opt="C">
+              <span class="option-letter">C</span>
+              <span class="option-text">Devem ser constituídos por 70% de representantes do governo e apenas 30% de usuários.</span>
+            </div>
+            <div class="option-item" data-opt="D">
+              <span class="option-letter">D</span>
+              <span class="option-text">São instâncias transitórias extintas a cada mudança de mandato do Chefe do Poder Executivo.</span>
+            </div>
+            <div class="option-item" data-opt="E">
+              <span class="option-letter">E</span>
+              <span class="option-text">Possuem caráter permanente e deliberativo, atuando na formulação de estratégias e no controle da execução da política de saúde, inclusive nos aspectos econômicos e financeiros.</span>
+            </div>
+          </div>
+          <div class="quiz-feedback">
+            <div class="feedback-status"></div>
+            <div class="explanation-title">📖 Comentário Detalhado:</div>
+            <p>
+              Gabarito: <strong>Letra E</strong>. Conforme o art. 1º, § 2º da Lei nº 8.142/90: <em>"O Conselho de Saúde, em caráter permanente e deliberativo, órgão colegiado composto por representantes do governo, prestadores de serviço, profissionais de saúde e usuários, atua na formulação de estratégias e no controle da execução da política de saúde na instância correspondente, inclusive nos aspectos econômicos e financeiros..."</em>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Questão 3 SUS -->
+        <div class="question-card" data-qid="sus_q3" data-correct="C">
+          <div class="question-meta">
+            <span class="banca-tag">CONSULPLAN • SIMULADO OFICIAL</span>
+            <span>Assunto: Decreto nº 7.508/2011 e Portas de Entrada</span>
+          </div>
+          <p class="question-text">
+            3. Nos termos do Decreto Federal nº 7.508/2011, que regulamenta a Lei Orgânica da Saúde nº 8.080/1990, são consideradas portas de entrada às ações e aos serviços de saúde nas Redes de Atenção à Saúde (RAS), EXCETO:
+          </p>
+          <div class="options-list">
+            <div class="option-item" data-opt="A">
+              <span class="option-letter">A</span>
+              <span class="option-text">Os serviços de atenção primária à saúde.</span>
+            </div>
+            <div class="option-item" data-opt="B">
+              <span class="option-letter">B</span>
+              <span class="option-text">Os serviços de atenção de urgência e emergência.</span>
+            </div>
+            <div class="option-item" data-opt="C">
+              <span class="option-letter">C</span>
+              <span class="option-text">Os centros hospitalares terciários de cirurgia eletiva de alta complexidade.</span>
+            </div>
+            <div class="option-item" data-opt="D">
+              <span class="option-letter">D</span>
+              <span class="option-text">Os serviços de atenção psicossocial (CAPS).</span>
+            </div>
+            <div class="option-item" data-opt="E">
+              <span class="option-letter">E</span>
+              <span class="option-text">Os serviços especiais de acesso aberto.</span>
+            </div>
+          </div>
+          <div class="quiz-feedback">
+            <div class="feedback-status"></div>
+            <div class="explanation-title">📖 Comentário Detalhado:</div>
+            <p>
+              Gabarito: <strong>Letra C</strong>. O art. 9º do Decreto nº 7.508/2011 define taxativamente como portas de entrada: I - de atenção primária; II - de atenção de urgência e emergência; III - de atenção psicossocial; e IV - especiais de acesso aberto. Serviços hospitalares terciários especializados (como leitos cirúrgicos eletivos da FHCGV) não são portas de entrada direta, exigindo regulação e encaminhamento médico prévio.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Botão para Marcar Módulo como Estudado -->
+      <div style="text-align: center; margin: 3rem 0 1rem;">
+        <button class="btn btn-primary" onclick="markModuleComplete('sus')">
+          ✅ Concluir Módulo de SUS & Salvar Progresso
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Menu Inferior Mobile First -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="nav-icon">🏠</span>
+      <span>Início</span>
+    </a>
+    <a href="modulo-especificos.html" class="bottom-nav-item">
+      <span class="nav-icon">📁</span>
+      <span>Específicas</span>
+    </a>
+    <a href="modulo-sus.html" class="bottom-nav-item active">
+      <span class="nav-icon">🏥</span>
+      <span>SUS</span>
+    </a>
+    <a href="modulo-discursiva.html" class="bottom-nav-item">
+      <span class="nav-icon">✍️</span>
+      <span>Redação</span>
+    </a>
+    <a href="simulados.html" class="bottom-nav-item">
+      <span class="nav-icon">🏆</span>
+      <span>Simulados</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

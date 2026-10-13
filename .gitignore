@@ -1,0 +1,9 @@
+# Dependências e caches de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e arquivos temporários
+*.log
+.vscode/
+.idea/
