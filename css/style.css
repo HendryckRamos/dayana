@@ -6,16 +6,13 @@
 
 :root {
   /* Paleta Base Sofisticada (Healthcare & Executive) */
-  --primary: #0284c7;
-  /* Azul Real Elegante */
+  --primary: #0284c7;            /* Azul Real */
   --primary-dark: #0369a1;
   --primary-light: #e0f2fe;
-  --accent: #0d9488;
-  /* Verde Esmeralda Hospitalar / Gaspar Vianna */
+  --accent: #0d9488;             /* Verde Esmeralda Hospitalar */
   --accent-light: #ccfbf1;
   --accent-dark: #0f766e;
-  --gold: #d97706;
-  /* Ouro da Aprovação */
+  --gold: #d97706;               /* Dourado da Aprovação */
   --gold-light: #fef3c7;
   --danger: #ef4444;
   --danger-light: #fee2e2;
@@ -23,72 +20,85 @@
   --success-light: #d1fae5;
 
   /* Níveis de Aprendizado */
-  --level-base: #10b981;
-  /* Verde broto / Base descomplicada */
+  --level-base: #059669;
   --level-base-bg: #ecfdf5;
+  --level-base-color: #065f46;
   --level-mediado: #0284c7;
-  /* Azul ponte / Mediado */
   --level-mediado-bg: #f0f9ff;
-  --level-avancado: #8b5cf6;
-  /* Roxo estratégico / Domínio 100% Edital */
+  --level-mediado-color: #0369a1;
+  --level-avancado: #7c3aed;
   --level-avancado-bg: #f5f3ff;
+  --level-avancado-color: #5b21b6;
 
-  /* Tema Claro (Padrão) */
+  /* Badges & Tags no Claro */
+  --banca-tag-bg: #e2e8f0;
+  --banca-tag-color: #1e293b;
+  --quiz-badge-bg: #e0f2fe;
+  --quiz-badge-color: #0369a1;
+
+  /* Tema Claro (Padrão) - CONTRASTE ULTRA ALTO */
   --bg-page: #f8fafc;
   --bg-surface: #ffffff;
   --bg-surface-elevated: #ffffff;
   --bg-subtle: #f1f5f9;
-  --border: #e2e8f0;
+  --border: #cbd5e1;
   --border-focus: #0284c7;
-
-  --text-main: #0f172a;
-  /* Contraste ótimo para leitura */
-  --text-muted: #475569;
-  --text-subtle: #64748b;
+  
+  --text-main: #0f172a;          /* Preto azulado legível */
+  --text-muted: #334155;          /* Cinza ardósia escuro */
+  --text-subtle: #475569;
   --text-inverse: #ffffff;
 
   /* Sombras & Profundidade */
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
-  --shadow-glow: 0 0 20px rgba(13, 148, 136, 0.25);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.12), 0 4px 6px -4px rgb(0 0 0 / 0.08);
 
   /* Dimensões & Acessibilidade */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 18px;
   --radius-full: 9999px;
-  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all 0.2s ease-in-out;
   --font-base-size: 16px;
   --line-height-reading: 1.75;
   --max-content-width: 920px;
 }
 
-/* Modo Escuro Refinado para não cansar a visão de estudo */
+/* Modo Escuro Refinado - ZERO TEXTO ESCURO NO ESCURO */
 [data-theme="dark"] {
-  --bg-page: #0b1120;
-  --bg-surface: #131c31;
-  --bg-surface-elevated: #1e293b;
-  --bg-subtle: #19243c;
-  --border: #243452;
+  --bg-page: #0a0f1d;
+  --bg-surface: #151f32;
+  --bg-surface-elevated: #1e2c45;
+  --bg-subtle: #1c273d;
+  --border: #2d3f5e;
   --border-focus: #38bdf8;
 
-  --text-main: #f1f5f9;
-  --text-muted: #cbd5e1;
-  --text-subtle: #94a3b8;
+  --text-main: #ffffff !important;   /* Branco puro para leitura cristalina */
+  --text-muted: #e2e8f0 !important;  /* Cinza claro de altíssimo contraste */
+  --text-subtle: #cbd5e1 !important;
 
-  --primary-light: #0c4a6e;
-  --accent-light: #134e4a;
-  --gold-light: #451a03;
-  --danger-light: #450a0a;
-  --success-light: #064e3b;
+  --primary-light: #0369a1;
+  --accent-light: #0f766e;
+  --gold-light: #78350f;
+  --danger-light: #7f1d1d;
+  --success-light: #065f46;
 
-  --level-base-bg: #064e3b33;
-  --level-mediado-bg: #0c4a6e33;
-  --level-avancado-bg: #4c1d9533;
+  /* Badges no Escuro com cores vivas e legíveis */
+  --banca-tag-bg: #1e3a8a;
+  --banca-tag-color: #bae6fd;
+  --quiz-badge-bg: #0f766e;
+  --quiz-badge-color: #a7f3d0;
 
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
+  --level-base-bg: #064e3b;
+  --level-base-color: #6ee7b7;
+  --level-mediado-bg: #075985;
+  --level-mediado-color: #7dd3fc;
+  --level-avancado-bg: #4c1d95;
+  --level-avancado-color: #c4b5fd;
+
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
 }
 
 /* Modificadores de tamanho de fonte para leitura acessível */
@@ -324,11 +334,16 @@ li {
    ========================================================================== */
 .countdown-banner {
   background: linear-gradient(135deg, #064e3b 0%, #0f172a 100%);
-  color: white;
+  color: #ffffff !important;
   padding: 0.85rem 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 2px solid #0d9488;
+}
+
+.countdown-banner * {
+  color: #ffffff;
 }
 
 .countdown-content {
@@ -346,17 +361,24 @@ li {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  color: #ffffff !important;
+}
+
+.target-contest strong {
+  color: #ffffff !important;
+  font-weight: 800;
 }
 
 .target-badge {
-  background: #f59e0b;
-  color: #000;
-  font-weight: 800;
-  font-size: 0.72rem;
-  padding: 0.2rem 0.55rem;
+  background: #f59e0b !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
   border-radius: var(--radius-sm);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: inline-block;
 }
 
 .countdown-timer-wrap {
@@ -562,64 +584,80 @@ li {
 
 .callout-body {
   flex: 1;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
 .callout-body strong {
   display: block;
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  color: inherit !important;
+}
+
+.callout-body * {
+  color: inherit;
 }
 
 .callout-base {
-  background-color: var(--level-base-bg);
-  border-color: var(--level-base);
-  color: var(--text-main);
+  background-color: #ecfdf5;
+  border-color: #059669;
+  color: #064e3b;
+}
+
+[data-theme="dark"] .callout-base {
+  background-color: #064e3b;
+  border-color: #34d399;
+  color: #f0fdf4 !important;
 }
 
 .callout-tip {
-  background-color: #ecfeff;
-  border-color: #06b6d4;
-  color: #083344;
+  background-color: #e0f2fe;
+  border-color: #0284c7;
+  color: #075985;
 }
 
 [data-theme="dark"] .callout-tip {
-  background-color: #08334440;
-  color: #cffafe;
+  background-color: #0c4a6e;
+  border-color: #38bdf8;
+  color: #f0f9ff !important;
 }
 
 .callout-pegadinha {
-  background-color: var(--danger-light);
-  border-color: var(--danger);
-  color: #7f1d1d;
+  background-color: #fee2e2;
+  border-color: #dc2626;
+  color: #991b1b;
 }
 
 [data-theme="dark"] .callout-pegadinha {
-  background-color: #450a0a40;
-  color: #fecaca;
+  background-color: #450a0a;
+  border-color: #f87171;
+  color: #fef2f2 !important;
 }
 
 .callout-lei {
-  background-color: var(--level-avancado-bg);
-  border-color: var(--level-avancado);
-  color: #4c1d95;
+  background-color: #f3e8ff;
+  border-color: #7c3aed;
+  color: #581c87;
   font-family: inherit;
 }
 
 [data-theme="dark"] .callout-lei {
-  background-color: #3b076440;
-  color: #e9d5ff;
+  background-color: #3b0764;
+  border-color: #c084fc;
+  color: #faf5ff !important;
 }
 
 .callout-hospital {
-  background-color: var(--accent-light);
-  border-color: var(--accent);
-  color: #042f2e;
+  background-color: #ccfbf1;
+  border-color: #0d9488;
+  color: #115e59;
 }
 
 [data-theme="dark"] .callout-hospital {
-  background-color: #134e4a40;
-  color: #ccfbf1;
+  background-color: #134e4a;
+  border-color: #2dd4bf;
+  color: #f0fdfa !important;
 }
 
 /* Grifo Inteligente de Palavras-Chave de Prova */
@@ -672,20 +710,22 @@ li {
 }
 
 .quiz-badge {
-  background: var(--primary-light);
-  color: var(--primary-dark);
-  font-weight: 700;
-  font-size: 0.75rem;
-  padding: 0.25rem 0.65rem;
+  background: var(--quiz-badge-bg) !important;
+  color: var(--quiz-badge-color) !important;
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
   border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  letter-spacing: 0.03em;
 }
 
 .question-card {
   background: var(--bg-surface);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 1.25rem;
-  margin-bottom: 1.5rem;
+  padding: 1.35rem;
+  margin-bottom: 1.75rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
 }
@@ -695,25 +735,29 @@ li {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.85rem;
-  font-size: 0.8rem;
-  color: var(--text-subtle);
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted) !important;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.65rem;
+  font-weight: 600;
 }
 
 .banca-tag {
-  background: var(--bg-subtle);
-  padding: 0.15rem 0.5rem;
+  background: var(--banca-tag-bg) !important;
+  color: var(--banca-tag-color) !important;
+  padding: 0.25rem 0.65rem;
   border-radius: var(--radius-sm);
-  font-weight: 700;
-  color: var(--accent-dark);
+  font-weight: 800;
+  font-size: 0.78rem;
+  border: 1px solid var(--border);
+  letter-spacing: 0.04em;
 }
 
 .question-text {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--text-main);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-main) !important;
   margin-bottom: 1.25rem;
   line-height: 1.6;
 }
@@ -721,15 +765,15 @@ li {
 .options-list {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
 .option-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  padding: 0.85rem 1rem;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
   border: 2px solid var(--border);
   border-radius: var(--radius-md);
   background: var(--bg-surface);
@@ -744,26 +788,26 @@ li {
 }
 
 .option-letter {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: var(--bg-subtle);
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 800;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 0.88rem;
+  color: var(--text-main);
   flex-shrink: 0;
   margin-top: 1px;
   transition: var(--transition);
 }
 
 .option-text {
-  font-size: 0.96rem;
-  color: var(--text-main);
-  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--text-main) !important;
+  line-height: 1.55;
   flex: 1;
 }
 

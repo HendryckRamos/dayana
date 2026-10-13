@@ -221,18 +221,51 @@
     </div>
   </main>
 
+  <!-- Modal Suspenso com as Disciplinas por Prioridade -->
+  <div id="materias-modal" class="modal-overlay" onclick="if(event.target === this) this.classList.remove('open')">
+    <div class="modal-box">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <h3><span>📚</span> Disciplinas por Prioridade</h3>
+        <button class="btn-icon" onclick="document.getElementById('materias-modal').classList.remove('open')">✕</button>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+        Selecione a matéria para estudar diretamente nos 3 níveis:
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="modulo-especificos.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          📁 <strong>1. Conhecimentos Específicos</strong> (15 Questões • 4,5 pts)
+        </a>
+        <a href="modulo-sus.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          🏥 <strong>2. Políticas de Saúde (SUS)</strong> (10 Questões • 3,0 pts)
+        </a>
+        <a href="modulo-portugues.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          ✍️ <strong>3. Língua Portuguesa</strong> (10 Questões • 1,0 pt • Não Zerar!)
+        </a>
+        <a href="modulo-discursiva.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          📝 <strong>4. Prova Discursiva / Redação</strong> (20 a 30 linhas • 5,0 pts)
+        </a>
+        <a href="modulo-legislacao.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          ⚖️ <strong>5. Legislação Estadual RJU</strong> (5 Questões • 0,5 pt)
+        </a>
+        <a href="modulo-etica.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          🤝 <strong>6. Ética e Atendimento</strong> (5 Questões • 0,5 pt)
+        </a>
+        <a href="modulo-rlm.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
+          🧠 <strong>7. Raciocínio Lógico (RLM)</strong> (5 Questões • 0,5 pt)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nova Barra Inferior Direcional Mobile-First -->
   <nav class="bottom-nav">
     <a href="index.html" class="bottom-nav-item">
-      <span class="nav-icon">🏠</span>
-      <span>Início</span>
+      <span class="nav-icon">🗺️</span>
+      <span>Roteiro</span>
     </a>
-    <a href="modulo-especificos.html" class="bottom-nav-item">
-      <span class="nav-icon">📁</span>
-      <span>Específicas</span>
-    </a>
-    <a href="modulo-sus.html" class="bottom-nav-item">
-      <span class="nav-icon">🏥</span>
-      <span>SUS</span>
+    <a href="javascript:void(0)" class="bottom-nav-item active" onclick="document.getElementById('materias-modal').classList.add('open')">
+      <span class="nav-icon">📚</span>
+      <span>Matérias</span>
     </a>
     <a href="modulo-discursiva.html" class="bottom-nav-item">
       <span class="nav-icon">✍️</span>
@@ -240,7 +273,7 @@
     </a>
     <a href="simulados.html" class="bottom-nav-item">
       <span class="nav-icon">🏆</span>
-      <span>Simulados</span>
+      <span>Simulado</span>
     </a>
   </nav>
 
