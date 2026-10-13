@@ -1310,3 +1310,167 @@ li {
 .accordion-item.open .accordion-body {
   display: block;
 }
+
+/* ==========================================================================
+   SISTEMA DE INSPEÇÃO DE TODAS AS ALTERNATIVAS (A, B, C, D, E) E BANCO CSV
+   ========================================================================== */
+.option-wrapper {
+  margin-bottom: 0.65rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.option-explanation-drawer {
+  display: none;
+  margin-top: 0.4rem;
+  margin-left: 2.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  animation: fadeIn 0.25s ease;
+  border-left: 4px solid var(--accent);
+}
+
+.option-explanation-drawer.show {
+  display: block;
+}
+
+.option-explanation-drawer.exp-correct {
+  background: var(--success-light);
+  border-left-color: var(--success);
+  color: #064e3b;
+}
+
+[data-theme="dark"] .option-explanation-drawer.exp-correct {
+  background: #064e3b40;
+  border-left-color: #34d399;
+  color: #a7f3d0 !important;
+}
+
+.option-explanation-drawer.exp-wrong {
+  background: var(--danger-light);
+  border-left-color: var(--danger);
+  color: #991b1b;
+}
+
+[data-theme="dark"] .option-explanation-drawer.exp-wrong {
+  background: #450a0a40;
+  border-left-color: #f87171;
+  color: #fca5a5 !important;
+}
+
+.alt-inspect-hint {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Barra de Filtros e Estatísticas do Módulo */
+.quiz-controls-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-buttons-group {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1.5px solid var(--border);
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-pill.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.module-progress-chip {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--bg-subtle);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+/* Ferramentas CSV e Configurações do Simulado */
+.csv-toolbar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.csv-toolbar-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-csv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.95rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-csv-download {
+  background: #0284c7;
+  color: white !important;
+  border-color: #0284c7;
+}
+
+.btn-csv-download:hover {
+  background: #0369a1;
+}
+
+.btn-csv-import {
+  background: var(--bg-subtle);
+  color: var(--text-main) !important;
+}
+
+.btn-csv-import:hover {
+  background: var(--border);
+}

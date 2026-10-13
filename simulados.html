@@ -20,6 +20,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
       position: sticky;
       top: 60px;
       z-index: 80;
@@ -41,11 +43,72 @@
     }
     .score-big {
       font-family: 'Outfit', sans-serif;
-      font-size: 3rem;
+      font-size: 3.2rem;
       font-weight: 800;
       color: var(--accent);
       line-height: 1;
       margin: 0.5rem 0;
+    }
+    .sim-control-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .sim-select-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .sim-form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--text-muted);
+    }
+    .sim-select {
+      width: 100%;
+      padding: 0.65rem 0.85rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--bg-subtle);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-weight: 600;
+      outline: none;
+    }
+    .sim-select:focus {
+      border-color: var(--primary);
+    }
+    .discipline-breakdown {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin: 1.25rem 0;
+    }
+    .breakdown-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0.75rem;
+      text-align: center;
+    }
+    .breakdown-card .title {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      display: block;
+      text-transform: uppercase;
+    }
+    .breakdown-card .val {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-top: 0.2rem;
     }
   </style>
 </head>
@@ -53,6 +116,7 @@
 
   <div id="scroll-progress-container"><div id="scroll-progress-bar"></div></div>
 
+  <!-- Cabeçalho -->
   <header class="site-header">
     <div class="header-container">
       <div class="brand-wrapper">
@@ -73,12 +137,72 @@
   <main class="main-wrapper">
     <div class="reading-container">
 
+      <!-- Banner de Apresentação -->
       <div style="margin-bottom: 1.5rem;">
-        <span class="badge badge-accent" style="font-size: 0.8rem; margin-bottom: 0.5rem;">PROVA OBJETIVA COMPLETA • EDITAL Nº 01/SEPLAD-FHCGV</span>
-        <h1>Simulado Estratégico da Dayana: Cargo 01</h1>
+        <span class="badge badge-accent" style="font-size: 0.8rem; margin-bottom: 0.5rem;">BANCO DE 180 QUESTÕES • EDITAL Nº 01/SEPLAD-FHCGV</span>
+        <h1>Simulador Geral da Dayana: Cargo 01</h1>
         <p style="color: var(--text-muted);">
-          Este simulador pondera as questões exatamente com os pesos do edital (0.1 para básicas e 0.3 para SUS/Específicos), verifica a nota de corte (mínimo 5,0 pontos) e o critério de eliminação de Língua Portuguesa.
+          Banco completo com <strong>180 questões comentadas (30 de cada uma das 6 disciplinas)</strong>. Sorteia aleatoriamente simulados oficiais com pesos da Consulplan (0.3 para SUS/Específicos e 0.1 para Básicas).
         </p>
+      </div>
+
+      <!-- Barra de Ferramentas CSV e Importação/Exportação -->
+      <div class="csv-toolbar">
+        <div>
+          <strong style="display: block; font-size: 0.95rem;">📂 Portabilidade do Banco de Questões</strong>
+          <span style="font-size: 0.82rem; color: var(--text-muted);">
+            Exporte as 180 questões para planilha ou importe novas questões via CSV a qualquer momento.
+          </span>
+        </div>
+        <div class="csv-toolbar-actions">
+          <button class="btn-csv btn-csv-download" onclick="window.exportarBancoCSV()" title="Baixar todas as questões em CSV para Excel">
+            📥 Baixar Banco (CSV)
+          </button>
+          <button class="btn-csv btn-csv-import" onclick="document.getElementById('sim-csv-input').click()" title="Carregar novas questões de arquivo CSV">
+            📤 Importar CSV
+          </button>
+          <input type="file" id="sim-csv-input" accept=".csv" style="display: none;" onchange="window.importarBancoCSV(this)">
+        </div>
+      </div>
+
+      <!-- Painel de Configuração do Simulado -->
+      <div class="sim-control-panel">
+        <h3 style="margin: 0; font-size: 1.15rem; display: flex; align-items: center; gap: 0.5rem;">
+          ⚙️ Configurar Meu Simulado
+        </h3>
+        
+        <div class="sim-select-grid">
+          <div class="sim-form-group">
+            <label for="sim-tipo-select">Formato do Simulado:</label>
+            <select id="sim-tipo-select" class="sim-select" onchange="window.gerarNovoSimulado()">
+              <option value="oficial_50" selected>🎯 Prova Oficial da Consulplan (50 Questões Ponderadas)</option>
+              <option value="maratona_180">🏆 Maratona Completa (Todas as 180 Questões)</option>
+              <option value="disc_especificos">🔬 Apenas Específicos (30 Questões - Peso 0.3)</option>
+              <option value="disc_sus">🏥 Apenas Legislação SUS (30 Questões - Peso 0.3)</option>
+              <option value="disc_portugues">📚 Apenas Português (30 Questões - Não Pode Zerar)</option>
+              <option value="disc_legislacao">⚖️ Apenas Legislação Estadual (30 Questões - Lei 5.810)</option>
+              <option value="disc_etica">⭐ Apenas Ética e Atendimento (30 Questões)</option>
+              <option value="disc_rlm">🧮 Apenas Raciocínio Lógico (30 Questões)</option>
+            </select>
+          </div>
+
+          <div class="sim-form-group">
+            <label for="sim-modo-select">Modo de Resolução:</label>
+            <select id="sim-modo-select" class="sim-select" onchange="window.mudarModoResolucao()">
+              <option value="treino" selected>💡 Modo Treino (Feedback Imediato + Inspeção A a E)</option>
+              <option value="prova">⏱️ Modo Prova Real (Gabarito e Nota ao Final)</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem; flex-wrap: wrap;">
+          <button class="btn btn-primary" onclick="window.gerarNovoSimulado()">
+            🎲 Sortear Novo Simulado Aleatório
+          </button>
+          <button class="btn btn-secondary" onclick="window.reiniciarSimuladoAtual()">
+            🔄 Limpar Respostas Deste Simulado
+          </button>
+        </div>
       </div>
 
       <!-- Barra de Cronômetro de Prova (4h30min) -->
@@ -87,12 +211,15 @@
           <span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Tempo Oficial da Prova:</span>
           <strong id="sim-clock" style="font-size: 1.25rem; font-family: 'Outfit', monospace; color: var(--primary);">04:30:00</strong>
         </div>
-        <button id="sim-btn-start" class="btn btn-secondary" onclick="toggleSimTimer()">
-          ⏱️ Iniciar Cronômetro
-        </button>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <span id="sim-total-count-badge" class="badge badge-accent">50 Questões Carregadas</span>
+          <button id="sim-btn-start" class="btn btn-secondary" onclick="window.toggleSimTimer()">
+            ⏱️ Iniciar Cronômetro
+          </button>
+        </div>
       </div>
 
-      <!-- Card de Resultado Final -->
+      <!-- Card de Resultado Final Ponderado -->
       <div id="sim-result-box" class="score-result-card">
         <h2 style="margin: 0; font-size: 1.5rem;" id="sim-verdict-title">Resultado do Simulado</h2>
         <div class="score-big" id="sim-final-score">0.0</div>
@@ -100,311 +227,431 @@
           Pontuação total calculada com base nos pesos oficiais da Consulplan.
         </div>
         <div id="sim-verdict-badge" style="margin-top: 1rem;"></div>
-      </div>
 
-      <!-- Bloco de Questões da Prova -->
-      <form id="simulado-form">
+        <!-- Detalhamento por Disciplina -->
+        <div class="discipline-breakdown" id="sim-breakdown-container"></div>
 
-        <!-- BLOCO 1: LÍNGUA PORTUGUESA (10 QUESTÕES - PESO 0.1) -->
-        <div class="card-content" style="border-left: 5px solid var(--primary);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <h3>Língua Portuguesa (Peso 0.1 cada)</h3>
-            <span class="badge badge-primary">Não Pode Zerar!</span>
-          </div>
-
-          <!-- Q1 -->
-          <div class="question-card" data-sim-peso="0.1" data-sim-disc="portugues" data-sim-correct="A">
-            <p class="question-text">1. Em qual das orações abaixo a concordância verbal está rigorosamente de acordo com a norma padrão?</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q1" value="A"> <span class="option-text">Faz três anos que a servidora Dayana atua na administração hospitalar.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q1" value="B"> <span class="option-text">Fazem três anos que os documentos foram arquivados.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q1" value="C"> <span class="option-text">Haviam muitos pacientes aguardando a chamada da triagem.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q1" value="D"> <span class="option-text">Devem haver soluções imediatas para a falta de leitos.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q1" value="E"> <span class="option-text">Existia muitos processos pendentes na diretoria.</span></label>
-            </div>
-          </div>
-
-          <!-- Q2 -->
-          <div class="question-card" data-sim-peso="0.1" data-sim-disc="portugues" data-sim-correct="C">
-            <p class="question-text">2. Indique a opção em que o uso do acento indicador de crase é OBRIGATÓRIO:</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q2" value="A"> <span class="option-text">O paciente retornou a pé para sua residência após a alta.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q2" value="B"> <span class="option-text">A direção do hospital está disposta a negociar prazos com o fornecedor.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q2" value="C"> <span class="option-text">O Auxiliar Administrativo entregou os relatórios à coordenadora de faturamento.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q2" value="D"> <span class="option-text">O ofício foi enviado a Sua Excelência o Diretor Geral.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q2" value="E"> <span class="option-text">As compras foram parceladas a prazo pela fundação.</span></label>
-            </div>
-          </div>
-        </div>
-
-        <!-- BLOCO 2: POLÍTICAS DE SAÚDE PÚBLICA / SUS (PESO 0.3 CADA - ALTO VALOR!) -->
-        <div class="card-content" style="border-left: 5px solid var(--accent);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <h3>Políticas de Saúde Pública / SUS (Peso 0.3 cada)</h3>
-            <span class="badge badge-accent">⭐ 3,0 Pontos em Jogo</span>
-          </div>
-
-          <!-- Q3 -->
-          <div class="question-card" data-sim-peso="0.3" data-sim-disc="sus" data-sim-correct="D">
-            <p class="question-text">3. O princípio doutrinário do SUS que garante que o sistema de saúde deve oferecer ações de promoção, prevenção, tratamento e reabilitação de forma articulada e contínua é denominado:</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q3" value="A"> <span class="option-text">Universalidade.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q3" value="B"> <span class="option-text">Descentralização político-administrativa.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q3" value="C"> <span class="option-text">Equidade distributiva.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q3" value="D"> <span class="option-text">Integralidade da atenção.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q3" value="E"> <span class="option-text">Regionalização dos serviços.</span></label>
-            </div>
-          </div>
-
-          <!-- Q4 -->
-          <div class="question-card" data-sim-peso="0.3" data-sim-disc="sus" data-sim-correct="B">
-            <p class="question-text">4. Conforme a Lei Federal nº 8.142/1990 e a Resolução CNS nº 453/2012, qual é o percentual obrigatório de representação dos Usuários nos Conselhos e Conferências de Saúde?</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q4" value="A"> <span class="option-text">25% (um quarto das vagas).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q4" value="B"> <span class="option-text">50% (metade de todos os assentos, garantindo paridade).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q4" value="C"> <span class="option-text">30% (percentual mínimo constitucional).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q4" value="D"> <span class="option-text">100% de usuários civis sem participação de profissionais.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q4" value="E"> <span class="option-text">Percentual discricionário definido pelo Prefeito ou Governador.</span></label>
-            </div>
-          </div>
-        </div>
-
-        <!-- BLOCO 3: CONHECIMENTOS ESPECÍFICOS DO CARGO 01 (PESO 0.3 CADA - MAIOR PESO!) -->
-        <div class="card-content" style="border-left: 5px solid var(--gold);">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <h3>Conhecimentos Específicos: Auxiliar Administrativo (Peso 0.3 cada)</h3>
-            <span class="badge badge-gold">⭐ 4,5 Pontos em Jogo</span>
-          </div>
-
-          <!-- Q5 -->
-          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="B">
-            <p class="question-text">5. De acordo com a Nova Lei de Licitações e Contratos Administrativos (Lei Federal nº 14.133/2021), a modalidade de licitação obrigatória para a aquisição de bens e serviços comuns é o(a):</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q5" value="A"> <span class="option-text">Concorrência internacional.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q5" value="B"> <span class="option-text">Pregão.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q5" value="C"> <span class="option-text">Tomada de Preços.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q5" value="D"> <span class="option-text">Convite por carta.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q5" value="E"> <span class="option-text">Leilão reverso de bens móveis.</span></label>
-            </div>
-          </div>
-
-          <!-- Q6 -->
-          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="C">
-            <p class="question-text">6. No contexto do faturamento do Sistema Único de Saúde em ambiente hospitalar, o instrumento padrão emitido para autorizar e registrar as cobranças dos procedimentos e diárias de um paciente internado no Hospital Gaspar Vianna denomina-se:</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q6" value="A"> <span class="option-text">BPA (Boletim de Produção Ambulatorial).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q6" value="B"> <span class="option-text">RAAS (Registro das Ações Ambulatoriais de Saúde).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q6" value="C"> <span class="option-text">AIH (Autorização de Internação Hospitalar).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q6" value="D"> <span class="option-text">APAC (Autorização de Procedimento de Alta Complexidade Ambulatorial).</span></label>
-              <label class="option-item"><input type="radio" name="sim_q6" value="E"> <span class="option-text">DAE (Documento de Arrecadação Estadual).</span></label>
-            </div>
-          </div>
-
-          <!-- Q7 -->
-          <div class="question-card" data-sim-peso="0.3" data-sim-disc="especificos" data-sim-correct="A">
-            <p class="question-text">7. No sistema operacional Microsoft Windows, qual é a combinação de teclas de atalho amplamente recomendada por razões de sigilo hospitalar para bloquear instantaneamente a estação de trabalho ao se afastar da mesa?</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q7" value="A"> <span class="option-text">Tecla do logotipo do Windows + L</span></label>
-              <label class="option-item"><input type="radio" name="sim_q7" value="B"> <span class="option-text">Ctrl + Alt + Del apenas para desligar</span></label>
-              <label class="option-item"><input type="radio" name="sim_q7" value="C"> <span class="option-text">Tecla do logotipo do Windows + D</span></label>
-              <label class="option-item"><input type="radio" name="sim_q7" value="D"> <span class="option-text">Alt + F4</span></label>
-              <label class="option-item"><input type="radio" name="sim_q7" value="E"> <span class="option-text">Ctrl + Shift + Esc</span></label>
-            </div>
-          </div>
-        </div>
-
-        <!-- BLOCO 4: LEGISLAÇÃO ESTADUAL & ÉTICA (PESO 0.1 CADA) -->
-        <div class="card-content" style="border-left: 5px solid #a855f7;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-            <h3>Legislação Estadual e Ética (Peso 0.1 cada)</h3>
-            <span class="badge badge-primary">RJU-PA e Normas da FHCGV</span>
-          </div>
-
-          <!-- Q8 -->
-          <div class="question-card" data-sim-peso="0.1" data-sim-disc="legislacao" data-sim-correct="D">
-            <p class="question-text">8. Segundo o art. 29 da Lei Estadual nº 5.810/1994 (RJU dos Servidores Civis do Pará), o servidor habilitado em concurso público adquire estabilidade no serviço público estadual após cumprir:</p>
-            <div class="options-list">
-              <label class="option-item"><input type="radio" name="sim_q8" value="A"> <span class="option-text">1 (um) ano de efetivo exercício.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q8" value="B"> <span class="option-text">2 (dois) anos de estágio probatório.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q8" value="C"> <span class="option-text">5 (cinco) anos ininterruptos de trabalho.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q8" value="D"> <span class="option-text">3 (três) anos de efetivo exercício, após avaliação especial de desempenho.</span></label>
-              <label class="option-item"><input type="radio" name="sim_q8" value="E"> <span class="option-text">10 (dez) anos com promoção automática por antiguidade.</span></label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Botão para Corrigir Simulado -->
-        <div style="text-align: center; margin: 2.5rem 0;">
-          <button type="button" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;" onclick="gradeSimulation()">
-            🏆 Finalizar Prova & Calcular Minha Nota Oficial
+        <div style="margin-top: 1.5rem;">
+          <button class="btn btn-primary" onclick="window.gerarNovoSimulado()">
+            🎲 Fazer Outro Simulado com Novas Questões
           </button>
         </div>
+      </div>
 
-      </form>
+      <!-- Lista Dinâmica de Questões do Simulado -->
+      <div id="simulado-questoes-container">
+        <!-- Renderizado dinamicamente via JS -->
+      </div>
+
+      <!-- Botão de Entrega da Prova -->
+      <div id="sim-entrega-box" style="text-align: center; margin: 2.5rem 0; padding: 2rem; background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-lg);">
+        <h3 style="margin-bottom: 0.5rem;">Concluiu todas as questões, Dayana?</h3>
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+          Clique abaixo para finalizar, calcular a nota ponderada oficial (0 a 10), verificar a classificação e abrir a inspeção completa de todas as alternativas.
+        </p>
+        <button class="btn btn-primary" style="font-size: 1.1rem; padding: 0.85rem 2rem;" onclick="window.finalizarSimulado()">
+          🏁 Entregar Simulado e Ver Minha Nota Oficial
+        </button>
+      </div>
 
     </div>
   </main>
 
-  <!-- Modal Suspenso com as Disciplinas por Prioridade -->
-  <div id="materias-modal" class="modal-overlay" onclick="if(event.target === this) this.classList.remove('open')">
-    <div class="modal-box">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-        <h3><span>📚</span> Disciplinas por Prioridade</h3>
-        <button class="btn-icon" onclick="document.getElementById('materias-modal').classList.remove('open')">✕</button>
-      </div>
-      <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
-        Selecione a matéria para estudar diretamente nos 3 níveis:
-      </p>
-      <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="modulo-especificos.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          📁 <strong>1. Conhecimentos Específicos</strong> (15 Questões • 4,5 pts)
-        </a>
-        <a href="modulo-sus.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          🏥 <strong>2. Políticas de Saúde (SUS)</strong> (10 Questões • 3,0 pts)
-        </a>
-        <a href="modulo-portugues.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          ✍️ <strong>3. Língua Portuguesa</strong> (10 Questões • 1,0 pt • Não Zerar!)
-        </a>
-        <a href="modulo-discursiva.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          📝 <strong>4. Prova Discursiva / Redação</strong> (20 a 30 linhas • 5,0 pts)
-        </a>
-        <a href="modulo-legislacao.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          ⚖️ <strong>5. Legislação Estadual RJU</strong> (5 Questões • 0,5 pt)
-        </a>
-        <a href="modulo-etica.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          🤝 <strong>6. Ética e Atendimento</strong> (5 Questões • 0,5 pt)
-        </a>
-        <a href="modulo-rlm.html" class="btn btn-secondary" style="justify-content: flex-start; text-align: left;">
-          🧠 <strong>7. Raciocínio Lógico (RLM)</strong> (5 Questões • 0,5 pt)
-        </a>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Plataforma Exclusiva • Dayana Maia de Jesus</h3>
+        <p>Preparação de Alto Desempenho para Auxiliar Administrativo • FHCGV / SEPLAD-PA (Concurso C-223)</p>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- Nova Barra Inferior Direcional Mobile-First -->
-  <nav class="bottom-nav">
-    <a href="index.html" class="bottom-nav-item">
-      <span class="nav-icon">🗺️</span>
-      <span>Roteiro</span>
-    </a>
-    <a href="javascript:void(0)" class="bottom-nav-item" onclick="document.getElementById('materias-modal').classList.add('open')">
-      <span class="nav-icon">📚</span>
-      <span>Matérias</span>
-    </a>
-    <a href="modulo-discursiva.html" class="bottom-nav-item">
-      <span class="nav-icon">✍️</span>
-      <span>Redação</span>
-    </a>
-    <a href="simulados.html" class="bottom-nav-item active">
-      <span class="nav-icon">🏆</span>
-      <span>Simulado</span>
-    </a>
-  </nav>
-
+  <!-- Scripts: dados unificados (180 questões) + motor interativo -->
+  <script src="js/questoes_data.js"></script>
   <script src="js/app.js"></script>
+
   <script>
-    // Lógica Específica da Central de Simulados
-    let simTimerSeconds = 4.5 * 3600; // 4h30min
-    let simInterval = null;
+    /* ==========================================================================
+       LÓGICA DINÂMICA DO SIMULADOR OFICIAL (PULL ALEATÓRIO DE 180 QUESTÕES)
+       ========================================================================== */
+    let questoesDoSimulado = [];
+    let timerInterval = null;
+    let secondsLeft = 4 * 3600 + 30 * 60; // 4 horas e 30 minutos
+    let timerRunning = false;
 
-    function toggleSimTimer() {
-      const clockEl = document.getElementById('sim-clock');
-      const btn = document.getElementById('sim-btn-start');
+    document.addEventListener('DOMContentLoaded', () => {
+      window.gerarNovoSimulado();
+    });
 
-      if (simInterval) {
-        clearInterval(simInterval);
-        simInterval = null;
-        btn.textContent = '▶️ Retomar Tempo';
+    // Função utilitária para embaralhar array (Fisher-Yates)
+    function shuffleArray(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // Puxa aleatoriamente as questões conforme o formato escolhido
+    window.gerarNovoSimulado = function() {
+      const all = getAllQuestoes();
+      const tipo = document.getElementById('sim-tipo-select').value;
+      const countBadge = document.getElementById('sim-total-count-badge');
+      const resultBox = document.getElementById('sim-result-box');
+      if (resultBox) resultBox.classList.remove('active');
+
+      // Limpa respostas temporárias da sessão de simulado anterior
+      sessionStorage.clear();
+
+      if (tipo === 'oficial_50') {
+        // Distribuição Oficial do Edital C-223 (50 questões)
+        const esp = shuffleArray(all.filter(q => q.disciplina === 'especificos')).slice(0, 15);
+        const sus = shuffleArray(all.filter(q => q.disciplina === 'sus')).slice(0, 10);
+        const port = shuffleArray(all.filter(q => q.disciplina === 'portugues')).slice(0, 10);
+        const leg = shuffleArray(all.filter(q => q.disciplina === 'legislacao')).slice(0, 5);
+        const eti = shuffleArray(all.filter(q => q.disciplina === 'etica')).slice(0, 5);
+        const rlm = shuffleArray(all.filter(q => q.disciplina === 'rlm')).slice(0, 5);
+
+        questoesDoSimulado = [...esp, ...sus, ...port, ...leg, ...eti, ...rlm];
+      } else if (tipo === 'maratona_180') {
+        // Todas as 180 questões embaralhadas
+        questoesDoSimulado = shuffleArray(all);
+      } else {
+        // Disciplina única específica (30 questões)
+        const discKey = tipo.replace('disc_', '');
+        questoesDoSimulado = shuffleArray(all.filter(q => q.disciplina === discKey));
+      }
+
+      if (countBadge) {
+        countBadge.textContent = `${questoesDoSimulado.length} Questões Carregadas`;
+      }
+
+      renderSimuladoQuestoes();
+    };
+
+    window.reiniciarSimuladoAtual = function() {
+      if (!confirm('Deseja limpar as respostas deste simulado e recomeçar?')) return;
+      sessionStorage.clear();
+      renderSimuladoQuestoes();
+      const resultBox = document.getElementById('sim-result-box');
+      if (resultBox) resultBox.classList.remove('active');
+    };
+
+    window.mudarModoResolucao = function() {
+      renderSimuladoQuestoes();
+    };
+
+    function renderSimuladoQuestoes() {
+      const container = document.getElementById('simulado-questoes-container');
+      if (!container) return;
+
+      const modo = document.getElementById('sim-modo-select').value; // 'treino' ou 'prova'
+      let html = '';
+
+      questoesDoSimulado.forEach((q, idx) => {
+        const peso = (q.disciplina === 'especificos' || q.disciplina === 'sus') ? 0.3 : 0.1;
+        const userAns = sessionStorage.getItem(`sim_ans_${q.id}`);
+        const jaRespondeu = Boolean(userAns);
+        const acertou = userAns === q.correta;
+
+        // No modo prova antes de finalizar, não revelamos o gabarito
+        const revelado = modo === 'treino' && jaRespondeu;
+
+        html += `
+          <div class="question-card" id="sim-card-${q.id}" data-qid="${q.id}" data-correct="${q.correta}" data-peso="${peso}" data-disc="${q.disciplina}">
+            <div class="question-meta">
+              <div>
+                <span class="banca-tag">QUESTÃO ${String(idx + 1).padStart(2, '0')}</span>
+                <span style="margin-left: 0.5rem; font-weight:700;">${escapeHtml(q.materia_nome)} (Peso ${peso})</span>
+              </div>
+              <span class="badge badge-accent" style="font-size:0.75rem;">${escapeHtml(q.topico || '')}</span>
+            </div>
+
+            <p class="question-text">${escapeHtml(q.enunciado)}</p>
+
+            <div class="options-list">
+        `;
+
+        ['A', 'B', 'C', 'D', 'E'].forEach(letter => {
+          const altObj = q.alternativas[letter];
+          if (!altObj) return;
+
+          let itemClass = 'option-item';
+          let drawerClass = 'option-explanation-drawer';
+          let drawerStyle = 'display:none;';
+
+          if (userAns === letter) {
+            itemClass += ' selected';
+          }
+
+          if (revelado) {
+            if (letter === q.correta) {
+              itemClass += ' correct';
+            }
+            if (userAns === letter && !acertou) {
+              itemClass += ' incorrect';
+            }
+            if (userAns === letter || (!acertou && letter === q.correta)) {
+              drawerClass += letter === q.correta ? ' exp-correct show' : ' exp-wrong show';
+              drawerStyle = 'display:block;';
+            }
+          }
+
+          html += `
+            <div class="option-wrapper" id="sim-opt-wrap-${q.id}-${letter}">
+              <div class="${itemClass}" id="sim-opt-btn-${q.id}-${letter}" data-opt="${letter}" onclick="window.handleSimOptionClick('${q.id}', '${letter}')">
+                <span class="option-letter">${letter}</span>
+                <span class="option-text">${escapeHtml(altObj.texto)}</span>
+              </div>
+              <div class="${drawerClass}" id="sim-drawer-${q.id}-${letter}" style="${drawerStyle}">
+                <strong>${letter === q.correta ? '✅ Alternativa (' + letter + ') - Gabarito Correto:' : '❌ Alternativa (' + letter + ') - Por que está incorreta:'}</strong><br>
+                ${escapeHtml(altObj.exp)}
+              </div>
+            </div>
+          `;
+        });
+
+        html += `</div>`; // fim options-list
+
+        // Feedback da questão
+        let feedbackClass = 'quiz-feedback';
+        let feedbackContent = '';
+
+        if (revelado) {
+          feedbackClass += acertou ? ' show feedback-success' : ' show feedback-error';
+          if (acertou) {
+            feedbackContent = `
+              <div class="feedback-status">🎉 <strong>Excelente, Dayana! Você acertou!</strong></div>
+              <p style="margin: 0.35rem 0 0 0;">${escapeHtml(q.comentarioGeral || '')}</p>
+              <div class="alt-inspect-hint">
+                💡 <strong>Dica de Estudo:</strong> Você acertou! Clique em qualquer outra alternativa (A, B, C, D ou E) para ver a justificativa do erro!
+              </div>
+            `;
+          } else {
+            feedbackContent = `
+              <div class="feedback-status">⚠️ <strong>Atenção ao detalhe, Dayana! O gabarito oficial é a letra (${q.correta}).</strong></div>
+              <p style="margin: 0.35rem 0 0 0;">${escapeHtml(q.comentarioGeral || '')}</p>
+              <div class="alt-inspect-hint">
+                🔍 <strong>Modo Inspeção Ativo:</strong> Clique nas outras alternativas para conferir o motivo do erro de cada uma.
+              </div>
+            `;
+          }
+        }
+
+        html += `
+            <div class="${feedbackClass}" id="sim-feedback-${q.id}">
+              ${feedbackContent}
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+    }
+
+    // Clique em alternativa do simulado
+    window.handleSimOptionClick = function(qId, letter) {
+      const questao = questoesDoSimulado.find(q => q.id === qId);
+      if (!questao) return;
+
+      const modo = document.getElementById('sim-modo-select').value;
+      const userAns = sessionStorage.getItem(`sim_ans_${qId}`);
+
+      // Salva no sessionStorage do simulado
+      sessionStorage.setItem(`sim_ans_${qId}`, letter);
+      // Salva também no histórico geral da Dayana
+      localStorage.setItem(`dayana_ans_${qId}`, letter);
+
+      if (modo === 'prova') {
+        // No modo prova real, apenas marca a seleção visualmente sem entregar a resposta
+        ['A', 'B', 'C', 'D', 'E'].forEach(l => {
+          const btn = document.getElementById(`sim-opt-btn-${qId}-${l}`);
+          if (btn) {
+            btn.classList.remove('selected');
+            if (l === letter) btn.classList.add('selected');
+          }
+        });
         return;
       }
 
-      btn.textContent = '⏸️ Pausar Tempo';
-      simInterval = setInterval(() => {
-        if (simTimerSeconds <= 0) {
-          clearInterval(simInterval);
-          alert('Tempo esgotado da prova, Dayana!');
-          return;
-        }
-        simTimerSeconds--;
-        const h = Math.floor(simTimerSeconds / 3600);
-        const m = Math.floor((simTimerSeconds % 3600) / 60);
-        const s = simTimerSeconds % 60;
-        clockEl.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-      }, 1000);
-    }
+      // No modo treino: feedback imediato e inspeção aberta
+      if (!userAns) {
+        // Primeira resposta
+        renderSimuladoQuestoes();
+      } else {
+        // Já havia respondido: alterna abertura da gaveta da alternativa clicada
+        const targetDrawer = document.getElementById(`sim-drawer-${qId}-${letter}`);
+        if (!targetDrawer) return;
 
-    function gradeSimulation() {
-      const questions = document.querySelectorAll('.question-card[data-sim-correct]');
-      let totalPoints = 0;
-      let portuguesPoints = 0;
-      let totalPossible = 0;
-
-      questions.forEach(q => {
-        const correct = q.getAttribute('data-sim-correct');
-        const peso = parseFloat(q.getAttribute('data-sim-peso'));
-        const disc = q.getAttribute('data-sim-disc');
-        totalPossible += peso;
-
-        const selected = q.querySelector('input[type="radio"]:checked');
-        const labels = q.querySelectorAll('.option-item');
-        
-        labels.forEach(l => l.classList.remove('correct', 'incorrect'));
-
-        if (selected) {
-          if (selected.value === correct) {
-            totalPoints += peso;
-            if (disc === 'portugues') portuguesPoints += peso;
-            selected.closest('.option-item').classList.add('correct');
-          } else {
-            selected.closest('.option-item').classList.add('incorrect');
-            const rightLabel = q.querySelector(`input[value="${correct}"]`);
-            if (rightLabel) rightLabel.closest('.option-item').classList.add('correct');
-          }
+        const isVisible = targetDrawer.style.display === 'block';
+        if (isVisible) {
+          targetDrawer.style.display = 'none';
+          targetDrawer.classList.remove('show');
         } else {
-          // Não respondeu
-          const rightLabel = q.querySelector(`input[value="${correct}"]`);
-          if (rightLabel) rightLabel.closest('.option-item').classList.add('correct');
+          targetDrawer.className = 'option-explanation-drawer ' + (letter === questao.correta ? 'exp-correct show' : 'exp-wrong show');
+          targetDrawer.style.display = 'block';
+        }
+      }
+    };
+
+    // Finalizar simulado e calcular nota oficial
+    window.finalizarSimulado = function() {
+      let totalObtido = 0;
+      let totalPossivel = 0;
+      let portuguesAcertos = 0;
+      let portuguesQuestoes = 0;
+
+      const statsPorDisc = {};
+
+      questoesDoSimulado.forEach(q => {
+        const peso = (q.disciplina === 'especificos' || q.disciplina === 'sus') ? 0.3 : 0.1;
+        totalPossivel += peso;
+
+        if (!statsPorDisc[q.disciplina]) {
+          statsPorDisc[q.disciplina] = { total: 0, acertos: 0, nome: q.materia_nome };
+        }
+        statsPorDisc[q.disciplina].total++;
+
+        const userAns = sessionStorage.getItem(`sim_ans_${q.id}`);
+        const acertou = userAns === q.correta;
+
+        if (q.disciplina === 'portugues') {
+          portuguesQuestoes++;
+          if (acertou) portuguesAcertos++;
+        }
+
+        if (acertou) {
+          totalObtido += peso;
+          statsPorDisc[q.disciplina].acertos++;
+        }
+
+        // Revela todos os cards no simulado
+        const card = document.getElementById(`sim-card-${q.id}`);
+        const feedbackBox = document.getElementById(`sim-feedback-${q.id}`);
+        if (!card) return;
+
+        ['A', 'B', 'C', 'D', 'E'].forEach(l => {
+          const btn = document.getElementById(`sim-opt-btn-${q.id}-${l}`);
+          const drawer = document.getElementById(`sim-drawer-${q.id}-${l}`);
+          if (!btn || !drawer) return;
+
+          btn.classList.remove('selected', 'correct', 'incorrect');
+          drawer.style.display = 'none';
+
+          if (l === q.correta) {
+            btn.classList.add('correct');
+          }
+          if (userAns === l && !acertou) {
+            btn.classList.add('incorrect');
+          }
+
+          if (userAns === l || (!acertou && l === q.correta)) {
+            drawer.className = 'option-explanation-drawer ' + (l === q.correta ? 'exp-correct show' : 'exp-wrong show');
+            drawer.style.display = 'block';
+          }
+        });
+
+        if (feedbackBox) {
+          feedbackBox.className = 'quiz-feedback show ' + (acertou ? 'feedback-success' : 'feedback-error');
+          feedbackBox.innerHTML = `
+            <div class="feedback-status">${acertou ? '🎉 <strong>Você acertou!</strong>' : '⚠️ <strong>Gabarito: Letra (' + q.correta + ')</strong>'}</div>
+            <p style="margin: 0.35rem 0 0 0;">${escapeHtml(q.comentarioGeral || '')}</p>
+            <div class="alt-inspect-hint">
+              💡 <strong>Inspeção de Alternativas:</strong> Clique nas opções A, B, C, D ou E para ver a justificativa detalhada de cada item!
+            </div>
+          `;
         }
       });
 
-      // Normaliza para nota proporcional de 0 a 10
-      const finalGrade10 = totalPossible > 0 ? (totalPoints / totalPossible) * 10 : 0;
-      const resultCard = document.getElementById('sim-result-box');
+      // Nota normalizada de 0 a 10
+      const nota10 = totalPossivel > 0 ? (totalObtido / totalPossivel) * 10 : 0;
+      const resultBox = document.getElementById('sim-result-box');
       const scoreVal = document.getElementById('sim-final-score');
       const details = document.getElementById('sim-score-details');
       const badge = document.getElementById('sim-verdict-badge');
       const title = document.getElementById('sim-verdict-title');
+      const breakdown = document.getElementById('sim-breakdown-container');
 
-      resultCard.classList.add('active');
-      scoreVal.textContent = finalGrade10.toFixed(2) + ' / 10.0';
+      resultBox.classList.add('active');
+      scoreVal.textContent = nota10.toFixed(2) + ' / 10.0';
 
       let isApproved = true;
-      let message = '';
+      let messages = [];
 
-      if (finalGrade10 < 5.0) {
+      if (nota10 < 5.0) {
         isApproved = false;
-        message += '<p style="color: var(--danger); font-weight:700;">Atenção: A nota foi inferior ao mínimo regulamentar de 50% (5,0 pontos) exigido no subitem 14.21.</p>';
+        messages.push('❌ Nota inferior ao mínimo de 5,0 pontos (50%) exigido no subitem 14.21 do edital.');
       }
 
-      if (portuguesPoints === 0) {
+      if (portuguesQuestoes > 0 && portuguesAcertos === 0) {
         isApproved = false;
-        message += '<p style="color: var(--danger); font-weight:700;">Atenção Crítica: Você zerou as questões de Português. Conforme o edital, zerar português elimina automaticamente!</p>';
+        messages.push('🚨 ELIMINADA: Você zerou as questões de Língua Portuguesa! O subitem 14.21 elimina automaticamente o candidato que zerar qualquer disciplina básica.');
       }
 
       if (isApproved) {
         title.innerHTML = '🎉 PARABÉNS, DAYANA MAIA! VOCÊ ESTÁ APROVADA!';
         scoreVal.style.color = 'var(--success)';
-        badge.innerHTML = '<span class="badge" style="background: var(--success); color: white; font-size: 1rem; padding: 0.5rem 1rem;">CLASSIFICADA PARA CORREÇÃO DA REDAÇÃO (Top 172 da AC)</span>';
+        badge.innerHTML = '<span class="badge" style="background: var(--success); color: white; font-size: 1.1rem; padding: 0.6rem 1.25rem;">APROVADA E CLASSIFICADA PARA CORREÇÃO DA REDAÇÃO (Top 172 da AC)</span>';
+        details.innerHTML = '<p style="color: var(--success); font-weight: 700;">Excelente pontuação! Você ultrapassou a linha de corte com segurança.</p>';
       } else {
         title.innerHTML = '⚠️ REVISÃO NECESSÁRIA, DAYANA';
         scoreVal.style.color = 'var(--danger)';
-        badge.innerHTML = '<span class="badge" style="background: var(--danger); color: white; font-size: 1rem; padding: 0.5rem 1rem;">REVISE OS MÓDULOS DE ESPECÍFICAS E PORTUGUÊS</span>';
+        badge.innerHTML = '<span class="badge" style="background: var(--danger); color: white; font-size: 1.1rem; padding: 0.6rem 1.25rem;">NÃO ATINGIU O CRITÉRIO MÍNIMO DESTE SIMULADO</span>';
+        details.innerHTML = `<p style="color: var(--danger); font-weight: 700;">${messages.join('<br>')}</p>`;
       }
 
-      details.innerHTML = message || '<p style="color: var(--success); font-weight: 600;">Excelente desempenho! Você superou com folga a linha de corte e garantiu sua vaga.</p>';
+      // Renderiza breakdown por disciplina
+      let breakdownHtml = '';
+      for (const disc in statsPorDisc) {
+        const d = statsPorDisc[disc];
+        const perc = d.total > 0 ? Math.round((d.acertos / d.total) * 100) : 0;
+        breakdownHtml += `
+          <div class="breakdown-card">
+            <span class="title">${escapeHtml(d.nome)}</span>
+            <div class="val">${d.acertos}/${d.total}</div>
+            <span style="font-size:0.75rem; color: var(--text-muted);">${perc}% de acerto</span>
+          </div>
+        `;
+      }
+      breakdown.innerHTML = breakdownHtml;
 
-      window.scrollTo({ top: resultCard.offsetTop - 80, behavior: 'smooth' });
-    }
+      // Rolagem suave até o resultado
+      window.scrollTo({ top: resultBox.offsetTop - 80, behavior: 'smooth' });
+    };
+
+    // Controle do Cronômetro
+    window.toggleSimTimer = function() {
+      const btn = document.getElementById('sim-btn-start');
+      const clock = document.getElementById('sim-clock');
+
+      if (!timerRunning) {
+        timerRunning = true;
+        btn.textContent = '⏸️ Pausar Cronômetro';
+        btn.classList.remove('btn-secondary');
+        btn.classList.add('btn-primary');
+
+        timerInterval = setInterval(() => {
+          if (secondsLeft <= 0) {
+            clearInterval(timerInterval);
+            alert('⏰ Tempo esgotado! O simulado será finalizado agora.');
+            window.finalizarSimulado();
+            return;
+          }
+          secondsLeft--;
+          const hrs = Math.floor(secondsLeft / 3600);
+          const mins = Math.floor((secondsLeft % 3600) / 60);
+          const secs = secondsLeft % 60;
+          clock.textContent = `${String(hrs).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        }, 1000);
+      } else {
+        timerRunning = false;
+        clearInterval(timerInterval);
+        btn.textContent = '▶️ Retomar Cronômetro';
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-secondary');
+      }
+    };
   </script>
 </body>
 </html>
