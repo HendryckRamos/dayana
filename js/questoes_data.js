@@ -3707,32 +3707,32 @@ const BANCO_QUESTOES = [
         "id":  "leg_30",
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
-        "topico":  "Lei Estadual nº 6.304/2000 e Lei 9.341/2021 - Regime de Pessoal da FHCGV",
-        "enunciado":  "O regime jurídico do pessoal admitido na Fundação Pública Estadual Hospital de Clínicas Gaspar Vianna (FHCGV) mediante o presente Concurso Público C-223 é o:",
+        "topico":  "Lei Estadual nº 9.341/2021 - Estatuto da Equidade Racial do Pará",
+        "enunciado":  "Nos termos da Lei Estadual nº 9.341/2021, que institui o Estatuto da Equidade Racial do Estado do Pará, considera-se população negra o conjunto de pessoas que se autodeclaram:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Regime celetista (CLT), com recolhimento de FGTS e aviso prévio indenizado.",
-                                       "exp":  "Incorreto. A fundação de direito público adota o regime estatutário para seus servidores concursados."
+                                       "texto":  "Pretas e pardas, conforme o quesito cor ou raça utilizado pela Fundação Instituto Brasileiro de Geografia e Estatística (IBGE).",
+                                       "exp":  "Correto! A lei estadual acolhe expressamente a autodeclaração de pretos e pardos conforme o padrão oficial do IBGE para a definição de população negra."
                                    },
                              "B":  {
-                                       "texto":  "Regime Jurídico único Estatutário dos Servidores Públicos Civis do Estado do Pará (Lei Estadual nº 5.810/1994).",
-                                       "exp":  "Correto! O Edital nº 01/SEPLAD-FHCGV e a Lei 6.304/2000 consagram o regime estatutário (Lei 5.810/94), assegurando estabilidade funcional após 3 anos."
+                                       "texto":  "Exclusivamente pretas de ascendência quilombola com certidão emitida por comunidade tradicional.",
+                                       "exp":  "Incorreto. O conceito legal abrange pretos e pardos autodeclarados, não se restringindo a quilombolas."
                                    },
                              "C":  {
-                                       "texto":  "Contrato temporário de prestação de serviços renovável anualmente.",
-                                       "exp":  "Incorreto. Trata-se de provimento de cargos de carreira efetiva por concurso público."
+                                       "texto":  "Pardas e indígenas residentes exclusivamente em áreas rurais ou ribeirinhas do Estado do Pará.",
+                                       "exp":  "Incorreto. A legislação foca na equidade racial da população negra (pretos e pardos) em todo o território paraense."
                                    },
                              "D":  {
-                                       "texto":  "Regime de pessoa jurídica terceirizada sem vínculo com o Estado.",
-                                       "exp":  "Incorreto. A nomeação é diretamente em cargo público estadual de provimento efetivo."
+                                       "texto":  "Cidadãos submetidos a vulnerabilidade socioeconômica independentemente de quesito de cor ou raça.",
+                                       "exp":  "Incorreto. A equidade racial tem recorte étnico-racial explícito fundamentado na autodeclaração."
                                    },
                              "E":  {
-                                       "texto":  "Regime militar da reserva hospitalar.",
-                                       "exp":  "Incorreto. Trata-se de servidores públicos civis."
+                                       "texto":  "Afrodescendentes com comprovação documental pericial de ascendência genealógica direta.",
+                                       "exp":  "Incorreto. O critério legal é a autodeclaração, não exigindo perícia documental genealógica."
                                    }
                          },
-        "correta":  "B",
-        "comentarioGeral":  "Todos os aprovados no Concurso FHCGV serão regidos pelo Estatuto dos Servidores Públicos Civis do Pará (Lei 5.810/94), usufruindo de estabilidade e de todos os direitos estatutários!"
+        "correta":  "A",
+        "comentarioGeral":  "A Lei Estadual nº 9.341/2021 define a população negra como o conjunto de pessoas que se autodeclaram pretas e pardas, conforme o quesito cor ou raça do IBGE, assegurando políticas afirmativas e acesso à saúde integral!"
     },
     {
         "id":  "eti_01",
