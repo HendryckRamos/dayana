@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disciplinas de Estudo • Concurso FHCGV • Dayana Maia</title>
+  <meta name="description" content="Central de Matérias e Disciplinas de Estudo para o Concurso FHCGV - Auxiliar Administrativo. 180 questões comentadas e trilha nos 3 níveis.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .materias-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .materia-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .materia-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    .materia-card.destaque-ouro {
+      border-color: rgba(234, 179, 8, 0.4);
+      background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(234, 179, 8, 0.04) 100%);
+    }
+    .materia-card.destaque-alerta {
+      border-color: rgba(239, 68, 68, 0.4);
+      background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(239, 68, 68, 0.04) 100%);
+    }
+    .materia-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    .materia-icon {
+      font-size: 2rem;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-surface-elevated);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+    }
+    .materia-prioridade {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.5px;
+    }
+    .prio-critica {
+      background: rgba(234, 179, 8, 0.15);
+      color: #eab308;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+    .prio-eliminatoria {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    .prio-base {
+      background: rgba(59, 130, 246, 0.15);
+      color: #3b82f6;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .materia-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0.25rem 0 0.5rem 0;
+      color: var(--text-main);
+    }
+    .materia-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .materia-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      background: var(--bg-surface-elevated);
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .materia-stat-item .stat-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: block;
+    }
+    .materia-stat-item .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .materia-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">🏥</span>
+        <div class="brand-text">
+          <span class="brand-name">Concurso FHCGV</span>
+          <span class="brand-sub">Auxiliar Administrativo • C-223</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <span class="user-pill">
+          <span class="user-avatar">DM</span>
+          <span class="user-name">Dayana Maia</span>
+        </span>
+        <button id="theme-toggle" class="btn-icon" aria-label="Alternar tema">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="page-container">
+    
+    <!-- Hero / Cabeçalho da Página -->
+    <section class="hero-section" style="padding-bottom: 1.5rem;">
+      <div class="badge-wrapper">
+        <span class="badge badge-accent">📚 Matérias do Edital</span>
+        <span class="badge badge-secondary">180 Questões Comentadas (30x6)</span>
+      </div>
+      <h1 class="hero-title" style="margin-top: 0.5rem;">
+        As 6 Disciplinas de Estudo da Prova
+      </h1>
+      <p class="hero-subtitle">
+        Dayana, aqui está a central completa com as 6 matérias que compõem a sua prova da Consulplan.
+        Cada disciplina possui seu módulo didático dividido em <strong>3 Níveis de Aprendizado</strong> (Base, Prática e Nível Prova) 
+        além de um caderno com <strong>30 questões comentadas</strong> com feedback imediato e inspeção de alternativas.
+      </p>
+
+      <!-- Painel Resumo de Pontuação -->
+      <div class="stats-overview" style="margin-top: 1.5rem;">
+        <div class="stat-card">
+          <div class="stat-value">6</div>
+          <div class="stat-label">Matérias Oficiais</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">50</div>
+          <div class="stat-label">Questões na Prova</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">180</div>
+          <div class="stat-label">Questões no Banco</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">10.0</div>
+          <div class="stat-label">Pontuação Total</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estratégia de Prioridade Recomendada -->
+    <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; margin-bottom: 2rem;">
+      <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 1.15rem;">
+        <span>🎯</span> Estratégia dos 75% da Prova
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+        Apenas duas disciplinas somam <strong>75% de toda a sua prova objetiva (7,5 pontos em 10,0)</strong>:
+        <strong>Conhecimentos Específicos</strong> (4,5 pts) e <strong>SUS</strong> (3,0 pts). Domine essas duas primeiro e garanta que não vai zerar <strong>Língua Portuguesa</strong>!
+      </p>
+    </div>
+
+    <!-- Grid com os Cards das 6 Matérias -->
+    <div class="materias-grid">
+
+      <!-- 1. Conhecimentos Específicos -->
+      <div class="materia-card destaque-ouro">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">📁</div>
+            <span class="materia-prioridade prio-critica">Prioridade Máxima • Peso 0.3</span>
+          </div>
+          <h2 class="materia-title">1. Conhecimentos Específicos</h2>
+          <p class="materia-desc">
+            Rotinas de secretaria hospitalar, arquivologia e teoria das 3 idades, redação oficial, Nova Lei de Licitações (Lei 14.133/21), almoxarifado e faturamento SUS (AIH e APAC).
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">15</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">4,5</span>
+              <span class="stat-label">Pontos</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-especificos.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-especificos.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Políticas de Saúde Pública (SUS) -->
+      <div class="materia-card destaque-ouro">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">🏥</div>
+            <span class="materia-prioridade prio-critica">Prioridade Alta • Peso 0.3</span>
+          </div>
+          <h2 class="materia-title">2. Políticas de Saúde (SUS)</h2>
+          <p class="materia-desc">
+            Artigos 196 a 200 da CF/88, Lei Federal nº 8.080/1990 (organização do SUS), Lei nº 8.142/1990 (participação comunitária e conferências), Redes de Atenção (RAS) e o Hospital Gaspar Vianna.
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">10</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">3,0</span>
+              <span class="stat-label">Pontos</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-sus.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-sus.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Língua Portuguesa -->
+      <div class="materia-card destaque-alerta">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">✍️</div>
+            <span class="materia-prioridade prio-eliminatoria">Eliminatória • Não Pode Zerar!</span>
+          </div>
+          <h2 class="materia-title">3. Língua Portuguesa</h2>
+          <p class="materia-desc">
+            Compreensão e interpretação de textos da saúde, tipologias textuais, concordância verbal e nominal, regência verbal com crase, pontuação e sintaxe. Zerar esta matéria elimina do concurso!
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">10</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">1,0</span>
+              <span class="stat-label">Ponto</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-portugues.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-portugues.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Legislação do Estado do Pará -->
+      <div class="materia-card">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">⚖️</div>
+            <span class="materia-prioridade prio-base">Conhecimentos Básicos • Peso 0.1</span>
+          </div>
+          <h2 class="materia-title">4. Legislação Estadual RJU</h2>
+          <p class="materia-desc">
+            Lei Estadual nº 5.810/1994 (Regime Jurídico Único dos Servidores Públicos do Pará - posse, estabilidade, licenças e deveres) e Lei Estadual nº 6.304/2000 (criação e estrutura da Fundação Gaspar Vianna).
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">0,5</span>
+              <span class="stat-label">Ponto</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-legislacao.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-legislacao.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Ética e Qualidade no Serviço Público -->
+      <div class="materia-card">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">⭐</div>
+            <span class="materia-prioridade prio-base">Conhecimentos Básicos • Peso 0.1</span>
+          </div>
+          <h2 class="materia-title">5. Ética e Atendimento</h2>
+          <p class="materia-desc">
+            Princípios da Administração Pública (LIMPE), qualidade no atendimento a pacientes e acompanhantes, eficiência e comunicabilidade, relações humanas e Lei de Acesso à Informação (Lei 12.527/11).
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">0,5</span>
+              <span class="stat-label">Ponto</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-etica.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-etica.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Raciocínio Lógico-Matemático -->
+      <div class="materia-card">
+        <div>
+          <div class="materia-top">
+            <div class="materia-icon">🧮</div>
+            <span class="materia-prioridade prio-base">Conhecimentos Básicos • Peso 0.1</span>
+          </div>
+          <h2 class="materia-title">6. Raciocínio Lógico (RLM)</h2>
+          <p class="materia-desc">
+            Proposições lógicas, conectivos (E, OU, SE... ENTÃO), tabelas-verdade, negações e equivalências lógicas, conjuntos numéricos, diagramas de Venn, frações e sequências lógicas.
+          </p>
+        </div>
+
+        <div>
+          <div class="materia-stats-grid">
+            <div class="materia-stat-item">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Na Prova</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">0,5</span>
+              <span class="stat-label">Ponto</span>
+            </div>
+            <div class="materia-stat-item">
+              <span class="stat-num">30</span>
+              <span class="stat-label">Questões</span>
+            </div>
+          </div>
+
+          <div class="materia-actions">
+            <a href="modulo-rlm.html" class="btn btn-primary" style="justify-content: center;">
+              📖 Estudar Módulo (Níveis 1, 2 e 3)
+            </a>
+            <a href="modulo-rlm.html#modulo-questoes-container" class="btn btn-secondary" style="justify-content: center;">
+              📝 Treinar as 30 Questões
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Destaque Extra: Redação / Prova Discursiva -->
+    <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(13, 148, 136, 0.04) 100%); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-lg); padding: 1.75rem; margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+        <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; font-weight: 700;">
+          ✍️ ETAPA DISCURSIVA • VALE 5,0 PONTOS
+        </span>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">
+          Texto Dissertativo-Argumentativo de 20 a 30 linhas
+        </span>
+      </div>
+      <div>
+        <h3 style="margin: 0; font-size: 1.35rem; color: var(--text-main);">
+          Módulo Especial de Redação Nota 10
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.4rem; line-height: 1.5;">
+          A prova discursiva é realizada no mesmo turno da prova objetiva. Preparamos uma estrutura pronta em 4 parágrafos e modelo focado em saúde pública e no Hospital Gaspar Vianna para você garantir a pontuação máxima.
+        </p>
+      </div>
+      <div>
+        <a href="modulo-discursiva.html" class="btn btn-primary" style="background: #10b981; border-color: #10b981; font-size: 1rem; padding: 0.75rem 1.75rem;">
+          🚀 Acessar Módulo Completo de Redação
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Rodapé do Site -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Plataforma Exclusiva • Dayana Maia de Jesus</h3>
+        <p>Preparação de Alto Desempenho para Auxiliar Administrativo • FHCGV / SEPLAD-PA (Concurso C-223)</p>
+        <p style="font-size: 0.78rem; margin-top: 0.3rem;">Banca Organizadora: Instituto Consulplan • 180 Questões Comentadas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Barra de Navegação Inferior Mobile-First Unificada -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="bottom-nav-item">
+      <span class="nav-icon">🗺️</span>
+      <span>Roteiro</span>
+    </a>
+    <a href="materias.html" class="bottom-nav-item active">
+      <span class="nav-icon">📚</span>
+      <span>Matérias</span>
+    </a>
+    <a href="modulo-discursiva.html" class="bottom-nav-item">
+      <span class="nav-icon">✍️</span>
+      <span>Redação</span>
+    </a>
+    <a href="simulados.html" class="bottom-nav-item">
+      <span class="nav-icon">🏆</span>
+      <span>Simulado</span>
+    </a>
+  </nav>
+
+  <script src="js/questoes_data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

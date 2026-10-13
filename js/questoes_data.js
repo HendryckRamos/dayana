@@ -1,15 +1,15 @@
 ﻿/**
- * BANCO OFICIAL DE QUEST�•ES FHCGV - CARGO 01: AUXILIAR ADMINISTRATIVO
- * 180 QUEST�•ES SELECIONADAS (30 DE CADA UMA DAS 6 DISCIPLINAS)
+ * BANCO OFICIAL DE QUESTÕES FHCGV - CARGO 01: AUXILIAR ADMINISTRATIVO
+ * 180 QUESTÕES SELECIONADAS (30 DE CADA UMA DAS 6 DISCIPLINAS)
  * COM JUSTIFICATIVA DETALHADA PARA CADA UMA DAS ALTERNATIVAS (A, B, C, D, E)
  * ALUNA: DAYANA MAIA DE JESUS | BANCA: CONSULPLAN
  * 
- * DISTRIBUI�‡�ƒO DAS 180 QUEST�•ES:
+ * DISTRIBUIÇÃO DAS 180 QUESTÕES:
  * 1. Conhecimentos Específicos: 30 questões (esp_01 a esp_30)
  * 2. Políticas de Saúde Pública (SUS): 30 questões (sus_01 a sus_30)
  * 3. Língua Portuguesa: 30 questões (port_01 a port_30)
  * 4. Legislação Estadual (Lei 5.810/94 e Lei 6.304/00): 30 questões (leg_01 a leg_30)
- * 5. �‰tica e Qualidade no Serviço Público: 30 questões (eti_01 a eti_30)
+ * 5. Ética e Qualidade no Serviço Público: 30 questões (eti_01 a eti_30)
  * 6. Raciocínio Lógico-Matemático: 30 questões (rlm_01 a rlm_30)
  */
 
@@ -17,176 +17,176 @@ const BANCO_QUESTOES = [
     {
         "id":  "esp_01",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Reda��o Oficial e Fechos",
-        "enunciado":  "Um Auxiliar Administrativo da FHCGV precisa redigir um of�cio ao Secret�rio de Estado de Sa�de do Par�, autoridade superior. De acordo com o Manual de Reda��o da Presid�ncia da Rep�blica (3� edi��o), o fecho correto a ser empregado �:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Redação Oficial e Fechos",
+        "enunciado":  "Um Auxiliar Administrativo da FHCGV precisa redigir um ofício ao Secretário de Estado de Saúde do Pará, autoridade superior. De acordo com o Manual de Redação da Presidência da República (3ª edição), o fecho correto a ser empregado é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Cordialmente,",
-                                       "exp":  "Incorreto. \u0027Cordialmente\u0027 n�o � previsto como fecho oficial pelo Manual de Reda��o da Presid�ncia da Rep�blica."
+                                       "exp":  "Incorreto. \u0027Cordialmente\u0027 não é previsto como fecho oficial pelo Manual de Redação da Presidência da República."
                                    },
                              "B":  {
                                        "texto":  "Atenciosamente,",
-                                       "exp":  "Incorreto. \u0027Atenciosamente\u0027 � reservado para autoridades de mesma hierarquia ou de hierarquia inferior."
+                                       "exp":  "Incorreto. \u0027Atenciosamente\u0027 é reservado para autoridades de mesma hierarquia ou de hierarquia inferior."
                                    },
                              "C":  {
                                        "texto":  "Respeitosamente,",
-                                       "exp":  "Correto! O fecho \u0027Respeitosamente,\u0027 � o �nico padr�o oficial para autoridades hierarquicamente superiores (incluindo Secret�rios de Estado)."
+                                       "exp":  "Correto! O fecho \u0027Respeitosamente,\u0027 é o único padrão oficial para autoridades hierarquicamente superiores (incluindo Secretários de Estado)."
                                    },
                              "D":  {
-                                       "texto":  "Com protestos de elevada estima e considera��o,",
-                                       "exp":  "Incorreto. F�rmulas prolixas e rebuscadas foram completamente abolidas das normas oficiais."
+                                       "texto":  "Com protestos de elevada estima e consideração,",
+                                       "exp":  "Incorreto. Fórmulas prolixas e rebuscadas foram completamente abolidas das normas oficiais."
                                    },
                              "E":  {
-                                       "texto":  "Sauda��es Fraternas,",
-                                       "exp":  "Incorreto. Trata-se de fecho coloquial ou informal, totalmente vedado no padr�o culto oficial."
+                                       "texto":  "Saudações Fraternas,",
+                                       "exp":  "Incorreto. Trata-se de fecho coloquial ou informal, totalmente vedado no padrão culto oficial."
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "O Manual de Reda��o da Presid�ncia uniformizou todos os fechos em apenas dois: \u0027Respeitosamente,\u0027 para autoridades superiores e \u0027Atenciosamente,\u0027 para igual ou menor hierarquia."
+        "comentarioGeral":  "O Manual de Redação da Presidência uniformizou todos os fechos em apenas dois: \u0027Respeitosamente,\u0027 para autoridades superiores e \u0027Atenciosamente,\u0027 para igual ou menor hierarquia."
     },
     {
         "id":  "esp_02",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Arquivologia e Teoria das Tr�s Idades",
-        "enunciado":  "No Servi�o de Arquivo M�dico e Estat�stica (SAME) da FHCGV, prontu�rios de pacientes com alta h� 7 anos sem consultas recentes, aguardando prazo prescricional legal, encontram-se no:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Arquivologia e Teoria das Três Idades",
+        "enunciado":  "No Serviço de Arquivo Médico e Estatéstica (SAME) da FHCGV, prontuários de pacientes com alta há 7 anos sem consultas recentes, aguardando prazo prescricional legal, encontram-se no:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Arquivo Corrente (1� Idade).",
-                                       "exp":  "Incorreto. O arquivo corrente guarda documentos de uso frequente e tramita��o ativa no dia a dia."
+                                       "texto":  "Arquivo Corrente (1ª Idade).",
+                                       "exp":  "Incorreto. O arquivo corrente guarda documentos de uso frequente e tramitação ativa no dia a dia."
                                    },
                              "B":  {
-                                       "texto":  "Arquivo Intermedi�rio (2� Idade).",
+                                       "texto":  "Arquivo Intermediário (2ª Idade).",
                                        "exp":  "Correto! Guarda documentos de uso pouco frequente que cumprem prazo precaucional/prescricional antes do descarte ou guarda permanente."
                                    },
                              "C":  {
-                                       "texto":  "Arquivo Permanente (3� Idade).",
-                                       "exp":  "Incorreto. O permanente � destinado exclusivamente aos documentos de valor hist�rico, probat�rio definitivo ou cultural, inalien�veis."
+                                       "texto":  "Arquivo Permanente (3ª Idade).",
+                                       "exp":  "Incorreto. O permanente é destinado exclusivamente aos documentos de valor histórico, probatério definitivo ou cultural, inalienáveis."
                                    },
                              "D":  {
                                        "texto":  "Arquivo Morto.",
-                                       "exp":  "Incorreto. O termo \u0027arquivo morto\u0027 � repudiado na arquivologia moderna e considerado conceitualmente errado."
+                                       "exp":  "Incorreto. O termo \u0027arquivo morto\u0027 é repudiado na arquivologia moderna e considerado conceitualmente errado."
                                    },
                              "E":  {
-                                       "texto":  "Arquivo de Cust�dia Ef�mera.",
-                                       "exp":  "Incorreto. Termo inexistente na teoria cl�ssica das tr�s idades (ciclo vital dos documentos)."
+                                       "texto":  "Arquivo de Custódia Efêmera.",
+                                       "exp":  "Incorreto. Termo inexistente na teoria clássica das três idades (ciclo vital dos documentos)."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A Teoria das Tr�s Idades classifica os documentos em: Corrente (ativo/frequente), Intermedi�rio (semi-ativo/precau��o tempor�ria) e Permanente (hist�rico/eterno)."
+        "comentarioGeral":  "A Teoria das Três Idades classifica os documentos em: Corrente (ativo/frequente), Intermediário (semi-ativo/precaução temporária) e Permanente (histórico/eterno)."
     },
     {
         "id":  "esp_03",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Nova Lei de Licita��es (Lei 14.133/21)",
-        "enunciado":  "A FHCGV necessita contratar empresa para servi�o exclusivo de manuten��o em acelerador linear patenteado, com comprova��o formal de que n�o existe concorrente t�cnico no pa�s. A hip�tese legal � de:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Nova Lei de Licitações (Lei 14.133/21)",
+        "enunciado":  "A FHCGV necessita contratar empresa para serviço exclusivo de manutenção em acelerador linear patenteado, com comprovação formal de que não existe concorrente técnico no país. A hipótese legal é de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Dispensa de licita��o por valor.",
-                                       "exp":  "Incorreto. A dispensa por valor aplica-se apenas a compras de pequeno vulto (art. 75, I e II), o que n�o � o caso de servi�os de alta tecnologia."
+                                       "texto":  "Dispensa de licitação por valor.",
+                                       "exp":  "Incorreto. A dispensa por valor aplica-se apenas a compras de pequeno vulto (art. 75, I e II), o que não é o caso de serviços de alta tecnologia."
                                    },
                              "B":  {
-                                       "texto":  "Preg�o eletr�nico obrigat�rio.",
-                                       "exp":  "Incorreto. O preg�o exige competi��o e disputa de lances entre m�ltiplos fornecedores."
+                                       "texto":  "Pregão eletrônico obrigatório.",
+                                       "exp":  "Incorreto. O pregão exige competição e disputa de lances entre múltiplos fornecedores."
                                    },
                              "C":  {
-                                       "texto":  "Concorr�ncia com crit�rio de t�cnica e pre�o.",
-                                       "exp":  "Incorreto. N�o havendo competidores no mercado, � imposs�vel instaurar disputa licitat�ria."
+                                       "texto":  "Concorrência com critério de técnica e preço.",
+                                       "exp":  "Incorreto. Não havendo competidores no mercado, é impossóvel instaurar disputa licitatória."
                                    },
                              "D":  {
-                                       "texto":  "Inexigibilidade de licita��o, pela inviabilidade de competi��o.",
-                                       "exp":  "Correto! O art. 74, I da Lei 14.133/21 determina que � inexig�vel licitar quando h� inviabilidade f�tica de competi��o (fornecedor exclusivo)."
+                                       "texto":  "Inexigibilidade de licitação, pela inviabilidade de competição.",
+                                       "exp":  "Correto! O art. 74, I da Lei 14.133/21 determina que é inexigível licitar quando há inviabilidade fática de competição (fornecedor exclusivo)."
                                    },
                              "E":  {
-                                       "texto":  "Concurso p�blico de projetos.",
-                                       "exp":  "Incorreto. Concurso destina-se � escolha de trabalho art�stico, t�cnico ou cient�fico mediante pr�mio."
+                                       "texto":  "Concurso público de projetos.",
+                                       "exp":  "Incorreto. Concurso destina-se é escolha de trabalho artístico, técnico ou científico mediante prêmio."
                                    }
                          },
         "correta":  "D",
-        "comentarioGeral":  "Inexigibilidade = Inviabilidade de competi��o (rol exemplificativo, art. 74). Dispensa = Competi��o vi�vel, mas a lei autoriza n�o licitar (rol taxativo, art. 75)."
+        "comentarioGeral":  "Inexigibilidade = Inviabilidade de competição (rol exemplificativo, art. 74). Dispensa = Competição viável, mas a lei autoriza não licitar (rol taxativo, art. 75)."
     },
     {
         "id":  "esp_04",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Almoxarifado e Gest�o de Estoques",
-        "enunciado":  "Para evitar o vencimento de ampolas de antibi�ticos no almoxarifado hospitalar, o m�todo de movimenta��o de materiais em que os lotes mais antigos saem primeiro para as enfermarias �:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Almoxarifado e Gestáo de Estoques",
+        "enunciado":  "Para evitar o vencimento de ampolas de antibióticos no almoxarifado hospitalar, o método de movimentação de materiais em que os lotes mais antigos saem primeiro para as enfermarias é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "PEPS (Primeiro que Entra, Primeiro que Sai / FIFO).",
-                                       "exp":  "Correto! O PEPS assegura que o produto estocado h� mais tempo seja consumido primeiro, evitando perdas por validade."
+                                       "exp":  "Correto! O PEPS assegura que o produto estocado há mais tempo seja consumido primeiro, evitando perdas por validade."
                                    },
                              "B":  {
-                                       "texto":  "UEPS (�ltimo que Entra, Primeiro que Sai / LIFO).",
-                                       "exp":  "Incorreto. O UEPS consome o estoque novo primeiro, o que faria os lotes antigos vencerem na prateleira (proibido na sa�de)."
+                                       "texto":  "UEPS (último que Entra, Primeiro que Sai / LIFO).",
+                                       "exp":  "Incorreto. O UEPS consome o estoque novo primeiro, o que faria os lotes antigos vencerem na prateleira (proibido na saúde)."
                                    },
                              "C":  {
-                                       "texto":  "Custo M�dio Ponderado Fixo.",
-                                       "exp":  "Incorreto. O custo m�dio � m�todo cont�bil de valora��o financeira, n�o uma regra f�sica de rotatividade de estoque perec�vel."
+                                       "texto":  "Custo Médio Ponderado Fixo.",
+                                       "exp":  "Incorreto. O custo médio é método contábil de valoração financeira, não uma regra física de rotatividade de estoque perecível."
                                    },
                              "D":  {
                                        "texto":  "Just-in-Time com estoque zero.",
-                                       "exp":  "Incorreto. Hospitais de urg�ncia n�o podem operar com estoque zero sob pena de desabastecimento em cirurgias de emerg�ncia."
+                                       "exp":  "Incorreto. Hospitais de urgência não podem operar com estoque zero sob pena de desabastecimento em cirurgias de emergência."
                                    },
                              "E":  {
-                                       "texto":  "Giro de Reposi��o Posterior.",
-                                       "exp":  "Incorreto. Express�o sem correla��o conceitual com normas de estocagem de produtos farmac�uticos."
+                                       "texto":  "Giro de Reposição Posterior.",
+                                       "exp":  "Incorreto. Expressão sem correlação conceitual com normas de estocagem de produtos farmacêuticos."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "PEPS (First In, First Out) � mandat�rio para medicamentos e insumos com prazo de validade definido em farm�cias e almoxarifados hospitalares."
+        "comentarioGeral":  "PEPS (First In, First Out) é mandatério para medicamentos e insumos com prazo de validade definido em farmácias e almoxarifados hospitalares."
     },
     {
         "id":  "esp_05",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
+        "materia_nome":  "Conhecimentos Específicos",
         "topico":  "Faturamento Hospitalar do SUS",
-        "enunciado":  "Ao preparar o processamento de contas de um paciente submetido a cirurgia card�aca eletiva internado na FHCGV, o instrumento padr�o emitido pelo Auxiliar Administrativo para autorizar a cobran�a ao SUS � a:",
+        "enunciado":  "Ao preparar o processamento de contas de um paciente submetido a cirurgia cardíaca eletiva internado na FHCGV, o instrumento padrão emitido pelo Auxiliar Administrativo para autorizar a cobrança ao SUS é a:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "BPA (Boletim de Produ��o Ambulatorial).",
-                                       "exp":  "Incorreto. O BPA � utilizado para procedimentos ambulatoriais simples e consultas sem interna��o."
+                                       "texto":  "BPA (Boletim de Produção Ambulatorial).",
+                                       "exp":  "Incorreto. O BPA é utilizado para procedimentos ambulatoriais simples e consultas sem internação."
                                    },
                              "B":  {
-                                       "texto":  "RAAS (Registro das A��es Ambulatoriais de Sa�de).",
-                                       "exp":  "Incorreto. O RAAS atende a atendimentos psicossociais e aten��o domiciliar continuada."
+                                       "texto":  "RAAS (Registro das Ações Ambulatoriais de Saúde).",
+                                       "exp":  "Incorreto. O RAAS atende a atendimentos psicossociais e atenção domiciliar continuada."
                                    },
                              "C":  {
-                                       "texto":  "AIH (Autoriza��o de Interna��o Hospitalar).",
-                                       "exp":  "Correto! A AIH � o documento de faturamento gerador do pagamento de di�rias, cirurgias e exames de pacientes internados no SUS."
+                                       "texto":  "AIH (Autorização de Internação Hospitalar).",
+                                       "exp":  "Correto! A AIH é o documento de faturamento gerador do pagamento de diárias, cirurgias e exames de pacientes internados no SUS."
                                    },
                              "D":  {
-                                       "texto":  "APAC (Autoriza��o de Procedimento de Alta Complexidade).",
-                                       "exp":  "Incorreto. A APAC destina-se a procedimentos ambulatoriais especializados (como quimioterapia ou hemodi�lise sem interna��o)."
+                                       "texto":  "APAC (Autorização de Procedimento de Alta Complexidade).",
+                                       "exp":  "Incorreto. A APAC destina-se a procedimentos ambulatoriais especializados (como quimioterapia ou hemodiálise sem internação)."
                                    },
                              "E":  {
-                                       "texto":  "DAE (Documento de Arrecada��o Estadual).",
-                                       "exp":  "Incorreto. O DAE � guia de recolhimento de tributos e taxas estaduais, n�o instrumento do SUS."
+                                       "texto":  "DAE (Documento de Arrecadação Estadual).",
+                                       "exp":  "Incorreto. O DAE é guia de recolhimento de tributos e taxas estaduais, não instrumento do SUS."
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "AIH = Interna��o hospitalar (leitos, cirurgias, UTI). APAC = Ambulat�rio de alta complexidade (hemodi�lise, quimioterapia sem interna��o). BPA = Atendimentos ambulatoriais gerais."
+        "comentarioGeral":  "AIH = Internação hospitalar (leitos, cirurgias, UTI). APAC = Ambulatério de alta complexidade (hemodiálise, quimioterapia sem internação). BPA = Atendimentos ambulatoriais gerais."
     },
     {
         "id":  "esp_06",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Inform�tica: Seguran�a e Atalhos Windows",
-        "enunciado":  "Ao se afastar temporariamente da recep��o do hospital por motivo de pausa, a fim de resguardar o sigilo dos prontu�rios abertos, o atalho de teclado nativo do Windows para bloquear o computador �:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Informática: Segurança e Atalhos Windows",
+        "enunciado":  "Ao se afastar temporariamente da recepção do hospital por motivo de pausa, a fim de resguardar o sigilo dos prontuários abertos, o atalho de teclado nativo do Windows para bloquear o computador é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Tecla Windows + L",
-                                       "exp":  "Correto! Win + L bloqueia instantaneamente a sess�o de usu�rio (Lock), exigindo senha para reabrir."
+                                       "exp":  "Correto! Win + L bloqueia instantaneamente a sessão de usuário (Lock), exigindo senha para reabrir."
                                    },
                              "B":  {
                                        "texto":  "Tecla Windows + D",
-                                       "exp":  "Incorreto. Win + D minimiza todas as janelas para exibir a �rea de trabalho, mas n�o bloqueia o computador."
+                                       "exp":  "Incorreto. Win + D minimiza todas as janelas para exibir a área de trabalho, mas não bloqueia o computador."
                                    },
                              "C":  {
                                        "texto":  "Alt + F4",
-                                       "exp":  "Incorreto. Alt + F4 fecha o programa em execu��o ou exibe o di�logo para desligar o Windows."
+                                       "exp":  "Incorreto. Alt + F4 fecha o programa em execução ou exibe o diálogo para desligar o Windows."
                                    },
                              "D":  {
                                        "texto":  "Ctrl + Shift + Esc",
@@ -198,336 +198,336 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Win + L (Lock) � a principal medida de seguran�a da informa��o f�sica em balc�es de atendimento e prontu�rios m�dicos."
+        "comentarioGeral":  "Win + L (Lock) é a principal medida de segurança da informação física em balcões de atendimento e prontuários médicos."
     },
     {
         "id":  "esp_07",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Reda��o Oficial: Vocativos e Pronomes",
-        "enunciado":  "Segundo a 3� edi��o do Manual de Reda��o da Presid�ncia da Rep�blica, qual das formas de vocativo a seguir � a �NICA correta para correspond�ncias oficiais dirigidas a autoridades p�blicas?",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Redação Oficial: Vocativos e Pronomes",
+        "enunciado":  "Segundo a 3ª edição do Manual de Redação da Presidência da República, qual das formas de vocativo a seguir é a ÚNICA correta para correspondências oficiais dirigidas a autoridades públicas?",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Dign�ssimo Juiz de Direito,",
-                                       "exp":  "Incorreto. O pronome e qualificativo \u0027Dign�ssimo\u0027 (DD.) foi expressamente banido das comunica��es oficiais."
+                                       "texto":  "Digníssimo Juiz de Direito,",
+                                       "exp":  "Incorreto. O pronome e qualificativo \u0027Digníssimo\u0027 (DD.) foi expressamente banido das comunicações oficiais."
                                    },
                              "B":  {
-                                       "texto":  "Ilustr�ssimo Senhor Coordenador,",
-                                       "exp":  "Incorreto. O tratamento \u0027Ilustr�ssimo\u0027 (Ilmo.) tamb�m foi expressamente abolido pelo manual."
+                                       "texto":  "Ilustríssimo Senhor Coordenador,",
+                                       "exp":  "Incorreto. O tratamento \u0027Ilustríssimo\u0027 (Ilmo.) também foi expressamente abolido pelo manual."
                                    },
                              "C":  {
                                        "texto":  "Senhor Diretor,",
-                                       "exp":  "Correto! O vocativo padr�o oficial adotado � invariavelmente \u0027Senhor + Cargo\u0027 (ou \u0027Senhora + Cargo\u0027), seguido de v�rgula."
+                                       "exp":  "Correto! O vocativo padrão oficial adotado é invariavelmente \u0027Senhor + Cargo\u0027 (ou \u0027Senhora + Cargo\u0027), seguido de vírgula."
                                    },
                              "D":  {
                                        "texto":  "Prezado Amigo,",
-                                       "exp":  "Incorreto. Linguagem excessivamente �ntima e pessoal, vedada pela impessoalidade da reda��o oficial."
+                                       "exp":  "Incorreto. Linguagem excessivamente íntima e pessoal, vedada pela impessoalidade da redação oficial."
                                    },
                              "E":  {
                                        "texto":  "Estimado Colega Servidor,",
-                                       "exp":  "Incorreto. Foge completamente ao padr�o culto e impessoal da administra��o p�blica."
+                                       "exp":  "Incorreto. Foge completamente ao padrão culto e impessoal da administração pública."
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "O Manual aboliu \u0027Dign�ssimo\u0027 e \u0027Ilustr�ssimo\u0027. O padr�o moderno para vocativo � unicamente \u0027Senhor + Cargo,\u0027 ou \u0027Excelent�ssimo Senhor Presidente,\u0027 para chefes de Poder."
+        "comentarioGeral":  "O Manual aboliu \u0027Digníssimo\u0027 e \u0027Ilustríssimo\u0027. O padrão moderno para vocativo é unicamente \u0027Senhor + Cargo,\u0027 ou \u0027Excelentíssimo Senhor Presidente,\u0027 para chefes de Poder."
     },
     {
         "id":  "esp_08",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Arquivologia: M�todos de Arquivamento",
-        "enunciado":  "Para organizar as pastas funcionais dos servidores administrativos da FHCGV pelo crit�rio estrito dos seus nomes completos, utiliza-se o m�todo de arquivamento:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Arquivologia: Métodos de Arquivamento",
+        "enunciado":  "Para organizar as pastas funcionais dos servidores administrativos da FHCGV pelo critério estrito dos seus nomes completos, utiliza-se o método de arquivamento:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Num�rico Cronol�gico.",
-                                       "exp":  "Incorreto. Esse m�todo ordena pela data de cria��o ou protocolo sequencial do documento."
+                                       "texto":  "Numérico Cronológico.",
+                                       "exp":  "Incorreto. Esse método ordena pela data de criação ou protocolo sequencial do documento."
                                    },
                              "B":  {
-                                       "texto":  "Alfab�tico.",
-                                       "exp":  "Correto! O m�todo alfab�tico organiza fichas e pastas por ordem alfab�tica de nomes (com regras de alfabeta��o e sobrenomes)."
+                                       "texto":  "Alfabético.",
+                                       "exp":  "Correto! O método alfabético organiza fichas e pastas por ordem alfabética de nomes (com regras de alfabetação e sobrenomes)."
                                    },
                              "C":  {
-                                       "texto":  "Geogr�fico.",
-                                       "exp":  "Incorreto. O m�todo geogr�fico prioriza o local (Estado, cidade ou pa�s) como primeiro crit�rio de ordena��o."
+                                       "texto":  "Geográfico.",
+                                       "exp":  "Incorreto. O método geográfico prioriza o local (Estado, cidade ou país) como primeiro critério de ordenação."
                                    },
                              "D":  {
-                                       "texto":  "Ideogr�fico Duplex.",
-                                       "exp":  "Incorreto. M�todos ideogr�ficos ordenam por assuntos ou temas divididos em classes e subclasses."
+                                       "texto":  "Ideográfico Duplex.",
+                                       "exp":  "Incorreto. Métodos ideográficos ordenam por assuntos ou temas divididos em classes e subclasses."
                                    },
                              "E":  {
-                                       "texto":  "Num�rico D�gito-Terminal.",
-                                       "exp":  "Incorreto. Utilizado em grandes massas de n�meros onde os �ltimos d�gitos formam o crit�rio prim�rio."
+                                       "texto":  "Numérico Dígito-Terminal.",
+                                       "exp":  "Incorreto. Utilizado em grandes massas de números onde os últimos dígitos formam o critério primário."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O m�todo alfab�tico � direto, simples e o mais empregado para pessoas f�sicas (como prontu�rios por nome ou pastas funcionais de RH)."
+        "comentarioGeral":  "O método alfabético é direto, simples e o mais empregado para pessoas físicas (como prontuários por nome ou pastas funcionais de RH)."
     },
     {
         "id":  "esp_09",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Gest�o de Materiais: Curva ABC",
-        "enunciado":  "Na an�lise de estoque do almoxarifado hospitalar da FHCGV pela Curva ABC, os itens classificados na \u0027Classe A\u0027 caracterizam-se por:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Gestáo de Materiais: Curva ABC",
+        "enunciado":  "Na análise de estoque do almoxarifado hospitalar da FHCGV pela Curva ABC, os itens classificados na \u0027Classe A\u0027 caracterizam-se por:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Representarem a maioria das unidades em estoque (cerca de 80%), por�m com baixo valor financeiro.",
-                                       "exp":  "Incorreto. Essa � a defini��o cl�ssica dos itens da Classe C."
+                                       "texto":  "Representarem a maioria das unidades em estoque (cerca de 80%), porém com baixo valor financeiro.",
+                                       "exp":  "Incorreto. Essa é a definição clássica dos itens da Classe C."
                                    },
                              "B":  {
-                                       "texto":  "Representarem pequeno percentual em quantidade f�sica (cerca de 20%), mas concentrarem o maior valor monet�rio total (cerca de 80%).",
-                                       "exp":  "Correto! A Classe A re�ne os itens de maior valor monet�rio do hospital (pr�teses, cateteres especiais, medicamentos caros), demandando controle r�gido."
+                                       "texto":  "Representarem pequeno percentual em quantidade física (cerca de 20%), mas concentrarem o maior valor monetário total (cerca de 80%).",
+                                       "exp":  "Correto! A Classe A reúne os itens de maior valor monetário do hospital (próteses, cateteres especiais, medicamentos caros), demandando controle rígido."
                                    },
                              "C":  {
-                                       "texto":  "Serem itens obsoletos que devem ser imediatamente descartados sem baixa cont�bil.",
-                                       "exp":  "Incorreto. Itens obsoletos n�o integram a categoriza��o de valor da Curva ABC."
+                                       "texto":  "Serem itens obsoletos que devem ser imediatamente descartados sem baixa contábil.",
+                                       "exp":  "Incorreto. Itens obsoletos não integram a categorização de valor da Curva ABC."
                                    },
                              "D":  {
-                                       "texto":  "Apresentarem giro de estoque nulo com toler�ncia a perdas indiscriminadas.",
-                                       "exp":  "Incorreto. Os itens da classe A exigem acompanhamento di�rio com zero toler�ncia a perdas."
+                                       "texto":  "Apresentarem giro de estoque nulo com tolerância a perdas indiscriminadas.",
+                                       "exp":  "Incorreto. Os itens da classe A exigem acompanhamento diário com zero tolerância a perdas."
                                    },
                              "E":  {
-                                       "texto":  "Serem itens adquiridos exclusivamente por doa��o e sem valor patrimonial registrado.",
-                                       "exp":  "Incorreto. A Curva ABC � baseada estritamente no valor monet�rio de consumo e aquisi��o."
+                                       "texto":  "Serem itens adquiridos exclusivamente por doação e sem valor patrimonial registrado.",
+                                       "exp":  "Incorreto. A Curva ABC é baseada estritamente no valor monetário de consumo e aquisição."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Curva ABC (Princ�pio de Pareto): Classe A = ~20% dos itens, ~80% do valor total; Classe B = intermedi�ria; Classe C = ~50% dos itens, ~5% do valor total."
+        "comentarioGeral":  "Curva ABC (Princípio de Pareto): Classe A = ~20% dos itens, ~80% do valor total; Classe B = intermediária; Classe C = ~50% dos itens, ~5% do valor total."
     },
     {
         "id":  "esp_10",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Nova Lei de Licita��es (Lei 14.133/21)",
-        "enunciado":  "Qual das op��es a seguir relaciona CORRETAMENTE as modalidades licitat�rias expressamente v�lidas sob a vig�ncia exclusiva da Lei Federal n� 14.133/2021?",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Nova Lei de Licitações (Lei 14.133/21)",
+        "enunciado":  "Qual das opções a seguir relaciona CORRETAMENTE as modalidades licitatórias expressamente válidas sob a vigência exclusiva da Lei Federal nº 14.133/2021?",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Preg�o, Concorr�ncia, Concurso, Leil�o e Di�logo Competitivo.",
-                                       "exp":  "Correto! S�o exatamente as 5 modalidades previstas no art. 28 da nova lei."
+                                       "texto":  "Pregão, Concorrência, Concurso, Leilão e Diálogo Competitivo.",
+                                       "exp":  "Correto! São exatamente as 5 modalidades previstas no art. 28 da nova lei."
                                    },
                              "B":  {
-                                       "texto":  "Tomada de Pre�os, Convite, Concorr�ncia e Preg�o.",
-                                       "exp":  "Incorreto. Tomada de Pre�os e Convite foram extintas e n�o existem mais na Lei 14.133/21."
+                                       "texto":  "Tomada de Preços, Convite, Concorrência e Pregão.",
+                                       "exp":  "Incorreto. Tomada de Preços e Convite foram extintas e não existem mais na Lei 14.133/21."
                                    },
                              "C":  {
-                                       "texto":  "Preg�o, Carta-Convite, Concurso e Consulta pr�via.",
-                                       "exp":  "Incorreto. Carta-convite foi extinta e Consulta s� existia em ag�ncias reguladoras na Lei 9.472."
+                                       "texto":  "Pregão, Carta-Convite, Concurso e Consulta prévia.",
+                                       "exp":  "Incorreto. Carta-convite foi extinta e Consulta só existia em agências reguladoras na Lei 9.472."
                                    },
                              "D":  {
-                                       "texto":  "Concorr�ncia, Tomada de Pre�os e Chamamento Social apenas.",
-                                       "exp":  "Incorreto. Tomada de Pre�os foi revogada da legisla��o licitat�ria geral."
+                                       "texto":  "Concorrência, Tomada de Preços e Chamamento Social apenas.",
+                                       "exp":  "Incorreto. Tomada de Preços foi revogada da legislação licitatória geral."
                                    },
                              "E":  {
-                                       "texto":  "Leil�o Judicial, Convite Presencial e Di�logo Simples.",
+                                       "texto":  "Leilão Judicial, Convite Presencial e Diálogo Simples.",
                                        "exp":  "Incorreto. Nomes inexistentes e mistura com modalidades extintas."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Art. 28 da Lei 14.133/21: Preg�o, Concorr�ncia, Concurso, Leil�o e Di�logo Competitivo. N�o existe mais Convite nem Tomada de Pre�os!"
+        "comentarioGeral":  "Art. 28 da Lei 14.133/21: Pregão, Concorrência, Concurso, Leilão e Diálogo Competitivo. Não existe mais Convite nem Tomada de Preços!"
     },
     {
         "id":  "esp_11",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Inform�tica: F�rmulas do Microsoft Excel",
-        "enunciado":  "Na planilha de controle de despesas de materiais da FHCGV, para somar apenas os valores do intervalo B2:B20 cujo setor correspondente na coluna A2:A20 seja igual a \u0027Cardiologia\u0027, a f�rmula correta �:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Informática: Fórmulas do Microsoft Excel",
+        "enunciado":  "Na planilha de controle de despesas de materiais da FHCGV, para somar apenas os valores do intervalo B2:B20 cujo setor correspondente na coluna A2:A20 seja igual a \u0027Cardiologia\u0027, a fórmula correta é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "=SOMA(B2:B20)",
-                                       "exp":  "Incorreto. Esta f�rmula soma todos os valores sem verificar qualquer crit�rio ou condi��o."
+                                       "exp":  "Incorreto. Esta fórmula soma todos os valores sem verificar qualquer critério ou condição."
                                    },
                              "B":  {
                                        "texto":  "=SOMASE(A2:A20; \"Cardiologia\"; B2:B20)",
-                                       "exp":  "Correto! A sintaxe da fun��o SOMASE �: (intervalo_crit�rio; crit�rio; intervalo_soma)."
+                                       "exp":  "Correto! A sintaxe da função SOMASE é: (intervalo_critério; critério; intervalo_soma)."
                                    },
                              "C":  {
                                        "texto":  "=CONT.SE(B2:B20; \"Cardiologia\")",
-                                       "exp":  "Incorreto. CONT.SE conta a quantidade de ocorr�ncias, n�o realiza soma monet�ria de valores."
+                                       "exp":  "Incorreto. CONT.SE conta a quantidade de ocorrências, não realiza soma monetária de valores."
                                    },
                              "D":  {
                                        "texto":  "=SE(A2:A20=\"Cardiologia\"; SOMA(B2:B20))",
-                                       "exp":  "Incorreto. Sintaxe inv�lida no Excel para opera��es com intervalos m�ltiplos sem SOMASE."
+                                       "exp":  "Incorreto. Sintaxe inválida no Excel para operações com intervalos múltiplos sem SOMASE."
                                    },
                              "E":  {
-                                       "texto":  "=M�DIASE(B2:B20; \"Cardiologia\")",
-                                       "exp":  "Incorreto. Calcula a m�dia aritm�tica condicional, n�o a soma total."
+                                       "texto":  "=MÉDIASE(B2:B20; \"Cardiologia\")",
+                                       "exp":  "Incorreto. Calcula a média aritmética condicional, não a soma total."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A fun��o SOMASE(intervalo_avalia��o; crit�rio; intervalo_a_somar) � a f�rmula condicional mais cobrada pela Consulplan em provas administrativas."
+        "comentarioGeral":  "A função SOMASE(intervalo_avaliação; critério; intervalo_a_somar) é a fórmula condicional mais cobrada pela Consulplan em provas administrativas."
     },
     {
         "id":  "esp_12",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Constitucional: Princ�pios da Administra��o P�blica",
-        "enunciado":  "O diretor da funda��o p�blica n�o pode inserir seu nome, foto ou slogan pessoal em cartazes publicit�rios das campanhas preventivas do hospital. Esse limite decorre diretamente do princ�pio constitucional da:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Constitucional: Princípios da Administração Pública",
+        "enunciado":  "O diretor da fundação pública não pode inserir seu nome, foto ou slogan pessoal em cartazes publicitários das campanhas preventivas do hospital. Esse limite decorre diretamente do princípio constitucional da:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Publicidade estrita.",
-                                       "exp":  "Incorreto. A publicidade exige transpar�ncia dos atos, mas � a impessoalidade que veda a promo��o pessoal."
+                                       "exp":  "Incorreto. A publicidade exige transparência dos atos, mas é a impessoalidade que veda a promoção pessoal."
                                    },
                              "B":  {
                                        "texto":  "Impessoalidade.",
-                                       "exp":  "Correto! O art. 37, � 1� da CF veda expressamente nomes, s�mbolos ou imagens que caracterizem promo��o pessoal de autoridades."
+                                       "exp":  "Correto! O art. 37, é 1ª da CF veda expressamente nomes, sómbolos ou imagens que caracterizem promoção pessoal de autoridades."
                                    },
                              "C":  {
                                        "texto":  "Autotutela governamental.",
-                                       "exp":  "Incorreto. Autotutela � o poder da administra��o de anular seus pr�prios atos ilegais ou revogar os inoportunos."
+                                       "exp":  "Incorreto. Autotutela é o poder da administração de anular seus próprios atos ilegais ou revogar os inoportunos."
                                    },
                              "D":  {
-                                       "texto":  "Efici�ncia financeira.",
-                                       "exp":  "Incorreto. Efici�ncia diz respeito ao rendimento, celeridade e economia de recursos p�blicos."
+                                       "texto":  "Eficiência financeira.",
+                                       "exp":  "Incorreto. Eficiência diz respeito ao rendimento, celeridade e economia de recursos públicos."
                                    },
                              "E":  {
-                                       "texto":  "Continuidade dos servi�os.",
-                                       "exp":  "Incorreto. Refere-se � proibi��o de interrup��o injustificada dos servi�os p�blicos essenciais."
+                                       "texto":  "Continuidade dos serviços.",
+                                       "exp":  "Incorreto. Refere-se é proibição de interrupção injustificada dos serviços públicos essenciais."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O princ�pio da Impessoalidade tem duas faces: tratamento igualit�rio aos administrados e veda��o de promo��o pessoal de agentes p�blicos com verba estatal."
+        "comentarioGeral":  "O princípio da Impessoalidade tem duas faces: tratamento igualitário aos administrados e vedação de promoção pessoal de agentes públicos com verba estatal."
     },
     {
         "id":  "esp_13",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
+        "materia_nome":  "Conhecimentos Específicos",
         "topico":  "Arquivologia: Tabela de Temporalidade",
-        "enunciado":  "O instrumento arquiv�stico resultante do processo de avalia��o de documentos que determina os prazos de guarda nas fases corrente e intermedi�ria e a destina��o final (elimina��o ou recolhimento) chama-se:",
+        "enunciado":  "O instrumento arquivístico resultante do processo de avaliação de documentos que determina os prazos de guarda nas fases corrente e intermediária e a destinação final (eliminação ou recolhimento) chama-se:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Regimento Interno de Protocolo.",
-                                       "exp":  "Incorreto. O regimento define atribui��es de cargos e funcionamento da unidade f�sica."
+                                       "exp":  "Incorreto. O regimento define atribuições de cargos e funcionamento da unidade física."
                                    },
                              "B":  {
                                        "texto":  "Tabela de Temporalidade.",
-                                       "exp":  "Correto! A Tabela de Temporalidade Documental (TTD) � o instrumento oficial que define prazos de reten��o e destina��o."
+                                       "exp":  "Correto! A Tabela de Temporalidade Documental (TTD) é o instrumento oficial que define prazos de retenção e destinação."
                                    },
                              "C":  {
-                                       "texto":  "�ndice Onom�stico Central.",
-                                       "exp":  "Incorreto. Trata-se de guia alfab�tico de nomes de pessoas f�sicas ou jur�dicas."
+                                       "texto":  "índice Onomástico Central.",
+                                       "exp":  "Incorreto. Trata-se de guia alfabético de nomes de pessoas físicas ou jurídicas."
                                    },
                              "D":  {
-                                       "texto":  "Livro de Registro de Of�cios.",
-                                       "exp":  "Incorreto. � mero instrumento de controle sequencial num�rico de sa�da de expedientes."
+                                       "texto":  "Livro de Registro de Ofícios.",
+                                       "exp":  "Incorreto. é mero instrumento de controle sequencial numérico de saída de expedientes."
                                    },
                              "E":  {
-                                       "texto":  "Invent�rio Sum�rio de Bens.",
-                                       "exp":  "Incorreto. � documento patrimonial de contabilidade para bens permanentes e m�veis."
+                                       "texto":  "Inventário Sumário de Bens.",
+                                       "exp":  "Incorreto. é documento patrimonial de contabilidade para bens permanentes e móveis."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A Tabela de Temporalidade � aprovada pela autoridade competente e � a �nica base legal para permitir o descarte seguro de pap�is p�blicos."
+        "comentarioGeral":  "A Tabela de Temporalidade é aprovada pela autoridade competente e é a única base legal para permitir o descarte seguro de papéis públicos."
     },
     {
         "id":  "esp_14",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Almoxarifado: Estoque de Seguran�a",
-        "enunciado":  "Em administra��o de materiais hospitalares, a quantidade adicional mantida no almoxarifado para prevenir atrasos imprevistos de fornecedores ou oscila��es de consumo inesperadas � o:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Almoxarifado: Estoque de Segurança",
+        "enunciado":  "Em administração de materiais hospitalares, a quantidade adicional mantida no almoxarifado para prevenir atrasos imprevistos de fornecedores ou oscilações de consumo inesperadas é o:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Estoque M�ximo Absoluto.",
-                                       "exp":  "Incorreto. O estoque m�ximo � o limite f�sico e financeiro suportado pela capacidade do dep�sito."
+                                       "texto":  "Estoque Máximo Absoluto.",
+                                       "exp":  "Incorreto. O estoque mximo é o limite físico e financeiro suportado pela capacidade do depósito."
                                    },
                              "B":  {
-                                       "texto":  "Estoque de Seguran�a (ou Estoque M�nimo).",
-                                       "exp":  "Correto! O estoque de seguran�a visa amortecer incertezas de demanda e atrasos de entrega para n�o faltar material essencial."
+                                       "texto":  "Estoque de Segurança (ou Estoque Mínimo).",
+                                       "exp":  "Correto! O estoque de segurança visa amortecer incertezas de demanda e atrasos de entrega para não faltar material essencial."
                                    },
                              "C":  {
-                                       "texto":  "Ponto de Ruptura Volunt�ria.",
-                                       "exp":  "Incorreto. Ruptura de estoque significa a falta total do item (desabastecimento), situa��o que deve ser evitada."
+                                       "texto":  "Ponto de Ruptura Voluntária.",
+                                       "exp":  "Incorreto. Ruptura de estoque significa a falta total do item (desabastecimento), situação que deve ser evitada."
                                    },
                              "D":  {
-                                       "texto":  "Lote Econ�mico Fracionado.",
-                                       "exp":  "Incorreto. O Lote Econ�mico de Compras (LEC) busca equilibrar custo de pedido e custo de armazenagem."
+                                       "texto":  "Lote Econômico Fracionado.",
+                                       "exp":  "Incorreto. O Lote Econômico de Compras (LEC) busca equilibrar custo de pedido e custo de armazenagem."
                                    },
                              "E":  {
-                                       "texto":  "Invent�rio Rotativo Semestral.",
-                                       "exp":  "Incorreto. Invent�rio � a contagem f�sica peri�dica de confer�ncia de materiais nas estantes."
+                                       "texto":  "Inventário Rotativo Semestral.",
+                                       "exp":  "Incorreto. Inventário é a contagem física periódica de conferência de materiais nas estantes."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O Estoque de Seguran�a impede a ruptura operacional. Se ele for consumido, significa que o sistema de compras atrasou ou a demanda disparou."
+        "comentarioGeral":  "O Estoque de Segurança impede a ruptura operacional. Se ele for consumido, significa que o sistema de compras atrasou ou a demanda disparou."
     },
     {
         "id":  "esp_15",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Nova Lei de Licita��es: Dispensa por Valor",
-        "enunciado":  "Nos termos do art. 75 da Lei n� 14.133/2021, a contrata��o direta que ocorre para compras e outros servi�os comuns em raz�o de pequeno valor monet�rio configura:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Nova Lei de Licitações: Dispensa por Valor",
+        "enunciado":  "Nos termos do art. 75 da Lei nº 14.133/2021, a contratação direta que ocorre para compras e outros serviços comuns em razão de pequeno valor monetário configura:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Inexigibilidade de licita��o.",
-                                       "exp":  "Incorreto. Inexigibilidade exige inviabilidade f�tica de competi��o (fornecedor exclusivo, not�ria especializa��o)."
+                                       "texto":  "Inexigibilidade de licitação.",
+                                       "exp":  "Incorreto. Inexigibilidade exige inviabilidade fática de competição (fornecedor exclusivo, notória especialização)."
                                    },
                              "B":  {
-                                       "texto":  "Dispensa de licita��o.",
-                                       "exp":  "Correto! A contrata��o por baixo valor monet�rio � caso cl�ssico e taxativo de dispensa de licita��o (art. 75, I e II)."
+                                       "texto":  "Dispensa de licitação.",
+                                       "exp":  "Correto! A contratação por baixo valor monetário é caso clássico e taxativo de dispensa de licitação (art. 75, I e II)."
                                    },
                              "C":  {
-                                       "texto":  "Preg�o simplificado verbal.",
-                                       "exp":  "Incorreto. N�o existe modalidade verbal no poder p�blico estadual."
+                                       "texto":  "Pregão simplificado verbal.",
+                                       "exp":  "Incorreto. Não existe modalidade verbal no poder público estadual."
                                    },
                              "D":  {
-                                       "texto":  "Leil�o de emerg�ncia.",
-                                       "exp":  "Incorreto. Leil�o � para venda de bens p�blicos da administra��o, n�o para compras de suprimentos."
+                                       "texto":  "Leilão de emergência.",
+                                       "exp":  "Incorreto. Leilão é para venda de bens públicos da administração, não para compras de suprimentos."
                                    },
                              "E":  {
-                                       "texto":  "Concorr�ncia restrita por credenciamento.",
-                                       "exp":  "Incorreto. Credenciamento � procedimento auxiliar de contrata��o, n�o dispensa por valor."
+                                       "texto":  "Concorrência restrita por credenciamento.",
+                                       "exp":  "Incorreto. Credenciamento é procedimento auxiliar de contratação, não dispensa por valor."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Compras de baixo valor financeiro s�o casos expressos de DISPENSA DE LICITA��O previstos no artigo 75 da Lei n� 14.133/2021."
+        "comentarioGeral":  "Compras de baixo valor financeiro são casos expressos de DISPENSA DE LICITAÇÃO previstos no artigo 75 da Lei nº 14.133/2021."
     },
     {
         "id":  "esp_16",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
+        "materia_nome":  "Conhecimentos Específicos",
         "topico":  "Faturamento Hospitalar: Glosas",
-        "enunciado":  "No setor de processamento de contas hospitalares do SUS, a recusa de pagamento de um procedimento cobrado na AIH em decorr�ncia de erro de preenchimento, diverg�ncia de laudo ou aus�ncia de assinatura m�dica � denominada:",
+        "enunciado":  "No setor de processamento de contas hospitalares do SUS, a recusa de pagamento de um procedimento cobrado na AIH em decorrência de erro de preenchimento, divergência de laudo ou ausência de assinatura médica é denominada:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Empenho liquidado.",
-                                       "exp":  "Incorreto. Empenho � est�gio da despesa p�blica or�ament�ria onde o Estado reserva o dinheiro para pagar."
+                                       "exp":  "Incorreto. Empenho é estágio da despesa pública orçamentária onde o Estado reserva o dinheiro para pagar."
                                    },
                              "B":  {
                                        "texto":  "Glosa hospitalar.",
-                                       "exp":  "Correto! Glosa � o cancelamento, recusa ou rejei��o parcial/total da fatura faturada perante o SUS ou operadoras."
+                                       "exp":  "Correto! Glosa é o cancelamento, recusa ou rejeição parcial/total da fatura faturada perante o SUS ou operadoras."
                                    },
                              "C":  {
                                        "texto":  "Rateio contratual.",
-                                       "exp":  "Incorreto. Rateio � divis�o de custos operacionais entre setores ou conv�nios."
+                                       "exp":  "Incorreto. Rateio é divisão de custos operacionais entre setores ou convênios."
                                    },
                              "D":  {
-                                       "texto":  "Estorno de cau��o.",
-                                       "exp":  "Incorreto. Estorno de cau��o � a devolu��o de garantia contratual depositada por licitantes."
+                                       "texto":  "Estorno de caução.",
+                                       "exp":  "Incorreto. Estorno de caução é a devolução de garantia contratual depositada por licitantes."
                                    },
                              "E":  {
                                        "texto":  "Ajuste de faturamento positivo.",
-                                       "exp":  "Incorreto. A glosa � um desconto/preju�zo decorrente de inconformidade detectada na auditoria."
+                                       "exp":  "Incorreto. A glosa é um desconto/prejuízo decorrente de inconformidade detectada na auditoria."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A glosa representa perda de faturamento para o hospital. Cabe ao Auxiliar Administrativo conferir prontu�rios e guias para zerar o �ndice de glosas."
+        "comentarioGeral":  "A glosa representa perda de faturamento para o hospital. Cabe ao Auxiliar Administrativo conferir prontuários e guias para zerar o índice de glosas."
     },
     {
         "id":  "esp_17",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Inform�tica: Microsoft Word e Formata��o",
-        "enunciado":  "No Microsoft Word (em portugu�s), qual � a combina��o de teclas de atalho padr�o para aplicar o estilo \u0027Negrito\u0027 no texto selecionado de uma ata de reuni�o?",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Informática: Microsoft Word e Formatação",
+        "enunciado":  "No Microsoft Word (em português), qual é a combinação de teclas de atalho padrão para aplicar o estilo \u0027Negrito\u0027 no texto selecionado de uma ata de reunião?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Ctrl + B",
-                                       "exp":  "Incorreto. No Word em portugu�s, Ctrl + B � o atalho para SALVAR o documento (Save em ingl�s usa Ctrl + S)."
+                                       "exp":  "Incorreto. No Word em português, Ctrl + B é o atalho para SALVAR o documento (Save em inglês usa Ctrl + S)."
                                    },
                              "B":  {
                                        "texto":  "Ctrl + N",
-                                       "exp":  "Correto! No Word BR, Ctrl + N aplica o Negrito (no Word em ingl�s seria Ctrl + B - Bold)."
+                                       "exp":  "Correto! No Word BR, Ctrl + N aplica o Negrito (no Word em inglês seria Ctrl + B - Bold)."
                                    },
                              "C":  {
                                        "texto":  "Ctrl + I",
-                                       "exp":  "Incorreto. Ctrl + I aplica o estilo It�lico."
+                                       "exp":  "Incorreto. Ctrl + I aplica o estilo Itálico."
                                    },
                              "D":  {
                                        "texto":  "Ctrl + S",
@@ -535,313 +535,313 @@ const BANCO_QUESTOES = [
                                    },
                              "E":  {
                                        "texto":  "Ctrl + U",
-                                       "exp":  "Incorreto. N�o � atalho padr�o de formata��o no Word BR (em ingl�s seria Underline)."
+                                       "exp":  "Incorreto. Não é atalho padrão de formatação no Word BR (em inglês seria Underline)."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Pegadinha cl�ssica de banca em Word Portugu�s: Ctrl + N = Negrito; Ctrl + S = Sublinhado; Ctrl + B = Salvar!"
+        "comentarioGeral":  "Pegadinha clássica de banca em Word Português: Ctrl + N = Negrito; Ctrl + S = Sublinhado; Ctrl + B = Salvar!"
     },
     {
         "id":  "esp_18",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Rela��es Humanas e Resolu��o de Conflitos",
-        "enunciado":  "Durante um plant�o tenso, um acompanhante irritado exige atendimento imediato na recep��o. A conduta do Auxiliar Administrativo alinhada � excel�ncia em rela��es humanas �:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Relações Humanas e Resolução de Conflitos",
+        "enunciado":  "Durante um plantão tenso, um acompanhante irritado exige atendimento imediato na recepção. A conduta do Auxiliar Administrativo alinhada é excelência em relações humanas é:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Responder de forma r�spida, afirmando que n�o � obrigado a tolerar desrespeito de ningu�m.",
-                                       "exp":  "Incorreto. Rea��o agressiva inflama o conflito e fere os princ�pios �ticos do servi�o p�blico."
+                                       "texto":  "Responder de forma ríspida, afirmando que não é obrigado a tolerar desrespeito de ninguém.",
+                                       "exp":  "Incorreto. Reação agressiva inflama o conflito e fere os princípios éticos do serviço público."
                                    },
                              "B":  {
                                        "texto":  "Praticar escuta ativa com urbanidade, manter o autocontrole e explicar com clareza o protocolo de acolhimento e triagem.",
-                                       "exp":  "Correto! A postura profissional emp�tica acolhe a ang�stia do cidad�o e orienta conforme os fluxos institucionais do hospital."
+                                       "exp":  "Correto! A postura profissional empática acolhe a angústia do cidadão e orienta conforme os fluxos institucionais do hospital."
                                    },
                              "C":  {
-                                       "texto":  "Ignorar o cidad�o e virar as costas fingindo estar ao telefone at� que a pessoa se acalme.",
-                                       "exp":  "Incorreto. O desprezo ao usu�rio agrava o estresse e gera infra��o disciplinar por des�dia."
+                                       "texto":  "Ignorar o cidadão e virar as costas fingindo estar ao telefone até que a pessoa se acalme.",
+                                       "exp":  "Incorreto. O desprezo ao usuário agrava o estresse e gera infração disciplinar por desódia."
                                    },
                              "D":  {
-                                       "texto":  "Chamar imediatamente a escolta policial armada sem antes ouvir a solicita��o do usu�rio.",
-                                       "exp":  "Incorreto. Medida desproporcional para o in�cio de uma demanda leg�tima de informa��o."
+                                       "texto":  "Chamar imediatamente a escolta policial armada sem antes ouvir a solicitação do usuário.",
+                                       "exp":  "Incorreto. Medida desproporcional para o início de uma demanda legítima de informação."
                                    },
                              "E":  {
-                                       "texto":  "Prometer que o m�dico atender� antes de todos, mesmo sem vaga, apenas para se livrar da situa��o.",
-                                       "exp":  "Incorreto. Viola a impessoalidade e cria expectativa falsa que prejudicar� a equipe cl�nica."
+                                       "texto":  "Prometer que o médico atenderá antes de todos, mesmo sem vaga, apenas para se livrar da situação.",
+                                       "exp":  "Incorreto. Viola a impessoalidade e cria expectativa falsa que prejudicaré a equipe clínica."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A urbanidade, comunicabilidade e empatia s�o compet�ncias avaliadas no edital para o atendimento humanizado no SUS."
+        "comentarioGeral":  "A urbanidade, comunicabilidade e empatia são competências avaliadas no edital para o atendimento humanizado no SUS."
     },
     {
         "id":  "esp_19",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Arquivologia: Conserva��o e Preserva��o",
-        "enunciado":  "O conjunto de medidas preventivas destinadas a desacelerar a degrada��o f�sica dos suportes documentais em papel (como controle de umidade, temperatura e higieniza��o) denomina-se:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Arquivologia: Conservação e Preservação",
+        "enunciado":  "O conjunto de medidas preventivas destinadas a desacelerar a degradação física dos suportes documentais em papel (como controle de umidade, temperatura e higienização) denomina-se:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Restaura��o documental compuls�ria.",
-                                       "exp":  "Incorreto. A restaura��o � medida curativa posterior sobre documento j� danificado, n�o preven��o."
+                                       "texto":  "Restauração documental compulsória.",
+                                       "exp":  "Incorreto. A restauração é medida curativa posterior sobre documento já danificado, não prevenção."
                                    },
                              "B":  {
-                                       "texto":  "Conserva��o preventiva.",
-                                       "exp":  "Correto! A conserva��o compreende a manuten��o do ambiente est�vel (luz, umidade, pragas) para evitar a deteriora��o do acervo."
+                                       "texto":  "Conservação preventiva.",
+                                       "exp":  "Correto! A conservação compreende a manutenção do ambiente estável (luz, umidade, pragas) para evitar a deterioração do acervo."
                                    },
                              "C":  {
-                                       "texto":  "Desinfesta��o por calor extremo.",
-                                       "exp":  "Incorreto. Calor excessivo destr�i a celulose do papel e quebra as fibras do documento."
+                                       "texto":  "Desinfestação por calor extremo.",
+                                       "exp":  "Incorreto. Calor excessivo destrói a celulose do papel e quebra as fibras do documento."
                                    },
                              "D":  {
-                                       "texto":  "Expurgo arquiv�stico imediato.",
-                                       "exp":  "Incorreto. Expurgo refere-se � elimina��o f�sica ou descarte de materiais inserv�veis."
+                                       "texto":  "Expurgo arquivístico imediato.",
+                                       "exp":  "Incorreto. Expurgo refere-se é eliminação física ou descarte de materiais inservíveis."
                                    },
                              "E":  {
-                                       "texto":  "Microfilmagem de elimina��o sum�ria.",
-                                       "exp":  "Incorreto. Microfilmagem � processo de reprodu��o por imagem �tica, n�o conserva��o f�sica do suporte."
+                                       "texto":  "Microfilmagem de eliminação sumária.",
+                                       "exp":  "Incorreto. Microfilmagem é processo de reprodução por imagem ética, não conservação física do suporte."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Conserva��o = Preven��o cont�nua no ambiente. Preserva��o = Estrat�gia global. Restaura��o = Reparo ap�s o estrago."
+        "comentarioGeral":  "Conservação = Prevenção contínua no ambiente. Preservação = Estratégia global. Restauração = Reparo após o estrago."
     },
     {
         "id":  "esp_20",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Reda��o Oficial: Pronomes de Tratamento",
-        "enunciado":  "Ao endere�ar um of�cio ao Governador do Estado do Par�, no envelope e no endere�amento formal, o pronome de tratamento e o vocativo corretos s�o, respectivamente:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Redação Oficial: Pronomes de Tratamento",
+        "enunciado":  "Ao endereçar um ofício ao Governador do Estado do Pará, no envelope e no endereçamento formal, o pronome de tratamento e o vocativo corretos são, respectivamente:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "A Sua Excel�ncia o Senhor / Excelent�ssimo Senhor Governador,",
-                                       "exp":  "Correto! Para chefes de Poder Executivo estadual utiliza-se \u0027A Sua Excel�ncia\u0027 no endere�amento e \u0027Excelent�ssimo Senhor + Cargo,\u0027 no vocativo."
+                                       "texto":  "A Sua Excelência o Senhor / Excelentíssimo Senhor Governador,",
+                                       "exp":  "Correto! Para chefes de Poder Executivo estadual utiliza-se \u0027A Sua Excelência\u0027 no endereçamento e \u0027Excelentíssimo Senhor + Cargo,\u0027 no vocativo."
                                    },
                              "B":  {
-                                       "texto":  "A Sua Senhoria / Ilustr�ssimo Governador,",
-                                       "exp":  "Incorreto. Sua Senhoria n�o � aplic�vel a chefes de Poder Executivo e Ilustr�ssimo foi abolido."
+                                       "texto":  "A Sua Senhoria / Ilustríssimo Governador,",
+                                       "exp":  "Incorreto. Sua Senhoria não é aplicável a chefes de Poder Executivo e Ilustríssimo foi abolido."
                                    },
                              "C":  {
-                                       "texto":  "Ao Mui Digno Governador / Vener�vel Senhor,",
-                                       "exp":  "Incorreto. Termos arcaicos e incompat�veis com a sobriedade da administra��o p�blica."
+                                       "texto":  "Ao Mui Digno Governador / Venerável Senhor,",
+                                       "exp":  "Incorreto. Termos arcaicos e incompatéveis com a sobriedade da administração pública."
                                    },
                              "D":  {
-                                       "texto":  "A Sua Magnific�ncia / Magn�fico Governador,",
-                                       "exp":  "Incorreto. Magnific�ncia � exclusivo para Reitores de Universidades."
+                                       "texto":  "A Sua Magnificência / Magnífico Governador,",
+                                       "exp":  "Incorreto. Magnificência é exclusivo para Reitores de Universidades."
                                    },
                              "E":  {
-                                       "texto":  "A Vossa Emin�ncia / Eminent�ssimo Governador,",
-                                       "exp":  "Incorreto. Emin�ncia � privativo de Cardeais da Igreja Cat�lica."
+                                       "texto":  "A Vossa Eminência / Eminentíssimo Governador,",
+                                       "exp":  "Incorreto. Eminência é privativo de Cardeais da Igreja Catélica."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "O vocativo \u0027Excelent�ssimo Senhor\u0027 � reservado aos Chefes dos Poderes Executivo, Legislativo e Judici�rio (Presidente, Governadores, Prefeitos, Presidentes de Casas Legislativas e Tribunais)."
+        "comentarioGeral":  "O vocativo \u0027Excelentíssimo Senhor\u0027 é reservado aos Chefes dos Poderes Executivo, Legislativo e Judiciário (Presidente, Governadores, Prefeitos, Presidentes de Casas Legislativas e Tribunais)."
     },
     {
         "id":  "esp_21",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Almoxarifado: Recebimento e Confer�ncia",
-        "enunciado":  "Ao descarregar um caminh�o de soros fisiol�gicos no almoxarifado, o Auxiliar Administrativo deve realizar a \u0027confer�ncia quantitativa\u0027 e a \u0027confer�ncia qualitativa\u0027. Esta �ltima consiste em:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Almoxarifado: Recebimento e Conferência",
+        "enunciado":  "Ao descarregar um caminháo de soros fisiológicos no almoxarifado, o Auxiliar Administrativo deve realizar a \u0027conferência quantitativa\u0027 e a \u0027conferência qualitativa\u0027. Esta última consiste em:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Contar apenas a quantidade de caixas recebidas e assinar o canhoto sem abrir.",
-                                       "exp":  "Incorreto. Essa � apenas a confer�ncia cega preliminar de volumes."
+                                       "exp":  "Incorreto. Essa é apenas a conferência cega preliminar de volumes."
                                    },
                              "B":  {
-                                       "texto":  "Verificar a integridade das embalagens, prazos de validade, n�mero do lote e conformidade das especifica��es t�cnicas com a nota fiscal e o empenho.",
-                                       "exp":  "Correto! A confer�ncia qualitativa inspeciona o estado f�sico, especifica��es t�cnicas, registros sanit�rios da Anvisa e validade dos produtos."
+                                       "texto":  "Verificar a integridade das embalagens, prazos de validade, número do lote e conformidade das especificações técnicas com a nota fiscal e o empenho.",
+                                       "exp":  "Correto! A conferência qualitativa inspeciona o estado físico, especificações técnicas, registros sanitários da Anvisa e validade dos produtos."
                                    },
                              "C":  {
                                        "texto":  "Pagar o fornecedor com cheque nominal antes de descarregar a carga.",
-                                       "exp":  "Incorreto. O pagamento � ato posterior da tesouraria ap�s a liquida��o formal da despesa."
+                                       "exp":  "Incorreto. O pagamento é ato posterior da tesouraria após a liquidação formal da despesa."
                                    },
                              "D":  {
-                                       "texto":  "Enviar a carga diretamente � enfermaria sem confer�ncia pr�via.",
-                                       "exp":  "Incorreto. Descumpre o controle interno e coloca em risco a seguran�a do paciente."
+                                       "texto":  "Enviar a carga diretamente é enfermaria sem conferência prévia.",
+                                       "exp":  "Incorreto. Descumpre o controle interno e coloca em risco a segurança do paciente."
                                    },
                              "E":  {
                                        "texto":  "Calcular o imposto de renda da transportadora.",
-                                       "exp":  "Incorreto. Fun��o alheia ao setor de recep��o e almoxarifado de insumos."
+                                       "exp":  "Incorreto. Função alheia ao setor de recepção e almoxarifado de insumos."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Recebimento no almoxarifado tem duas etapas essenciais: quantitativa (contagem de unidades) e qualitativa (inspe��o de qualidade, integridade e validade)."
+        "comentarioGeral":  "Recebimento no almoxarifado tem duas etapas essenciais: quantitativa (contagem de unidades) e qualitativa (inspeção de qualidade, integridade e validade)."
     },
     {
         "id":  "esp_22",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Nova Lei de Licita��es: Crit�rios de Julgamento",
-        "enunciado":  "Na modalidade Preg�o, prevista na Lei n� 14.133/2021, o julgamento das propostas poder� utilizar EXCLUSIVAMENTE os seguintes crit�rios:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Nova Lei de Licitações: Critérios de Julgamento",
+        "enunciado":  "Na modalidade Pregão, prevista na Lei nº 14.133/2021, o julgamento das propostas poderá utilizar EXCLUSIVAMENTE os seguintes critérios:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Menor pre�o ou maior desconto.",
-                                       "exp":  "Correto! O preg�o adota obrigatoriamente o crit�rio de menor pre�o ou maior desconto (art. 34 da Lei 14.133/21)."
+                                       "texto":  "Menor preço ou maior desconto.",
+                                       "exp":  "Correto! O pregão adota obrigatoriamente o critério de menor preço ou maior desconto (art. 34 da Lei 14.133/21)."
                                    },
                              "B":  {
-                                       "texto":  "Melhor t�cnica ou conte�do art�stico.",
-                                       "exp":  "Incorreto. Conte�do art�stico � crit�rio da modalidade Concurso."
+                                       "texto":  "Melhor técnica ou conteúdo artístico.",
+                                       "exp":  "Incorreto. Conteúdo artístico é critério da modalidade Concurso."
                                    },
                              "C":  {
-                                       "texto":  "Maior retorno econ�mico ou t�cnica e pre�o combinados.",
-                                       "exp":  "Incorreto. Maior retorno econ�mico aplica-se a contratos de efici�ncia em concorr�ncia."
+                                       "texto":  "Maior retorno econômico ou técnica e preço combinados.",
+                                       "exp":  "Incorreto. Maior retorno econômico aplica-se a contratos de eficiência em concorrência."
                                    },
                              "D":  {
                                        "texto":  "Maior lance fechado presencial.",
-                                       "exp":  "Incorreto. Maior lance � o crit�rio privativo da modalidade Leil�o."
+                                       "exp":  "Incorreto. Maior lance é o critério privativo da modalidade Leilão."
                                    },
                              "E":  {
-                                       "texto":  "Menor custo de deprecia��o temporal.",
-                                       "exp":  "Incorreto. N�o � crit�rio aut�nomo previsto para preg�o."
+                                       "texto":  "Menor custo de depreciação temporal.",
+                                       "exp":  "Incorreto. Não é critério autônomo previsto para pregão."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "No preg�o (bens e servi�os comuns), s� se admite julgamento por MENOR PRE�O ou MAIOR DESCONTO!"
+        "comentarioGeral":  "No pregão (bens e serviços comuns), só se admite julgamento por MENOR PREÇO ou MAIOR DESCONTO!"
     },
     {
         "id":  "esp_23",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Prontu�rio M�dico: Guarda e Sigilo (CFM)",
-        "enunciado":  "De acordo com as resolu��es do Conselho Federal de Medicina (CFM) e a legisla��o brasileira, o prontu�rio m�dico em suporte de papel deve ser mantido em arquivo pelo prazo m�nimo de:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Prontuário Médico: Guarda e Sigilo (CFM)",
+        "enunciado":  "De acordo com as resoluções do Conselho Federal de Medicina (CFM) e a legislação brasileira, o prontuário médico em suporte de papel deve ser mantido em arquivo pelo prazo mínimo de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "5 (cinco) anos ap�s o �ltimo registro.",
-                                       "exp":  "Incorreto. Prazo insuficiente perante as normas deontol�gicas m�dicas."
+                                       "texto":  "5 (cinco) anos após o último registro.",
+                                       "exp":  "Incorreto. Prazo insuficiente perante as normas deontológicas médicas."
                                    },
                              "B":  {
                                        "texto":  "10 (dez) anos a contar da data de nascimento.",
-                                       "exp":  "Incorreto. A contagem corre a partir do �ltimo atendimento/registro."
+                                       "exp":  "Incorreto. A contagem corre a partir do último atendimento/registro."
                                    },
                              "C":  {
-                                       "texto":  "20 (vinte) anos a partir do �ltimo registro do paciente.",
-                                       "exp":  "Correto! O CFM estabelece a guarda obrigat�ria do prontu�rio em papel por no m�nimo 20 anos a partir do �ltimo atendimento."
+                                       "texto":  "20 (vinte) anos a partir do último registro do paciente.",
+                                       "exp":  "Correto! O CFM estabelece a guarda obrigatória do prontuário em papel por no mínimo 20 anos a partir do último atendimento."
                                    },
                              "D":  {
-                                       "texto":  "1 (um) ano, ap�s o qual deve ser incinerado.",
-                                       "exp":  "Incorreto. A elimina��o antes do prazo legal constitui grave il�cito administrativo e �tico."
+                                       "texto":  "1 (um) ano, após o qual deve ser incinerado.",
+                                       "exp":  "Incorreto. A eliminação antes do prazo legal constitui grave ilícito administrativo e ético."
                                    },
                              "E":  {
                                        "texto":  "50 (cinquenta) anos incondicionalmente para qualquer tipo de documento.",
-                                       "exp":  "Incorreto. O prazo padr�o de suporte de papel estabelecido pelo CFM � de 20 anos."
+                                       "exp":  "Incorreto. O prazo padrão de suporte de papel estabelecido pelo CFM é de 20 anos."
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Resolu��o CFM n� 1.821/2007: Prontu�rios em papel devem ser guardados por 20 anos a partir do �ltimo registro. Se forem digitalizados sob certificado ICP-Brasil, o papel pode ser eliminado."
+        "comentarioGeral":  "Resolução CFM nº 1.821/2007: Prontuários em papel devem ser guardados por 20 anos a partir do último registro. Se forem digitalizados sob certificado ICP-Brasil, o papel pode ser eliminado."
     },
     {
         "id":  "esp_24",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Inform�tica: Conceitos de Internet e Nuvem",
-        "enunciado":  "Em rela��o ao armazenamento em nuvem (Cloud Storage) utilizado para backups de relat�rios administrativos na FHCGV, � correto afirmar que:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Informática: Conceitos de Internet e Nuvem",
+        "enunciado":  "Em relação ao armazenamento em nuvem (Cloud Storage) utilizado para backups de relatórios administrativos na FHCGV, é correto afirmar que:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Os arquivos ficam salvos apenas na placa-m�e do computador local onde foram digitados.",
+                                       "texto":  "Os arquivos ficam salvos apenas na placa-mãe do computador local onde foram digitados.",
                                        "exp":  "Incorreto. Isso seria armazenamento estritamente local (HD ou SSD)."
                                    },
                              "B":  {
-                                       "texto":  "Permite acesso aos dados a partir de qualquer dispositivo conectado � internet mediante credenciais autorizadas, garantindo redund�ncia e recupera��o em desastres.",
-                                       "exp":  "Correto! A nuvem oferece disponibilidade remota, seguran�a de replica��o e acessibilidade cont�nua."
+                                       "texto":  "Permite acesso aos dados a partir de qualquer dispositivo conectado é internet mediante credenciais autorizadas, garantindo redundância e recuperação em desastres.",
+                                       "exp":  "Correto! A nuvem oferece disponibilidade remota, segurança de replicação e acessibilidade contínua."
                                    },
                              "C":  {
-                                       "texto":  "O armazenamento em nuvem dispensa qualquer tipo de autentica��o ou login para os usu�rios externos.",
-                                       "exp":  "Incorreto. Exige r�gido controle de autentica��o e permiss�es de acesso por seguran�a."
+                                       "texto":  "O armazenamento em nuvem dispensa qualquer tipo de autenticação ou login para os usuários externos.",
+                                       "exp":  "Incorreto. Exige rígido controle de autenticação e permissóes de acesso por segurança."
                                    },
                              "D":  {
-                                       "texto":  "Funciona exclusivamente sem qualquer conex�o com a internet.",
-                                       "exp":  "Incorreto. A internet � a base obrigat�ria para sincroniza��o de servi�os de cloud."
+                                       "texto":  "Funciona exclusivamente sem qualquer conexão com a internet.",
+                                       "exp":  "Incorreto. A internet é a base obrigatória para sincronização de serviços de cloud."
                                    },
                              "E":  {
-                                       "texto":  "Impede que m�ltiplos servidores editem simultaneamente planilhas compartilhadas.",
-                                       "exp":  "Incorreto. Uma das maiores vantagens da nuvem � justamente a edi��o colaborativa simult�nea."
+                                       "texto":  "Impede que múltiplos servidores editem simultaneamente planilhas compartilhadas.",
+                                       "exp":  "Incorreto. Uma das maiores vantagens da nuvem é justamente a edição colaborativa simultânea."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Armazenamento em nuvem garante disponibilidade, sincroniza��o em tempo real e c�pias de seguran�a (backup offsite) vitais para hospitais."
+        "comentarioGeral":  "Armazenamento em nuvem garante disponibilidade, sincronização em tempo real e cópias de segurança (backup offsite) vitais para hospitais."
     },
     {
         "id":  "esp_25",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Arquivologia: Opera��es de Protocolo",
-        "enunciado":  "Quando um documento oficial chega ao setor de protocolo do hospital, a a��o de colocar nele um n�mero sequencial, data e carimbo identificador para formalizar o in�cio de sua tramita��o chama-se:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Arquivologia: Operações de Protocolo",
+        "enunciado":  "Quando um documento oficial chega ao setor de protocolo do hospital, a ação de colocar nele um número sequencial, data e carimbo identificador para formalizar o início de sua tramitação chama-se:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Expurgo arquiv�stico.",
-                                       "exp":  "Incorreto. Expurgo � a elimina��o ou queima de pap�is prescritos."
+                                       "texto":  "Expurgo arquivístico.",
+                                       "exp":  "Incorreto. Expurgo é a eliminação ou queima de papéis prescritos."
                                    },
                              "B":  {
-                                       "texto":  "Registro e Autua��o.",
-                                       "exp":  "Correto! Registrar e autuar � abrir a ficha do documento, atribuir n�mero �nico e vincul�-lo ao sistema de tramita��o."
+                                       "texto":  "Registro e Autuação.",
+                                       "exp":  "Correto! Registrar e autuar é abrir a ficha do documento, atribuir número único e vinculá-lo ao sistema de tramitação."
                                    },
                              "C":  {
-                                       "texto":  "Restaura��o de suporte.",
-                                       "exp":  "Incorreto. Restaura��o � reparo f�sico de folhas rasgadas ou atacadas por fungos."
+                                       "texto":  "Restauração de suporte.",
+                                       "exp":  "Incorreto. Restauração é reparo físico de folhas rasgadas ou atacadas por fungos."
                                    },
                              "D":  {
-                                       "texto":  "Desclassifica��o sigilosa.",
-                                       "exp":  "Incorreto. � a perda do grau de sigilo (secreto, reservado) ap�s decorrido o prazo legal."
+                                       "texto":  "Desclassificação sigilosa.",
+                                       "exp":  "Incorreto. é a perda do grau de sigilo (secreto, reservado) após decorrido o prazo legal."
                                    },
                              "E":  {
-                                       "texto":  "Microfilmagem de seguran�a.",
-                                       "exp":  "Incorreto. Processo fotogr�fico de reprodu��o documental."
+                                       "texto":  "Microfilmagem de segurança.",
+                                       "exp":  "Incorreto. Processo fotográfico de reprodução documental."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "As atividades do Protocolo s�o: Recebimento, Registro/Autua��o, Classifica��o, Distribui��o, Tramita��o e Expedi��o."
+        "comentarioGeral":  "As atividades do Protocolo são: Recebimento, Registro/Autuação, Classificação, Distribuição, Tramitação e Expedição."
     },
     {
         "id":  "esp_26",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Reda��o Oficial: Partes do Of�cio",
-        "enunciado":  "No padr�o of�cio, o par�grafo introdut�rio que apresenta o objetivo da comunica��o deve primar por qual caracter�stica?",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Redação Oficial: Partes do Ofício",
+        "enunciado":  "No padrão ofício, o parágrafo introdutório que apresenta o objetivo da comunicação deve primar por qual característica?",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Extensa sauda��o pessoal agradecendo favores passados.",
-                                       "exp":  "Incorreto. O manual veda agradecimentos de favores e bajula��es pessoais."
+                                       "texto":  "Extensa saudação pessoal agradecendo favores passados.",
+                                       "exp":  "Incorreto. O manual veda agradecimentos de favores e bajulações pessoais."
                                    },
                              "B":  {
-                                       "texto":  "Objetividade e concis�o, indicando logo o motivo da manifesta��o ou o expediente de refer�ncia.",
-                                       "exp":  "Correto! O primeiro par�grafo do of�cio deve ir direto ao assunto: \u0027Comunico a Vossa Senhoria...\u0027, \u0027Encaminho a Vossa Excel�ncia...\u0027."
+                                       "texto":  "Objetividade e concisão, indicando logo o motivo da manifestação ou o expediente de referência.",
+                                       "exp":  "Correto! O primeiro parágrafo do ofício deve ir direto ao assunto: \u0027Comunico a Vossa Senhoria...\u0027, \u0027Encaminho a Vossa Excelência...\u0027."
                                    },
                              "C":  {
-                                       "texto":  "Uso de cita��es liter�rias e met�foras po�ticas para enriquecer a linguagem.",
-                                       "exp":  "Incorreto. Reda��o oficial n�o admite linguagem po�tica nem figuras de estilo."
+                                       "texto":  "Uso de citações literárias e metáforas poéticas para enriquecer a linguagem.",
+                                       "exp":  "Incorreto. Redação oficial não admite linguagem poética nem figuras de estilo."
                                    },
                              "D":  {
-                                       "texto":  "Relato minucioso da vida profissional do redator da pe�a.",
-                                       "exp":  "Incorreto. Fere o princ�pio b�sico da impessoalidade."
+                                       "texto":  "Relato minucioso da vida profissional do redator da peça.",
+                                       "exp":  "Incorreto. Fere o princípio básico da impessoalidade."
                                    },
                              "E":  {
-                                       "texto":  "Oculta��o do assunto principal at� o �ltimo par�grafo do texto.",
-                                       "exp":  "Incorreto. O assunto deve ser evidente desde a ementa e o primeiro per�odo da mensagem."
+                                       "texto":  "Ocultação do assunto principal até o último parágrafo do texto.",
+                                       "exp":  "Incorreto. O assunto deve ser evidente desde a ementa e o primeiro período da mensagem."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Clareza e concis�o no par�grafo de abertura evitam que o leitor da administra��o perca tempo tentando descobrir o prop�sito do documento."
+        "comentarioGeral":  "Clareza e concisão no parágrafo de abertura evitam que o leitor da administração perca tempo tentando descobrir o propósito do documento."
     },
     {
         "id":  "esp_27",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Almoxarifado: Invent�rio F�sico",
-        "enunciado":  "O levantamento peri�dico e minucioso realizado para comparar a quantidade f�sica de materiais existentes nas prateleiras com as quantidades registradas no sistema informatizado chama-se:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Almoxarifado: Inventário Físico",
+        "enunciado":  "O levantamento periódico e minucioso realizado para comparar a quantidade física de materiais existentes nas prateleiras com as quantidades registradas no sistema informatizado chama-se:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Ponto de pedido autom�tico.",
-                                       "exp":  "Incorreto. Ponto de pedido � o n�vel de estoque que dispara uma nova compra."
+                                       "texto":  "Ponto de pedido automático.",
+                                       "exp":  "Incorreto. Ponto de pedido é o nível de estoque que dispara uma nova compra."
                                    },
                              "B":  {
-                                       "texto":  "Invent�rio f�sico (ou levantamento de estoque).",
-                                       "exp":  "Correto! O invent�rio f�sico apura discrep�ncias, desvios, quebras ou produtos vencidos nas prateleiras."
+                                       "texto":  "Inventário físico (ou levantamento de estoque).",
+                                       "exp":  "Correto! O inventário físico apura discrepâncias, desvios, quebras ou produtos vencidos nas prateleiras."
                                    },
                              "C":  {
-                                       "texto":  "Estoque em tr�nsito.",
-                                       "exp":  "Incorreto. Estoque em tr�nsito � o material j� faturado que est� a caminho no caminh�o do fornecedor."
+                                       "texto":  "Estoque em trânsito.",
+                                       "exp":  "Incorreto. Estoque em trânsito é o material já faturado que está a caminho no caminháo do fornecedor."
                                    },
                              "D":  {
-                                       "texto":  "Margem de seguran�a cont�bil.",
-                                       "exp":  "Incorreto. Termo de finan�as corporativas, n�o opera��o f�sica de dep�sito."
+                                       "texto":  "Margem de segurança contábil.",
+                                       "exp":  "Incorreto. Termo de finanças corporativas, não operação física de depósito."
                                    },
                              "E":  {
                                        "texto":  "Giro de ativo imobilizado.",
@@ -849,1030 +849,1030 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Invent�rios f�sicos podem ser rotativos (feitos por amostragem di�ria/semanal) ou anuais/peri�dicos (gerais de balan�o)."
+        "comentarioGeral":  "Inventários físicos podem ser rotativos (feitos por amostragem diária/semanal) ou anuais/periódicos (gerais de balanço)."
     },
     {
         "id":  "esp_28",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Nova Lei de Licita��es: Inexigibilidade de Not�ria Especializa��o",
-        "enunciado":  "A contrata��o direta sem licita��o de renomado jurista para emitir parecer t�cnico singular em defesa judicial de alta complexidade da FHCGV fundamenta-se em:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Nova Lei de Licitações: Inexigibilidade de Notória Especialização",
+        "enunciado":  "A contratação direta sem licitação de renomado jurista para emitir parecer técnico singular em defesa judicial de alta complexidade da FHCGV fundamenta-se em:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Inexigibilidade de licita��o, por not�ria especializa��o de profissional de natureza singular.",
-                                       "exp":  "Correto! O art. 74, III da Lei 14.133/21 autoriza a inexigibilidade para servi�os t�cnicos especializados de natureza predominantemente intelectual com profissional de not�ria especializa��o."
+                                       "texto":  "Inexigibilidade de licitação, por notória especialização de profissional de natureza singular.",
+                                       "exp":  "Correto! O art. 74, III da Lei 14.133/21 autoriza a inexigibilidade para serviços técnicos especializados de natureza predominantemente intelectual com profissional de notória especialização."
                                    },
                              "B":  {
-                                       "texto":  "Dispensa de licita��o por calamidade financeira.",
-                                       "exp":  "Incorreto. Calamidade tem outros requisitos e n�o se confunde com contrata��o de parecerista not�rio."
+                                       "texto":  "Dispensa de licitação por calamidade financeira.",
+                                       "exp":  "Incorreto. Calamidade tem outros requisitos e não se confunde com contratação de parecerista notório."
                                    },
                              "C":  {
-                                       "texto":  "Preg�o obrigat�rio com menor pre�o por hora trabalhada.",
-                                       "exp":  "Incorreto. O preg�o � vedado para servi�os t�cnicos especializados predominantemente intelectuais (art. 29, par�grafo �nico)."
+                                       "texto":  "Pregão obrigatório com menor preço por hora trabalhada.",
+                                       "exp":  "Incorreto. O pregão é vedado para serviços técnicos especializados predominantemente intelectuais (art. 29, parágrafo único)."
                                    },
                              "D":  {
-                                       "texto":  "Concorr�ncia com sorteio p�blico entre os advogados inscritos.",
-                                       "exp":  "Incorreto. O direito administrativo veda sorteio como crit�rio de sele��o t�cnica."
+                                       "texto":  "Concorrência com sorteio público entre os advogados inscritos.",
+                                       "exp":  "Incorreto. O direito administrativo veda sorteio como critério de seleção técnica."
                                    },
                              "E":  {
-                                       "texto":  "Contrato verbal t�cito de cavalheiros.",
-                                       "exp":  "Incorreto. Contratos verbais s�o nulos de pleno direito no servi�o p�blico, salvo pequenas compras at� limites �nfimos de pronto pagamento."
+                                       "texto":  "Contrato verbal tácito de cavalheiros.",
+                                       "exp":  "Incorreto. Contratos verbais são nulos de pleno direito no serviço público, salvo pequenas compras até limites ínfimos de pronto pagamento."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Servi�o t�cnico especializado + Natureza singular + Profissional ou empresa de not�ria especializa��o = Inexigibilidade (Art. 74, III da Lei 14.133/21)."
+        "comentarioGeral":  "Serviço técnico especializado + Natureza singular + Profissional ou empresa de notória especialização = Inexigibilidade (Art. 74, III da Lei 14.133/21)."
     },
     {
         "id":  "esp_29",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
+        "materia_nome":  "Conhecimentos Específicos",
         "topico":  "Faturamento Hospitalar: APAC",
-        "enunciado":  "Pacientes portadores de insufici�ncia renal cr�nica atendidos na unidade de hemodi�lise do Hospital Gaspar Vianna realizam sess�es semanais em regime ambulatorial cont�nuo. As cobran�as desses procedimentos ao SUS exigem:",
+        "enunciado":  "Pacientes portadores de insuficiência renal crônica atendidos na unidade de hemodiálise do Hospital Gaspar Vianna realizam sessões semanais em regime ambulatorial contínuo. As cobranças desses procedimentos ao SUS exigem:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "AIH de interna��o cir�rgica de urg�ncia.",
-                                       "exp":  "Incorreto. AIH � para pacientes que ocupam leito de interna��o hospitalar."
+                                       "texto":  "AIH de internação cirúrgica de urgência.",
+                                       "exp":  "Incorreto. AIH é para pacientes que ocupam leito de internação hospitalar."
                                    },
                              "B":  {
-                                       "texto":  "APAC (Autoriza��o de Procedimento de Alta Complexidade).",
-                                       "exp":  "Correto! A hemodi�lise ambulatorial � procedimento cr�nico e de alta complexidade faturado via APAC."
+                                       "texto":  "APAC (Autorização de Procedimento de Alta Complexidade).",
+                                       "exp":  "Correto! A hemodiálise ambulatorial é procedimento crônico e de alta complexidade faturado via APAC."
                                    },
                              "C":  {
-                                       "texto":  "Recibo de despesa extraordin�ria em dinheiro.",
-                                       "exp":  "Incorreto. � expressamente vedada qualquer cobran�a pecuni�ria direta do paciente no �mbito do SUS."
+                                       "texto":  "Recibo de despesa extraordinária em dinheiro.",
+                                       "exp":  "Incorreto. É expressamente vedada qualquer cobrança pecuniária direta do paciente no âmbito do SUS."
                                    },
                              "D":  {
-                                       "texto":  "Boleto banc�rio de ressarcimento privado.",
-                                       "exp":  "Incorreto. O atendimento � 100% p�blico e gratuito ao cidad�o financiado pelo fundo de sa�de."
+                                       "texto":  "Boleto bancário de ressarcimento privado.",
+                                       "exp":  "Incorreto. O atendimento é 100% público e gratuito ao cidadão financiado pelo fundo de saúde."
                                    },
                              "E":  {
                                        "texto":  "Ficha de protocolo sem registro no Datasus.",
-                                       "exp":  "Incorreto. Todos os procedimentos do SUS exigem alimenta��o formal nos sistemas oficiais (SIA/SUS)."
+                                       "exp":  "Incorreto. Todos os procedimentos do SUS exigem alimentação formal nos sistemas oficiais (SIA/SUS)."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Tratamentos ambulatoriais de alto custo e alta complexidade (hemodi�lise, quimioterapia, pr�teses ambulat�rias) s�o faturados via APAC no SIA/SUS."
+        "comentarioGeral":  "Tratamentos ambulatoriais de alto custo e alta complexidade (hemodiálise, quimioterapia, próteses ambulatórias) são faturados via APAC no SIA/SUS."
     },
     {
         "id":  "esp_30",
         "disciplina":  "especificos",
-        "materia_nome":  "Conhecimentos Espec�ficos",
-        "topico":  "Inform�tica: Planilhas e Gr�ficos",
-        "enunciado":  "Para demonstrar visualmente em uma apresenta��o da diretoria da FHCGV a evolu��o mensal das despesas de consumo ao longo dos 12 meses do ano anterior, o tipo de gr�fico mais adequado e recomendado no Excel � o:",
+        "materia_nome":  "Conhecimentos Específicos",
+        "topico":  "Informática: Planilhas e Gráficos",
+        "enunciado":  "Para demonstrar visualmente em uma apresentação da diretoria da FHCGV a evolução mensal das despesas de consumo ao longo dos 12 meses do ano anterior, o tipo de gráfico mais adequado e recomendado no Excel é o:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Gr�fico de Linhas (ou Linhas com Marcadores).",
-                                       "exp":  "Correto! O gr�fico de linhas � o modelo ideal para mostrar evolu��o cont�nua de vari�veis ao longo do tempo (s�ries temporais)."
+                                       "texto":  "Gráfico de Linhas (ou Linhas com Marcadores).",
+                                       "exp":  "Correto! O gráfico de linhas é o modelo ideal para mostrar evolução contínua de variáveis ao longo do tempo (séries temporais)."
                                    },
                              "B":  {
-                                       "texto":  "Gr�fico de Pizza 3D com 50 fatias.",
-                                       "exp":  "Incorreto. Gr�fico de pizza � p�ssimo para s�ries temporais e fica ileg�vel com mais de 5 a 7 categorias."
+                                       "texto":  "Gráfico de Pizza 3D com 50 fatias.",
+                                       "exp":  "Incorreto. Gráfico de pizza é péssimo para séries temporais e fica ilegível com mais de 5 a 7 categorias."
                                    },
                              "C":  {
-                                       "texto":  "Gr�fico de Dispers�o sem eixos num�ricos.",
-                                       "exp":  "Incorreto. Serve para correla��o entre vari�veis cient�ficas quantitativas, n�o para cronologia de despesas."
+                                       "texto":  "Gráfico de Dispersão sem eixos numéricos.",
+                                       "exp":  "Incorreto. Serve para correlação entre variáveis científicas quantitativas, não para cronologia de despesas."
                                    },
                              "D":  {
-                                       "texto":  "Gr�fico de Radar polar.",
-                                       "exp":  "Incorreto. Usado para comparar compet�ncias multivariadas (ex: perfis de RH), n�o fluxo temporal financeiro."
+                                       "texto":  "Gráfico de Radar polar.",
+                                       "exp":  "Incorreto. Usado para comparar competências multivariadas (ex: perfis de RH), não fluxo temporal financeiro."
                                    },
                              "E":  {
-                                       "texto":  "Gr�fico de Funil decrescente.",
-                                       "exp":  "Incorreto. Usado para taxas de convers�o de etapas sucessivas (funil de vendas/processo)."
+                                       "texto":  "Gráfico de Funil decrescente.",
+                                       "exp":  "Incorreto. Usado para taxas de conversão de etapas sucessivas (funil de vendas/processo)."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Tempo e evolu��o mensal/anual = Gr�fico de Linha ou Gr�fico de Colunas. Partes de um todo (percentuais) = Gr�fico de Pizza ou Rosca."
+        "comentarioGeral":  "Tempo e evolução mensal/anual = Gráfico de Linha ou Gráfico de Colunas. Partes de um todo (percentuais) = Gráfico de Pizza ou Rosca."
     },
     {
         "id":  "sus_01",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Constitui��o Federal: Artigo 196",
-        "enunciado":  "Nos exatos termos do artigo 196 da Constitui��o Federal de 1988, a sa�de � definida formalmente como:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Constituição Federal: Artigo 196",
+        "enunciado":  "Nos exatos termos do artigo 196 da Constituição Federal de 1988, a saúde é definida formalmente como:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Direito exclusivo dos cidad�os contribuintes da seguridade social.",
-                                       "exp":  "Incorreto. Esse era o modelo excludente pr�-1988 (INAMPS). A CF tornou a sa�de universal."
+                                       "texto":  "Direito exclusivo dos cidadãos contribuintes da seguridade social.",
+                                       "exp":  "Incorreto. Esse era o modelo excludente pré-1988 (INAMPS). A CF tornou a saúde universal."
                                    },
                              "B":  {
-                                       "texto":  "Direito de todos e dever do Estado, garantido mediante pol�ticas sociais e econ�micas.",
-                                       "exp":  "Correto! Texto literal do caput do art. 196 da Constitui��o Federal de 1988."
+                                       "texto":  "Direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas.",
+                                       "exp":  "Correto! Texto literal do caput do art. 196 da Constituição Federal de 1988."
                                    },
                              "C":  {
-                                       "texto":  "Servi�o prioritariamente privado, subsidiado em car�ter excepcional pelo poder p�blico.",
-                                       "exp":  "Incorreto. O Estado tem o dever prec�puo de prestar e garantir as a��es de sa�de p�blica."
+                                       "texto":  "Serviço prioritariamente privado, subsidiado em caráter excepcional pelo poder público.",
+                                       "exp":  "Incorreto. O Estado tem o dever precípuo de prestar e garantir as ações de saúde pública."
                                    },
                              "D":  {
-                                       "texto":  "Benef�cio concedido aos indiv�duos em situa��o de extrema miserabilidade comprovada.",
-                                       "exp":  "Incorreto. N�o se exige prova de car�ncia financeira para ser atendido no SUS."
+                                       "texto":  "Benefício concedido aos indivíduos em situação de extrema miserabilidade comprovada.",
+                                       "exp":  "Incorreto. Não se exige prova de carência financeira para ser atendido no SUS."
                                    },
                              "E":  {
-                                       "texto":  "Dever da fam�lia, cabendo ao Estado agir apenas na aus�ncia de respons�veis civis.",
-                                       "exp":  "Incorreto. A responsabilidade do Estado � prim�ria, solid�ria e cogente."
+                                       "texto":  "Dever da família, cabendo ao Estado agir apenas na ausência de responsóveis civis.",
+                                       "exp":  "Incorreto. A responsabilidade do Estado é primária, solidária e cogente."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Art. 196 da CF/88: \u0027A sa�de � direito de todos e dever do Estado, garantido mediante pol�ticas sociais e econ�micas que visem � redu��o do risco de doen�a e de outros agravos e ao acesso universal e igualit�rio �s a��es e servi�os para sua promo��o, prote��o e recupera��o.\u0027"
+        "comentarioGeral":  "Art. 196 da CF/88: \u0027A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal e igualitário às ações e serviços para sua promoção, proteção e recuperação.\u0027"
     },
     {
         "id":  "sus_02",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Constitui��o Federal: Artigo 198 (Diretrizes)",
-        "enunciado":  "O artigo 198 da Constitui��o Federal estabelece as diretrizes que organizam o Sistema �nico de Sa�de. Assinale a alternativa que traz uma dessas diretrizes constitucionais expressas:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Constituição Federal: Artigo 198 (Diretrizes)",
+        "enunciado":  "O artigo 198 da Constituição Federal estabelece as diretrizes que organizam o Sistema único de Saúde. Assinale a alternativa que traz uma dessas diretrizes constitucionais expressas:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Centraliza��o das decis�es na autoridade federal com comando �nico no Minist�rio da Sa�de.",
-                                       "exp":  "Incorreto. A diretriz � exatamente a Descentraliza��o, com dire��o �nica em cada esfera de governo."
+                                       "texto":  "Centralização das decisóes na autoridade federal com comando único no Ministério da Saúde.",
+                                       "exp":  "Incorreto. A diretriz é exatamente a Descentralização, com direção única em cada esfera de governo."
                                    },
                              "B":  {
-                                       "texto":  "Atendimento integral, com prioridade para as atividades preventivas, sem preju�zo dos servi�os assistenciais.",
-                                       "exp":  "Correto! Diretriz expressa no art. 198, inciso II da Constitui��o Federal."
+                                       "texto":  "Atendimento integral, com prioridade para as atividades preventivas, sem prejuízo dos serviços assistenciais.",
+                                       "exp":  "Correto! Diretriz expressa no art. 198, inciso II da Constituição Federal."
                                    },
                              "C":  {
                                        "texto":  "Prioridade absoluta de investimentos para a rede privada lucrativa em detrimento das unidades estatais.",
-                                       "exp":  "Incorreto. A iniciativa privada s� participa de forma complementar, com prefer�ncia �s filantr�picas."
+                                       "exp":  "Incorreto. A iniciativa privada só participa de forma complementar, com preferência às filantrópicas."
                                    },
                              "D":  {
-                                       "texto":  "Exclus�o dos usu�rios na fiscaliza��o dos recursos da sa�de para evitar politiza��o.",
-                                       "exp":  "Incorreto. A participa��o da comunidade � diretriz expressa no inciso III do art. 198."
+                                       "texto":  "Exclusão dos usuários na fiscalização dos recursos da saúde para evitar politização.",
+                                       "exp":  "Incorreto. A participação da comunidade é diretriz expressa no inciso III do art. 198."
                                    },
                              "E":  {
-                                       "texto":  "Cobran�a de taxas de interna��o para procedimentos de alta complexidade em cardiologia.",
-                                       "exp":  "Incorreto. O SUS � universal e gratuito, sendo inconstitucional qualquer cobran�a ao usu�rio."
+                                       "texto":  "Cobrança de taxas de internação para procedimentos de alta complexidade em cardiologia.",
+                                       "exp":  "Incorreto. O SUS é universal e gratuito, sendo inconstitucional qualquer cobrança ao usuário."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "As 3 diretrizes do art. 198 da CF s�o: 1) Descentraliza��o, com dire��o �nica em cada esfera; 2) Atendimento integral, priorizando a preven��o sem descuidar da assist�ncia; 3) Participa��o da comunidade."
+        "comentarioGeral":  "As 3 diretrizes do art. 198 da CF são: 1) Descentralização, com direção única em cada esfera; 2) Atendimento integral, priorizando a prevenção sem descuidar da assistência; 3) Participação da comunidade."
     },
     {
         "id":  "sus_03",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Constitui��o Federal: Artigo 199 (Iniciativa Privada)",
-        "enunciado":  "Sobre a atua��o de institui��es privadas no Sistema �nico de Sa�de, conforme o art. 199 da CF/88, � expressamente CORRETO afirmar:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Constituição Federal: Artigo 199 (Iniciativa Privada)",
+        "enunciado":  "Sobre a atuação de instituições privadas no Sistema único de Saúde, conforme o art. 199 da CF/88, é expressamente CORRETO afirmar:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "A iniciativa privada atua em regime de exclusividade na aten��o terci�ria de alta complexidade.",
-                                       "exp":  "Incorreto. A rede p�blica � a base; o privado atua em car�ter meramente complementar."
+                                       "texto":  "A iniciativa privada atua em regime de exclusividade na atenção terciária de alta complexidade.",
+                                       "exp":  "Incorreto. A rede pública é a base; o privado atua em caráter meramente complementar."
                                    },
                              "B":  {
-                                       "texto":  "As institui��es privadas poder�o participar de forma complementar do SUS, mediante contrato de direito p�blico ou conv�nio, tendo prefer�ncia as entidades filantr�picas e as sem fins lucrativos.",
-                                       "exp":  "Correto! Texto literal do art. 199, � 1� da Constitui��o Federal de 1988."
+                                       "texto":  "As instituições privadas poderáo participar de forma complementar do SUS, mediante contrato de direito público ou convênio, tendo preferência as entidades filantrópicas e as sem fins lucrativos.",
+                                       "exp":  "Correto! Texto literal do art. 199, é 1ª da Constituição Federal de 1988."
                                    },
                              "C":  {
-                                       "texto":  "� permitido destinar aux�lios e subven��es or�ament�rias p�blicas a empresas privadas com fins lucrativos.",
-                                       "exp":  "Incorreto. O � 2� do art. 199 veda expressamente aux�lios e subven��es a institui��es com fins lucrativos."
+                                       "texto":  "é permitido destinar auxílios e subvenções orçamentárias públicas a empresas privadas com fins lucrativos.",
+                                       "exp":  "Incorreto. O é 2ª do art. 199 veda expressamente auxílios e subvenções a instituições com fins lucrativos."
                                    },
                              "D":  {
-                                       "texto":  "A comercializa��o de sangue e seus derivados � livre para livre com�rcio no mercado interno.",
-                                       "exp":  "Incorreto. O � 4� do art. 199 pro�be terminantemente todo tipo de comercializa��o de �rg�os, tecidos e subst�ncias humanas."
+                                       "texto":  "A comercialização de sangue e seus derivados é livre para livre comércio no mercado interno.",
+                                       "exp":  "Incorreto. O é 4ª do art. 199 proíbe terminantemente todo tipo de comercialização de Órgãos, tecidos e substâncias humanas."
                                    },
                              "E":  {
-                                       "texto":  "O capital estrangeiro tem permiss�o ampla e irrestrita sem depender de autoriza��o em lei espec�fica.",
-                                       "exp":  "Incorreto. A participa��o de capital estrangeiro � vedada, salvo nos casos expressamente previstos em lei."
+                                       "texto":  "O capital estrangeiro tem permissão ampla e irrestrita sem depender de autorização em lei específica.",
+                                       "exp":  "Incorreto. A participação de capital estrangeiro é vedada, salvo nos casos expressamente previstos em lei."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A regra de ouro da iniciativa privada no SUS: car�ter complementar + contrato/conv�nio p�blico + prefer�ncia para entidades filantr�picas e sem fins lucrativos."
+        "comentarioGeral":  "A regra de ouro da iniciativa privada no SUS: caráter complementar + contrato/convênio público + preferência para entidades filantrópicas e sem fins lucrativos."
     },
     {
         "id":  "sus_04",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Lei 8.080/1990: Princ�pios Doutrin�rios",
-        "enunciado":  "O princ�pio que orienta o SUS a tratar desigualmente os desiguais, direcionando mais recursos e aten��o �s pessoas em situa��o de maior vulnerabilidade e desvantagem social, �:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Lei 8.080/1990: Princípios Doutrinários",
+        "enunciado":  "O princípio que orienta o SUS a tratar desigualmente os desiguais, direcionando mais recursos e atenção às pessoas em situação de maior vulnerabilidade e desvantagem social, é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Universalidade plena.",
-                                       "exp":  "Incorreto. Universalidade significa acesso garantido para todas as pessoas sem discrimina��o."
+                                       "exp":  "Incorreto. Universalidade significa acesso garantido para todas as pessoas sem discriminação."
                                    },
                              "B":  {
                                        "texto":  "Equidade.",
-                                       "exp":  "Correto! Equidade � a justi�a social distributiva: reconhecer as diferen�as de cada popula��o e dar mais apoio a quem mais precisa."
+                                       "exp":  "Correto! Equidade é a justiça social distributiva: reconhecer as diferenças de cada população e dar mais apoio a quem mais precisa."
                                    },
                              "C":  {
-                                       "texto":  "Descentraliza��o administrativa.",
-                                       "exp":  "Incorreto. Princ�pio organizativo referente � distribui��o de poder e compet�ncias entre entes federados."
+                                       "texto":  "Descentralização administrativa.",
+                                       "exp":  "Incorreto. Princípio organizativo referente é distribuição de poder e competências entre entes federados."
                                    },
                              "D":  {
-                                       "texto":  "Hierarquiza��o territorial.",
-                                       "exp":  "Incorreto. Organiza��o dos servi�os em n�veis crescentes de complexidade t�cnica."
+                                       "texto":  "Hierarquização territorial.",
+                                       "exp":  "Incorreto. Organização dos serviços em níveis crescentes de complexidade técnica."
                                    },
                              "E":  {
                                        "texto":  "Integralidade seletiva.",
-                                       "exp":  "Incorreto. A integralidade n�o � seletiva, � completa em todos os n�veis de aten��o � sa�de."
+                                       "exp":  "Incorreto. A integralidade não é seletiva, é completa em todos os níveis de atenção é saúde."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Igualdade formal trata todos do mesmo jeito. A Equidade entende as desigualdades e oferece suporte diferenciado aos mais vulner�veis."
+        "comentarioGeral":  "Igualdade formal trata todos do mesmo jeito. A Equidade entende as desigualdades e oferece suporte diferenciado aos mais vulneráveis."
     },
     {
         "id":  "sus_05",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Lei 8.080/1990: Campo de Atua��o do SUS",
-        "enunciado":  "De acordo com o art. 6� da Lei Org�nica da Sa�de (Lei n� 8.080/1990), est�o inclu�das no campo de atua��o do Sistema �nico de Sa�de, EXCETO:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Lei 8.080/1990: Campo de Atuação do SUS",
+        "enunciado":  "De acordo com o art. 6ª da Lei Orgânica da Saúde (Lei nº 8.080/1990), estáo incluídas no campo de atuação do Sistema único de Saúde, EXCETO:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "A execu��o de a��es de vigil�ncia sanit�ria e de vigil�ncia epidemiol�gica.",
-                                       "exp":  "Incorreto. Est�o expressamente inclu�das no art. 6�, inciso I da lei."
+                                       "texto":  "A execução de ações de vigilância sanitária e de vigilância epidemiológica.",
+                                       "exp":  "Incorreto. Estão expressamente incluídas no art. 6ª, inciso I da lei."
                                    },
                              "B":  {
-                                       "texto":  "A execu��o de a��es de sa�de do trabalhador.",
-                                       "exp":  "Incorreto. Faz parte expressa do campo de atua��o do SUS no art. 6�."
+                                       "texto":  "A execução de ações de saúde do trabalhador.",
+                                       "exp":  "Incorreto. Faz parte expressa do campo de atuação do SUS no art. 6ª."
                                    },
                              "C":  {
-                                       "texto":  "A fiscaliza��o e inspe��o de alimentos, �gua e bebidas para consumo humano.",
-                                       "exp":  "Incorreto. Compete ao SUS conforme o art. 6�, inciso VI."
+                                       "texto":  "A fiscalização e inspeção de alimentos, água e bebidas para consumo humano.",
+                                       "exp":  "Incorreto. Compete ao SUS conforme o art. 6ª, inciso VI."
                                    },
                              "D":  {
-                                       "texto":  "A fixa��o discricion�ria dos pre�os de mensalidades de planos de sa�de privados de operadoras multinacionais.",
-                                       "exp":  "Correto! Esta n�o � fun��o direta do SUS no art. 6� da Lei 8.080/90, pertencendo � regula��o setorial de ag�ncia pr�pria (ANS/Lei 9.656)."
+                                       "texto":  "A fixação discricionária dos preços de mensalidades de planos de saúde privados de operadoras multinacionais.",
+                                       "exp":  "Correto! Esta não é função direta do SUS no art. 6ª da Lei 8.080/90, pertencendo é regulação setorial de agência própria (ANS/Lei 9.656)."
                                    },
                              "E":  {
-                                       "texto":  "A formula��o da pol�tica de medicamentos, equipamentos, imunobiol�gicos e outros insumos de interesse para a sa�de.",
-                                       "exp":  "Incorreto. Expressamente inclu�do no art. 6�, inciso V da lei."
+                                       "texto":  "A formulação da política de medicamentos, equipamentos, imunobiológicos e outros insumos de interesse para a saúde.",
+                                       "exp":  "Incorreto. Expressamente incluído no art. 6ª, inciso V da lei."
                                    }
                          },
         "correta":  "D",
-        "comentarioGeral":  "O art. 6� detalha o amplo campo de atua��o do SUS: vigil�ncia sanit�ria, epidemiol�gica, sa�de do trabalhador, assist�ncia terap�utica integral, saneamento e sangue."
+        "comentarioGeral":  "O art. 6ª detalha o amplo campo de atuação do SUS: vigilância sanitária, epidemiológica, saúde do trabalhador, assistência terapêutica integral, saneamento e sangue."
     },
     {
         "id":  "sus_06",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Lei 8.142/1990: Controle Social e Confer�ncias",
-        "enunciado":  "A Confer�ncia de Sa�de, como inst�ncia colegiada de participa��o popular regulada pela Lei Federal n� 8.142/1990, re�ne-se ordinariamente com qual periodicidade?",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Lei 8.142/1990: Controle Social e Conferências",
+        "enunciado":  "A Conferência de Saúde, como instância colegiada de participação popular regulada pela Lei Federal nº 8.142/1990, reúne-se ordinariamente com qual periodicidade?",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Anualmente, sempre no in�cio do exerc�cio or�ament�rio.",
-                                       "exp":  "Incorreto. Reuni�es anuais s�o rotina de outros �rg�os; a confer�ncia � quadrienal."
+                                       "texto":  "Anualmente, sempre no início do exercício orçamentário.",
+                                       "exp":  "Incorreto. Reuniões anuais são rotina de outros Órgãos; a conferência é quadrienal."
                                    },
                              "B":  {
-                                       "texto":  "A cada 2 (dois) anos, convocada exclusivamente pelo Minist�rio P�blico.",
-                                       "exp":  "Incorreto. O prazo legal n�o � bienal e a convoca��o prim�ria cabe ao Poder Executivo."
+                                       "texto":  "A cada 2 (dois) anos, convocada exclusivamente pelo Ministério Público.",
+                                       "exp":  "Incorreto. O prazo legal não é bienal e a convocação primária cabe ao Poder Executivo."
                                    },
                              "C":  {
-                                       "texto":  "A cada 4 (quatro) anos, para avaliar a situa��o de sa�de e propor diretrizes para as pol�ticas p�blicas.",
-                                       "exp":  "Correto! O art. 1�, � 1� da Lei 8.142/90 fixa reuni�es a cada 4 anos com representa��o dos v�rios segmentos sociais."
+                                       "texto":  "A cada 4 (quatro) anos, para avaliar a situação de saúde e propor diretrizes para as políticas públicas.",
+                                       "exp":  "Correto! O art. 1ª, é 1ª da Lei 8.142/90 fixa reuniões a cada 4 anos com representação dos vários segmentos sociais."
                                    },
                              "D":  {
                                        "texto":  "A cada 5 (cinco) anos, coincidindo com o censo do IBGE.",
-                                       "exp":  "Incorreto. O ciclo da Confer�ncia de Sa�de � rigorosamente a cada 4 anos."
+                                       "exp":  "Incorreto. O ciclo da Conferência de Saúde é rigorosamente a cada 4 anos."
                                    },
                              "E":  {
-                                       "texto":  "Sem periodicidade fixa, reunindo-se unicamente em casos de pandemia ou calamidade p�blica.",
-                                       "exp":  "Incorreto. A confer�ncia tem car�ter ordin�rio peri�dico e obrigat�rio."
+                                       "texto":  "Sem periodicidade fixa, reunindo-se unicamente em casos de pandemia ou calamidade pública.",
+                                       "exp":  "Incorreto. A conferência tem caráter ordinário periódico e obrigatório."
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Confer�ncia de Sa�de: a cada 4 anos (avalia e prop�e diretrizes). Conselho de Sa�de: permanente e deliberativo (fiscaliza e controla a execu��o cont�nua, inclusive gastos!)."
+        "comentarioGeral":  "Conferência de Saúde: a cada 4 anos (avalia e propõe diretrizes). Conselho de Saúde: permanente e deliberativo (fiscaliza e controla a execução contínua, inclusive gastos!)."
     },
     {
         "id":  "sus_07",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Lei 8.142/1990: Composi��o Parit�ria dos Conselhos",
-        "enunciado":  "Nos Conselhos de Sa�de em �mbito municipal, estadual e nacional, a representa��o dos Usu�rios do SUS deve corresponder a qual percentual do total de membros titulares?",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Lei 8.142/1990: Composição Paritária dos Conselhos",
+        "enunciado":  "Nos Conselhos de Saúde em âmbito municipal, estadual e nacional, a representação dos Usuários do SUS deve corresponder a qual percentual do total de membros titulares?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "25% (um quarto dos assentos).",
-                                       "exp":  "Incorreto. 25% � a cota destinada aos profissionais de sa�de, e outros 25% aos gestores e prestadores."
+                                       "exp":  "Incorreto. 25% é a cota destinada aos profissionais de saúde, e outros 25% aos gestores e prestadores."
                                    },
                              "B":  {
                                        "texto":  "50% (metade dos membros, assegurando a paridade com todos os demais segmentos somados).",
-                                       "exp":  "Correto! O art. 1�, � 2� da Lei 8.142 e a Resolu��o CNS n� 453/12 exigem paridade: 50% s�o usu�rios!"
+                                       "exp":  "Correto! O art. 1ª, é 2ª da Lei 8.142 e a Resolução CNS nº 453/12 exigem paridade: 50% são usuários!"
                                    },
                              "C":  {
-                                       "texto":  "30% (percentual m�nimo id�ntico �s cotas p�blicas).",
-                                       "exp":  "Incorreto. O percentual legal do controle social no SUS � expressamente 50%."
+                                       "texto":  "30% (percentual mínimo idêntico às cotas públicas).",
+                                       "exp":  "Incorreto. O percentual legal do controle social no SUS é expressamente 50%."
                                    },
                              "D":  {
-                                       "texto":  "100% de cidad�os leigos sem presen�a de gestores de governo.",
-                                       "exp":  "Incorreto. O conselho � tripartite e re�ne usu�rios, trabalhadores e gestores."
+                                       "texto":  "100% de cidadãos leigos sem presença de gestores de governo.",
+                                       "exp":  "Incorreto. O conselho é tripartite e reúne usuários, trabalhadores e gestores."
                                    },
                              "E":  {
-                                       "texto":  "70% de servidores p�blicos e 30% de pacientes.",
-                                       "exp":  "Incorreto. Os usu�rios det�m a maioria parit�ria de exatamente 50% dos assentos."
+                                       "texto":  "70% de servidores públicos e 30% de pacientes.",
+                                       "exp":  "Incorreto. Os usuários detém a maioria paritária de exatamente 50% dos assentos."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Composi��o Parit�ria dos Conselhos de Sa�de: 50% Usu�rios; 25% Trabalhadores da Sa�de; 25% Gestores Governamentais e Prestadores de Servi�o conveniados."
+        "comentarioGeral":  "Composição Paritária dos Conselhos de Saúde: 50% Usuários; 25% Trabalhadores da Saúde; 25% Gestores Governamentais e Prestadores de Serviço conveniados."
     },
     {
         "id":  "sus_08",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "Lei 8.142/1990: Repasse de Recursos",
-        "enunciado":  "Para receberem os recursos regulares e autom�ticos (fundo a fundo) do Minist�rio da Sa�de para o custeio dos servi�os, os Estados e Munic�pios devem contar obrigatoriamente com:",
+        "enunciado":  "Para receberem os recursos regulares e automáticos (fundo a fundo) do Ministério da Saúde para o custeio dos serviços, os Estados e Municípios devem contar obrigatoriamente com:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Conselho de Sa�de, Fundo de Sa�de e Plano de Sa�de aprovado.",
-                                       "exp":  "Correto! O art. 4� da Lei 8.142/90 exige esses instrumentos essenciais para o repasse fundo a fundo."
+                                       "texto":  "Conselho de Saúde, Fundo de Saúde e Plano de Saúde aprovado.",
+                                       "exp":  "Correto! O art. 4ª da Lei 8.142/90 exige esses instrumentos essenciais para o repasse fundo a fundo."
                                    },
                              "B":  {
-                                       "texto":  "Super�vit financeiro prim�rio comprovado no ano anterior.",
-                                       "exp":  "Incorreto. O repasse da sa�de n�o depende de super�vit financeiro fiscal."
+                                       "texto":  "Superávit financeiro primário comprovado no ano anterior.",
+                                       "exp":  "Incorreto. O repasse da saúde não depende de superávit financeiro fiscal."
                                    },
                              "C":  {
-                                       "texto":  "Hospital terci�rio com cirurgia card�aca instalado no pr�prio territ�rio.",
-                                       "exp":  "Incorreto. A grande maioria dos munic�pios conta apenas com aten��o b�sica."
+                                       "texto":  "Hospital terciário com cirurgia cardíaca instalado no próprio território.",
+                                       "exp":  "Incorreto. A grande maioria dos municípios conta apenas com atenção básica."
                                    },
                              "D":  {
-                                       "texto":  "Assinatura de conv�nio exclusivo com bancos particulares internacionais.",
-                                       "exp":  "Incorreto. Os fundos de sa�de operam em contas p�blicas oficiais."
+                                       "texto":  "Assinatura de convênio exclusivo com bancos particulares internacionais.",
+                                       "exp":  "Incorreto. Os fundos de saúde operam em contas públicas oficiais."
                                    },
                              "E":  {
-                                       "texto":  "Terceiriza��o integral da rede b�sica para cooperativas m�dicas privadas.",
-                                       "exp":  "Incorreto. O modelo priorit�rio do SUS � de gest�o e execu��o p�blicas."
+                                       "texto":  "Terceirização integral da rede básica para cooperativas médicas privadas.",
+                                       "exp":  "Incorreto. O modelo prioritário do SUS é de gestáo e execução públicas."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Requisitos do Art. 4� da Lei 8.142: 1) Fundo de Sa�de; 2) Conselho de Sa�de; 3) Plano de Sa�de; 4) Relat�rios de gest�o; 5) Contrapartida de recursos; 6) Comiss�o de plano de carreira."
+        "comentarioGeral":  "Requisitos do Art. 4ª da Lei 8.142: 1) Fundo de Saúde; 2) Conselho de Saúde; 3) Plano de Saúde; 4) Relatérios de gestáo; 5) Contrapartida de recursos; 6) Comissão de plano de carreira."
     },
     {
         "id":  "sus_09",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Decreto 7.508/2011: Regi�o de Sa�de",
-        "enunciado":  "Nos termos do Decreto Federal n� 7.508/2011, para ser institu�da formalmente, a Regi�o de Sa�de deve conter, no m�nimo, a��es e servi�os de:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Decreto 7.508/2011: Região de Saúde",
+        "enunciado":  "Nos termos do Decreto Federal nº 7.508/2011, para ser instituída formalmente, a Região de Saúde deve conter, no mínimo, ações e serviços de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Aten��o prim�ria, urg�ncia e emerg�ncia, aten��o psicossocial, aten��o ambulatorial especializada e hospitalar, e vigil�ncia em sa�de.",
-                                       "exp":  "Correto! O art. 5� do Decreto 7.508/11 lista cumulativamente esses 5 servi�os m�nimos obrigat�rios."
+                                       "texto":  "Atenção primária, urgência e emergência, atenção psicossocial, atenção ambulatorial especializada e hospitalar, e vigilância em saúde.",
+                                       "exp":  "Correto! O art. 5ª do Decreto 7.508/11 lista cumulativamente esses 5 serviços mínimos obrigatórios."
                                    },
                              "B":  {
-                                       "texto":  "Cirurgia rob�tica e transplantes de m�ltiplos �rg�os em cada munic�pio lim�trofe.",
-                                       "exp":  "Incorreto. A alta complexidade especializada distribui-se em centros de refer�ncia regionais."
+                                       "texto":  "Cirurgia robótica e transplantes de múltiplos Órgãos em cada município limítrofe.",
+                                       "exp":  "Incorreto. A alta complexidade especializada distribui-se em centros de referência regionais."
                                    },
                              "C":  {
-                                       "texto":  "Apenas pronto-socorro e farm�cia b�sica de manipula��o.",
-                                       "exp":  "Incorreto. � exigida uma rede completa integrando aten��o prim�ria, psicossocial e hospitalar."
+                                       "texto":  "Apenas pronto-socorro e farmácia básica de manipulação.",
+                                       "exp":  "Incorreto. é exigida uma rede completa integrando atenção primária, psicossocial e hospitalar."
                                    },
                              "D":  {
-                                       "texto":  "Laborat�rios particulares de gen�tica forense e per�cia criminal.",
-                                       "exp":  "Incorreto. N�o comp�em os servi�os m�nimos de sa�de regional p�blica."
+                                       "texto":  "Laboratérios particulares de genética forense e perícia criminal.",
+                                       "exp":  "Incorreto. Não compõem os serviços mínimos de saúde regional pública."
                                    },
                              "E":  {
-                                       "texto":  "Hospital militar de fronteira e leitos de isolamento biol�gico n�vel 4.",
-                                       "exp":  "Incorreto. Requisitos sem correla��o com a organiza��o territorial padr�o do SUS."
+                                       "texto":  "Hospital militar de fronteira e leitos de isolamento biológico nível 4.",
+                                       "exp":  "Incorreto. Requisitos sem correlação com a organização territorial padrão do SUS."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Os 5 servi�os m�nimos de uma Regi�o de Sa�de (Art. 5� Dec. 7.508): I - aten��o prim�ria; II - urg�ncia/emerg�ncia; III - aten��o psicossocial; IV - aten��o ambulatorial especializada e hospitalar; V - vigil�ncia em sa�de."
+        "comentarioGeral":  "Os 5 serviços mínimos de uma Região de Saúde (Art. 5ª Dec. 7.508): I - atenção primária; II - urgência/emergência; III - atenção psicossocial; IV - atenção ambulatorial especializada e hospitalar; V - vigilância em saúde."
     },
     {
         "id":  "sus_10",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "Decreto 7.508/2011: RENAME e Acesso a Medicamentos",
-        "enunciado":  "A Rela��o Nacional de Medicamentos Essenciais (RENAME), institu�da no Decreto n� 7.508/2011, tem por finalidade prec�pua:",
+        "enunciado":  "A Relação Nacional de Medicamentos Essenciais (RENAME), instituída no Decreto nº 7.508/2011, tem por finalidade precípua:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Proibir a prescri��o de rem�dios gen�ricos pelos m�dicos dos hospitais estaduais.",
-                                       "exp":  "Incorreto. O SUS prioriza expressamente os medicamentos gen�ricos por economicidade."
+                                       "texto":  "Proibir a prescrição de remédios genéricos pelos médicos dos hospitais estaduais.",
+                                       "exp":  "Incorreto. O SUS prioriza expressamente os medicamentos genéricos por economicidade."
                                    },
                              "B":  {
-                                       "texto":  "Compreender a sele��o de medicamentos e produtos indicados para atender aos agravos mais prevalentes na popula��o, orientando a dispensa��o p�blica no SUS.",
-                                       "exp":  "Correto! A RENAME padroniza o elenco de f�rmacos garantidos pelo sistema com base na evid�ncia cl�nica e epidemiologia."
+                                       "texto":  "Compreender a seleção de medicamentos e produtos indicados para atender aos agravos mais prevalentes na população, orientando a dispensação pública no SUS.",
+                                       "exp":  "Correto! A RENAME padroniza o elenco de fármacos garantidos pelo sistema com base na evidência clínica e epidemiologia."
                                    },
                              "C":  {
-                                       "texto":  "Determinar os pre�os m�ximos de venda de medicamentos em farm�cias comerciais privadas.",
-                                       "exp":  "Incorreto. A regula��o de pre�os comerciais compete � CMED (C�mara de Medicamentos da Anvisa)."
+                                       "texto":  "Determinar os preços mximos de venda de medicamentos em farmácias comerciais privadas.",
+                                       "exp":  "Incorreto. A regulação de preços comerciais compete é CMED (Câmara de Medicamentos da Anvisa)."
                                    },
                              "D":  {
-                                       "texto":  "Listar apenas os rem�dios importados de uso experimental sem registro na Anvisa.",
-                                       "exp":  "Incorreto. Medicamentos sem registro na Anvisa s�o de regra vedados de incorpora��o ordin�ria no SUS."
+                                       "texto":  "Listar apenas os remédios importados de uso experimental sem registro na Anvisa.",
+                                       "exp":  "Incorreto. Medicamentos sem registro na Anvisa são de regra vedados de incorporação ordinária no SUS."
                                    },
                              "E":  {
-                                       "texto":  "Criar monop�lio de produ��o de vacinas exclusivo para laborat�rios estrangeiros.",
-                                       "exp":  "Incorreto. O SUS estimula o complexo econ�mico-industrial nacional de sa�de (Fiocruz, Butantan)."
+                                       "texto":  "Criar monopélio de produção de vacinas exclusivo para laboratérios estrangeiros.",
+                                       "exp":  "Incorreto. O SUS estimula o complexo econômico-industrial nacional de saúde (Fiocruz, Butantan)."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "RENAME = Medicamentos essenciais. RENASES = A��es e servi�os ofertados pelo SUS. Ambas s�o atualizadas periodicamente pelo Minist�rio da Sa�de."
+        "comentarioGeral":  "RENAME = Medicamentos essenciais. RENASES = Ações e serviços ofertados pelo SUS. Ambas são atualizadas periodicamente pelo Ministério da Saúde."
     },
     {
         "id":  "sus_11",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "Decreto 7.508/2011: COAP",
-        "enunciado":  "O Contrato Organizativo da A��o P�blica da Sa�de (COAP) � definido pelo Decreto n� 7.508/2011 como um instrumento de:",
+        "enunciado":  "O Contrato Organizativo da Ação Pública da Saúde (COAP) é definido pelo Decreto nº 7.508/2011 como um instrumento de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Venda de patrim�nio imobili�rio de hospitais p�blicos para investidores imobili�rios.",
-                                       "exp":  "Incorreto. O COAP trata de pactua��o cooperativa do SUS, n�o de aliena��o de patrim�nio."
+                                       "texto":  "Venda de patrimônio imobiliário de hospitais públicos para investidores imobiliários.",
+                                       "exp":  "Incorreto. O COAP trata de pactuação cooperativa do SUS, não de alienação de patrimônio."
                                    },
                              "B":  {
-                                       "texto":  "Acordo de colabora��o firmado entre entes federativos para organizar e integrar as a��es e servi�os na Regi�o de Sa�de, definindo responsabilidades, indicadores e metas.",
-                                       "exp":  "Correto! Texto conceitual do art. 2�, inciso II e arts. 33 a 41 do Decreto 7.508/11."
+                                       "texto":  "Acordo de colaboração firmado entre entes federativos para organizar e integrar as ações e serviços na Região de Saúde, definindo responsabilidades, indicadores e metas.",
+                                       "exp":  "Correto! Texto conceitual do art. 2ª, inciso II e arts. 33 a 41 do Decreto 7.508/11."
                                    },
                              "C":  {
-                                       "texto":  "Cobran�a extrajudicial de d�vidas ativas de usu�rios inadimplentes com o fundo de sa�de.",
-                                       "exp":  "Incorreto. O SUS n�o cobra mensalidades dos cidad�os."
+                                       "texto":  "Cobrança extrajudicial de dúvidas ativas de usuários inadimplentes com o fundo de saúde.",
+                                       "exp":  "Incorreto. O SUS não cobra mensalidades dos cidadãos."
                                    },
                              "D":  {
-                                       "texto":  "Contrata��o direta sem licita��o de planos de sa�de para os servidores estatut�rios.",
-                                       "exp":  "Incorreto. N�o tem rela��o com planos privados de servidores."
+                                       "texto":  "Contratação direta sem licitação de planos de saúde para os servidores estatutários.",
+                                       "exp":  "Incorreto. Não tem relação com planos privados de servidores."
                                    },
                              "E":  {
-                                       "texto":  "Extin��o sum�ria dos Conselhos Municipais de Sa�de que apresentarem parecer desfavor�vel.",
-                                       "exp":  "Incorreto. Os conselhos participam da fiscaliza��o do cumprimento das metas do COAP."
+                                       "texto":  "Extinção sumária dos Conselhos Municipais de Saúde que apresentarem parecer desfavorável.",
+                                       "exp":  "Incorreto. Os conselhos participam da fiscalização do cumprimento das metas do COAP."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O COAP firma o compromisso solid�rio entre Munic�pios, Estado e Uni�o em uma mesma Regi�o de Sa�de para ningu�m \u0027jogar a culpa no outro\u0027."
+        "comentarioGeral":  "O COAP firma o compromisso solidário entre Municípios, Estado e União em uma mesma Região de Saúde para ninguém \u0027jogar a culpa no outro\u0027."
     },
     {
         "id":  "sus_12",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Pol�tica Nacional de Aten��o B�sica (PNAB)",
-        "enunciado":  "De acordo com a Portaria de Consolida��o n� 2/2017 (Anexo XXII - PNAB), a Aten��o B�sica (ou Aten��o Prim�ria) � caracterizada como:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Política Nacional de Atenção Básica (PNAB)",
+        "enunciado":  "De acordo com a Portaria de Consolidação nº 2/2017 (Anexo XXII - PNAB), a Atenção Básica (ou Atenção Primária) é caracterizada como:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "A porta de entrada preferencial e o centro ordenador das Redes de Aten��o � Sa�de (RAS).",
-                                       "exp":  "Correto! A Aten��o B�sica � a principal porta de entrada e a coordenadora do cuidado do usu�rio na rede."
+                                       "texto":  "A porta de entrada preferencial e o centro ordenador das Redes de Atenção é Saúde (RAS).",
+                                       "exp":  "Correto! A Atenção Básica é a principal porta de entrada e a coordenadora do cuidado do usuário na rede."
                                    },
                              "B":  {
-                                       "texto":  "Um n�vel secund�rio de atendimento ao qual o cidad�o s� tem acesso ap�s passar pela UTI.",
-                                       "exp":  "Incorreto. A aten��o prim�ria � a base do sistema, anterior � m�dia e alta complexidade hospitalar."
+                                       "texto":  "Um nível secundário de atendimento ao qual o cidadão só tem acesso após passar pela UTI.",
+                                       "exp":  "Incorreto. A atenção primária é a base do sistema, anterior é média e alta complexidade hospitalar."
                                    },
                              "C":  {
-                                       "texto":  "Servi�o exclusivo para realiza��o de bi�psias e cirurgias card�acas de t�rax aberto.",
-                                       "exp":  "Incorreto. Esses procedimentos pertencem � alta complexidade terci�ria."
+                                       "texto":  "Serviço exclusivo para realização de biópsias e cirurgias cardíacas de tórax aberto.",
+                                       "exp":  "Incorreto. Esses procedimentos pertencem é alta complexidade terciária."
                                    },
                              "D":  {
-                                       "texto":  "Unidade de interna��o para pacientes terminais sem possibilidade de cura.",
-                                       "exp":  "Incorreto. A aten��o b�sica atua na promo��o, preven��o, diagn�stico precoce e tratamento de agravos comuns."
+                                       "texto":  "Unidade de internação para pacientes terminais sem possibilidade de cura.",
+                                       "exp":  "Incorreto. A atenção básica atua na promoção, prevenção, diagnóstico precoce e tratamento de agravos comuns."
                                    },
                              "E":  {
-                                       "texto":  "Setor administrativo central localizado exclusivamente em Bras�lia.",
-                                       "exp":  "Incorreto. A aten��o b�sica atua descentralizada nos bairros e comunidades de todo o Brasil."
+                                       "texto":  "Setor administrativo central localizado exclusivamente em Brasólia.",
+                                       "exp":  "Incorreto. A atenção básica atua descentralizada nos bairros e comunidades de todo o Brasil."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Aten��o B�sica (UBS/ESF): Porta de entrada preferencial, ordenadora da rede e coordenadora do cuidado do cidad�o no SUS."
+        "comentarioGeral":  "Atenção Básica (UBS/ESF): Porta de entrada preferencial, ordenadora da rede e coordenadora do cuidado do cidadão no SUS."
     },
     {
         "id":  "sus_13",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Estrat�gia Sa�de da Fam�lia (ESF)",
-        "enunciado":  "No modelo da Aten��o B�sica preconizado pelo Minist�rio da Sa�de, a Estrat�gia Sa�de da Fam�lia (ESF) � considerada:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Estratégia Saúde da Família (ESF)",
+        "enunciado":  "No modelo da Atenção Básica preconizado pelo Ministério da Saúde, a Estratégia Saúde da Família (ESF) é considerada:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Uma medida provis�ria voltada unicamente para a distribui��o de leite em p� nas periferias.",
-                                       "exp":  "Incorreto. � a estrat�gia priorit�ria e estruturante para expans�o e consolida��o da aten��o b�sica."
+                                       "texto":  "Uma medida provisória voltada unicamente para a distribuição de leite em pé nas periferias.",
+                                       "exp":  "Incorreto. é a estratégia prioritária e estruturante para expansão e consolidação da atenção básica."
                                    },
                              "B":  {
-                                       "texto":  "A estrat�gia priorit�ria para a expans�o e consolida��o da Aten��o B�sica no Brasil, atuando com equipe multiprofissional sobre um territ�rio adscrito.",
-                                       "exp":  "Correto! A ESF atua com m�dico, enfermeiro, t�cnicos e ACS vinculados a fam�lias e territ�rios definidos."
+                                       "texto":  "A estratégia prioritária para a expansão e consolidação da Atenção Básica no Brasil, atuando com equipe multiprofissional sobre um território adscrito.",
+                                       "exp":  "Correto! A ESF atua com médico, enfermeiro, técnicos e ACS vinculados a famílias e territórios definidos."
                                    },
                              "C":  {
-                                       "texto":  "Um plano de previd�ncia complementar fechada restrito aos profissionais de enfermagem.",
-                                       "exp":  "Incorreto. N�o � plano de previd�ncia, � pol�tica p�blica de aten��o � sa�de."
+                                       "texto":  "Um plano de previdência complementar fechada restrito aos profissionais de enfermagem.",
+                                       "exp":  "Incorreto. Não é plano de previdência, é política pública de atenção é saúde."
                                    },
                              "D":  {
-                                       "texto":  "Um servi�o pago mediante coparticipa��o de consultas particulares domiciliares.",
-                                       "exp":  "Incorreto. O atendimento da equipe de Sa�de da Fam�lia � inteiramente gratuito."
+                                       "texto":  "Um serviço pago mediante coparticipação de consultas particulares domiciliares.",
+                                       "exp":  "Incorreto. O atendimento da equipe de Saúde da Família é inteiramente gratuito."
                                    },
                              "E":  {
-                                       "texto":  "Programa tempor�rio extinto e substitu�do por consultas virtuais n�o presenciais.",
-                                       "exp":  "Incorreto. A ESF � modelo consagrado e permanente de sa�de coletiva no Brasil."
+                                       "texto":  "Programa temporário extinto e substituído por consultas virtuais não presenciais.",
+                                       "exp":  "Incorreto. A ESF é modelo consagrado e permanente de saúde coletiva no Brasil."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A equipe de Sa�de da Fam�lia (eSF) cria v�nculo de longo prazo com a comunidade, conhecendo o hist�rico de sa�de de cada fam�lia do territ�rio."
+        "comentarioGeral":  "A equipe de Saúde da Família (eSF) cria vínculo de longo prazo com a comunidade, conhecendo o histórico de saúde de cada família do território."
     },
     {
         "id":  "sus_14",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Agentes Comunit�rios de Sa�de (PACS/ACS)",
-        "enunciado":  "O Agente Comunit�rio de Sa�de (ACS) desempenha papel estrat�gico na integra��o entre a comunidade e a equipe de sa�de por meio de:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Agentes Comunitários de Saúde (PACS/ACS)",
+        "enunciado":  "O Agente Comunitário de Saúde (ACS) desempenha papel estratégico na integração entre a comunidade e a equipe de saúde por meio de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Realiza��o de cirurgias ambulatoriais e prescri��o de psicotr�picos sob supervis�o farmac�utica.",
-                                       "exp":  "Incorreto. O ACS n�o prescreve medicamentos nem realiza procedimentos invasivos privativos de m�dicos."
+                                       "texto":  "Realização de cirurgias ambulatoriais e prescrição de psicotrópicos sob supervisão farmacêutica.",
+                                       "exp":  "Incorreto. O ACS não prescreve medicamentos nem realiza procedimentos invasivos privativos de médicos."
                                    },
                              "B":  {
-                                       "texto":  "Visitas domiciliares peri�dicas, cadastramento familiar, busca ativa de faltosos a vacinas e identifica��o de riscos no territ�rio.",
-                                       "exp":  "Correto! O ACS � a ponte comunit�ria fundamental, mapeando as condi��es de vida e sa�de dos moradores."
+                                       "texto":  "Visitas domiciliares periódicas, cadastramento familiar, busca ativa de faltosos a vacinas e identificação de riscos no território.",
+                                       "exp":  "Correto! O ACS é a ponte comunitária fundamental, mapeando as condições de vida e saúde dos moradores."
                                    },
                              "C":  {
-                                       "texto":  "Fiscaliza��o tribut�ria de estabelecimentos comerciais do bairro para recolhimento de impostos.",
-                                       "exp":  "Incorreto. Fun��o exclusiva de fiscais de tributos da fazenda p�blica."
+                                       "texto":  "Fiscalização tributária de estabelecimentos comerciais do bairro para recolhimento de impostos.",
+                                       "exp":  "Incorreto. Função exclusiva de fiscais de tributos da fazenda pública."
                                    },
                              "D":  {
-                                       "texto":  "Seguran�a armada das instala��es f�sicas da Unidade B�sica de Sa�de.",
-                                       "exp":  "Incorreto. O agente n�o atua em vigil�ncia patrimonial."
+                                       "texto":  "Segurança armada das instalações físicas da Unidade Básica de Saúde.",
+                                       "exp":  "Incorreto. O agente não atua em vigilância patrimonial."
                                    },
                              "E":  {
-                                       "texto":  "Auditoria cont�bil dos contratos de compras do hospital de cl�nicas.",
-                                       "exp":  "Incorreto. Atribui��o de �rg�os de controle interno e auditores do SUS."
+                                       "texto":  "Auditoria contábil dos contratos de compras do hospital de clínicas.",
+                                       "exp":  "Incorreto. Atribuição de Órgãos de controle interno e auditores do SUS."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O ACS deve residir na pr�pria comunidade em que atua, permitindo conhecimento �ntimo da realidade social e das necessidades da popula��o local."
+        "comentarioGeral":  "O ACS deve residir na própria comunidade em que atua, permitindo conhecimento íntimo da realidade social e das necessidades da população local."
     },
     {
         "id":  "sus_15",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Vigil�ncia em Sa�de: Vigil�ncia Sanit�ria",
-        "enunciado":  "A Lei n� 8.080/1990 (art. 6�, � 1�) define a Vigil�ncia Sanit�ria como o conjunto de a��es capaz de eliminar, diminuir ou prevenir riscos � sa�de e de intervir nos problemas sanit�rios decorrentes do meio ambiente, da produ��o e circula��o de bens e da presta��o de servi�os. S�o objetos t�picos da vigil�ncia sanit�ria:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Vigilância em Saúde: Vigilância Sanitária",
+        "enunciado":  "A Lei nº 8.080/1990 (art. 6ª, é 1ª) define a Vigilância Sanitária como o conjunto de ações capaz de eliminar, diminuir ou prevenir riscos é saúde e de intervir nos problemas sanitários decorrentes do meio ambiente, da produção e circulação de bens e da prestação de serviços. São objetos tópicos da vigilância sanitária:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Controle de qualidade da �gua pot�vel, fiscaliza��o de medicamentos, alimentos comercializados e higiene de cl�nicas hospitalares.",
-                                       "exp":  "Correto! A vigil�ncia sanit�ria inspeciona produtos, insumos, servi�os e ambientes com impacto na sa�de humana."
+                                       "texto":  "Controle de qualidade da água potável, fiscalização de medicamentos, alimentos comercializados e higiene de clínicas hospitalares.",
+                                       "exp":  "Correto! A vigilância sanitária inspeciona produtos, insumos, serviços e ambientes com impacto na saúde humana."
                                    },
                              "B":  {
-                                       "texto":  "Julgamento criminal de homic�dios culposos ocorridos no tr�nsito urbano.",
-                                       "exp":  "Incorreto. Compet�ncia exclusiva do Poder Judici�rio e da Pol�cia Civil."
+                                       "texto":  "Julgamento criminal de homicídios culposos ocorridos no trânsito urbano.",
+                                       "exp":  "Incorreto. Competência exclusiva do Poder Judiciário e da Polícia Civil."
                                    },
                              "C":  {
-                                       "texto":  "Investiga��o militar de espionagem cibern�tica internacional.",
-                                       "exp":  "Incorreto. Compet�ncia de intelig�ncia de estado (ABIN/For�as Armadas)."
+                                       "texto":  "Investigação militar de espionagem cibernética internacional.",
+                                       "exp":  "Incorreto. Competência de inteligência de estado (ABIN/Forças Armadas)."
                                    },
                              "D":  {
-                                       "texto":  "Fixa��o das taxas de juros do Banco Central do Brasil.",
-                                       "exp":  "Incorreto. Atribui��o do Comit� de Pol�tica Monet�ria (COPOM)."
+                                       "texto":  "Fixação das taxas de juros do Banco Central do Brasil.",
+                                       "exp":  "Incorreto. Atribuição do Comité de Política Monetária (COPOM)."
                                    },
                              "E":  {
-                                       "texto":  "Controle de frequ�ncia de alunos em escolas prim�rias do munic�pio.",
-                                       "exp":  "Incorreto. Compet�ncia da �rea de educa��o escolar."
+                                       "texto":  "Controle de frequência de alunos em escolas primárias do município.",
+                                       "exp":  "Incorreto. Competência da área de educação escolar."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Vigil�ncia Sanit�ria (VISA): atua sobre produtos (alimentos, cosm�ticos, medicamentos), servi�os (hospitais, consult�rios, sal�es) e ambientes (�gua, res�duos)."
+        "comentarioGeral":  "Vigilância Sanitária (VISA): atua sobre produtos (alimentos, cosméticos, medicamentos), serviços (hospitais, consultórios, salões) e ambientes (água, resóduos)."
     },
     {
         "id":  "sus_16",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Vigil�ncia Epidemiol�gica",
-        "enunciado":  "A Vigil�ncia Epidemiol�gica � definida na Lei Org�nica da Sa�de como um conjunto de a��es que proporciona o conhecimento, a detec��o ou preven��o de qualquer mudan�a nos fatores determinantes e condicionantes de sa�de individual ou coletiva. Sua principal finalidade �:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Vigilância Epidemiológica",
+        "enunciado":  "A Vigilância Epidemiológica é definida na Lei Orgânica da Saúde como um conjunto de ações que proporciona o conhecimento, a detecção ou prevenção de qualquer mudança nos fatores determinantes e condicionantes de saúde individual ou coletiva. Sua principal finalidade é:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Recomendar e adotar as medidas de preven��o e controle das doen�as ou agravos transmiss�veis e cr�nicos.",
-                                       "exp":  "Correto! Texto literal do art. 6�, � 2� da Lei 8.080/90. Monitora surtos, epidemias, casos de dengue, tuberculose, etc."
+                                       "texto":  "Recomendar e adotar as medidas de prevenção e controle das doenças ou agravos transmissóveis e crônicos.",
+                                       "exp":  "Correto! Texto literal do art. 6ª, é 2ª da Lei 8.080/90. Monitora surtos, epidemias, casos de dengue, tuberculose, etc."
                                    },
                              "B":  {
-                                       "texto":  "Cobrar multas de tr�nsito dos motoristas que trafegam em faixas exclusivas.",
-                                       "exp":  "Incorreto. Fun��o de �rg�os de tr�nsito como Detran/Semob."
+                                       "texto":  "Cobrar multas de trânsito dos motoristas que trafegam em faixas exclusivas.",
+                                       "exp":  "Incorreto. Função de Órgãos de trânsito como Detran/Semob."
                                    },
                              "C":  {
-                                       "texto":  "Produzir laudos de per�cia cont�bil para fal�ncia de ind�strias farmac�uticas.",
-                                       "exp":  "Incorreto. Compet�ncia de peritos da justi�a do trabalho ou fal�ncias."
+                                       "texto":  "Produzir laudos de perícia contábil para falência de indústrias farmacêuticas.",
+                                       "exp":  "Incorreto. Competência de peritos da justiça do trabalho ou falências."
                                    },
                              "D":  {
-                                       "texto":  "Vender dados cadastrais de pacientes para campanhas de marketing publicit�rio.",
-                                       "exp":  "Incorreto. Conduta il�cita vedada pela LGPD e pelos princ�pios do SUS."
+                                       "texto":  "Vender dados cadastrais de pacientes para campanhas de marketing publicitário.",
+                                       "exp":  "Incorreto. Conduta ilícita vedada pela LGPD e pelos princípios do SUS."
                                    },
                              "E":  {
-                                       "texto":  "Exigir pagamento antecipado de vacinas obrigat�rias em postos de sa�de.",
-                                       "exp":  "Incorreto. As vacinas do Programa Nacional de Imuniza��es (PNI) s�o 100% gratuitas."
+                                       "texto":  "Exigir pagamento antecipado de vacinas obrigatórias em postos de saúde.",
+                                       "exp":  "Incorreto. As vacinas do Programa Nacional de Imunizações (PNI) são 100% gratuitas."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "A vigil�ncia epidemiol�gica analisa dados estat�sticos e notifica��es compuls�rias para agir rapidamente no bloqueio de epidemias e surtos."
+        "comentarioGeral":  "A vigilância epidemiológica analisa dados estatésticos e notificações compulsórias para agir rapidamente no bloqueio de epidemias e surtos."
     },
     {
         "id":  "sus_17",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Compet�ncias da Dire��o Estadual do SUS",
-        "enunciado":  "Nos termos do art. 17 da Lei n� 8.080/1990, compete � dire��o estadual do Sistema �nico de Sa�de (SESPA no Estado do Par�):",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Competências da Direção Estadual do SUS",
+        "enunciado":  "Nos termos do art. 17 da Lei nº 8.080/1990, compete é direção estadual do Sistema único de Saúde (SESPA no Estado do Pará):",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Promover a descentraliza��o para os Munic�pios dos servi�os e das a��es de sa�de, bem como coordenar e executar em car�ter suplementar as a��es de sa�de.",
-                                       "exp":  "Correto! O Estado apoia os munic�pios t�cnica e financeiramente e executa servi�os de refer�ncia regional/alta complexidade (como o Hospital Gaspar Vianna)."
+                                       "texto":  "Promover a descentralização para os Municípios dos serviços e das ações de saúde, bem como coordenar e executar em caráter suplementar as ações de saúde.",
+                                       "exp":  "Correto! O Estado apoia os municípios técnica e financeiramente e executa serviços de referência regional/alta complexidade (como o Hospital Gaspar Vianna)."
                                    },
                              "B":  {
-                                       "texto":  "Executar com exclusividade toda a vacina��o de rotina sem participa��o dos munic�pios.",
-                                       "exp":  "Incorreto. A execu��o direta da aten��o b�sica � fun��o primordial dos Munic�pios (art. 18)."
+                                       "texto":  "Executar com exclusividade toda a vacinação de rotina sem participação dos municípios.",
+                                       "exp":  "Incorreto. A execução direta da atenção básica é função primordial dos Municípios (art. 18)."
                                    },
                              "C":  {
-                                       "texto":  "Definir as fronteiras geopol�ticas internacionais da Amaz�nia Legal.",
-                                       "exp":  "Incorreto. Compet�ncia do Governo Federal e do Minist�rio das Rela��es Exteriores."
+                                       "texto":  "Definir as fronteiras geopolíticas internacionais da Amazônia Legal.",
+                                       "exp":  "Incorreto. Competência do Governo Federal e do Ministério das Relações Exteriores."
                                    },
                              "D":  {
-                                       "texto":  "Nomear os secret�rios municipais de sa�de de todas as prefeituras paraenses.",
-                                       "exp":  "Incorreto. O secret�rio municipal � de livre nomea��o pelo Prefeito de cada cidade."
+                                       "texto":  "Nomear os secretários municipais de saúde de todas as prefeituras paraenses.",
+                                       "exp":  "Incorreto. O secretário municipal é de livre nomeação pelo Prefeito de cada cidade."
                                    },
                              "E":  {
                                        "texto":  "Revogar leis federais aprovadas pelo Congresso Nacional.",
-                                       "exp":  "Incorreto. O Estado n�o tem compet�ncia legislativa para revogar lei federal da Uni�o."
+                                       "exp":  "Incorreto. O Estado não tem competência legislativa para revogar lei federal da União."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Compet�ncia do Estado no SUS: Coordenar a rede estadual, apoiar tecnicamente os munic�pios e gerenciar servi�os de refer�ncia regional de alta complexidade."
+        "comentarioGeral":  "Competência do Estado no SUS: Coordenar a rede estadual, apoiar tecnicamente os municípios e gerenciar serviços de referência regional de alta complexidade."
     },
     {
         "id":  "sus_18",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Compet�ncias da Dire��o Municipal do SUS",
-        "enunciado":  "Conforme preceitua o artigo 18 da Lei Federal n� 8.080/1990, a esfera priorit�ria para a execu��o direta da maioria dos servi�os p�blicos de sa�de e aten��o prim�ria �:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Competências da Direção Municipal do SUS",
+        "enunciado":  "Conforme preceitua o artigo 18 da Lei Federal nº 8.080/1990, a esfera prioritária para a execução direta da maioria dos serviços públicos de saúde e atenção primária é:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "O Munic�pio (Dire��o Municipal do SUS).",
-                                       "exp":  "Correto! O munic�pio � o executor prim�rio das a��es de sa�de, por estar mais pr�ximo do cotidiano do cidad�o."
+                                       "texto":  "O Município (Direção Municipal do SUS).",
+                                       "exp":  "Correto! O município é o executor primário das ações de saúde, por estar mais próximo do cotidiano do cidadão."
                                    },
                              "B":  {
-                                       "texto":  "A Uni�o, centralizando os m�dicos em hospitais federais em Bras�lia.",
-                                       "exp":  "Incorreto. A Uni�o formula diretrizes e financia, mas a execu��o direta � descentralizada."
+                                       "texto":  "A União, centralizando os médicos em hospitais federais em Brasólia.",
+                                       "exp":  "Incorreto. A União formula diretrizes e financia, mas a execução direta é descentralizada."
                                    },
                              "C":  {
-                                       "texto":  "A Organiza��o Mundial da Sa�de diretamente da Su��a.",
-                                       "exp":  "Incorreto. A OMS emite recomenda��es internacionais t�cnicas, n�o executa servi�os no Brasil."
+                                       "texto":  "A Organização Mundial da Saúde diretamente da Suíça.",
+                                       "exp":  "Incorreto. A OMS emite recomendações internacionais técnicas, não executa serviços no Brasil."
                                    },
                              "D":  {
-                                       "texto":  "Os cons�rcios de seguros privados norte-americanos.",
-                                       "exp":  "Incorreto. O SUS � p�blico e estatal."
+                                       "texto":  "Os consórcios de seguros privados norte-americanos.",
+                                       "exp":  "Incorreto. O SUS é público e estatal."
                                    },
                              "E":  {
-                                       "texto":  "Apenas as For�as Armadas em miss�es de fronteira.",
-                                       "exp":  "Incorreto. As For�as Armadas prestam apoio pontual em locais remotos, mas o gestor � o munic�pio."
+                                       "texto":  "Apenas as Forças Armadas em missóes de fronteira.",
+                                       "exp":  "Incorreto. As Forças Armadas prestam apoio pontual em locais remotos, mas o gestor é o município."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Diretriz da municipaliza��o: O munic�pio � o principal prestador dos servi�os b�sicos de sa�de, cabendo ao Estado o suporte e a alta complexidade."
+        "comentarioGeral":  "Diretriz da municipalização: O município é o principal prestador dos serviços básicos de saúde, cabendo ao Estado o suporte e a alta complexidade."
     },
     {
         "id":  "sus_19",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Determinantes Sociais da Sa�de (Lei 8.080)",
-        "enunciado":  "O art. 3� da Lei n� 8.080/1990 expressa que a sa�de tem como fatores determinantes e condicionantes, entre outros:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Determinantes Sociais da Saúde (Lei 8.080)",
+        "enunciado":  "O art. 3ª da Lei nº 8.080/1990 expressa que a saúde tem como fatores determinantes e condicionantes, entre outros:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "A alimenta��o, a moradia, o saneamento b�sico, o meio ambiente, o trabalho, a renda, a educa��o, a atividade f�sica, o transporte e o lazer.",
-                                       "exp":  "Correto! O conceito ampliado de sa�de compreende as condi��es integrais de dignidade da vida humana."
+                                       "texto":  "A alimentação, a moradia, o saneamento básico, o meio ambiente, o trabalho, a renda, a educação, a atividade física, o transporte e o lazer.",
+                                       "exp":  "Correto! O conceito ampliado de saúde compreende as condições integrais de dignidade da vida humana."
                                    },
                              "B":  {
-                                       "texto":  "Apenas o perfil gen�tico heredit�rio, sendo irrelevantes as condi��es de saneamento e esgoto.",
-                                       "exp":  "Incorreto. O meio ambiente e o saneamento s�o determinantes diretos de endemias e infec��es."
+                                       "texto":  "Apenas o perfil genético hereditário, sendo irrelevantes as condições de saneamento e esgoto.",
+                                       "exp":  "Incorreto. O meio ambiente e o saneamento são determinantes diretos de endemias e infecções."
                                    },
                              "C":  {
-                                       "texto":  "Exclusivamente a quantidade de hospitais particulares constru�dos no centro da capital.",
-                                       "exp":  "Incorreto. A oferta hospitalar curativa � apenas um dos fatores de assist�ncia m�dica."
+                                       "texto":  "Exclusivamente a quantidade de hospitais particulares construídos no centro da capital.",
+                                       "exp":  "Incorreto. A oferta hospitalar curativa é apenas um dos fatores de assistência médica."
                                    },
                              "D":  {
-                                       "texto":  "A ades�o obrigat�ria a planos de previd�ncia privada fechada de bancos estatais.",
-                                       "exp":  "Incorreto. Fator financeiro previdenci�rio sem rela��o com o conceito da Lei 8.080."
+                                       "texto":  "A adesão obrigatória a planos de previdência privada fechada de bancos estatais.",
+                                       "exp":  "Incorreto. Fator financeiro previdenciário sem relação com o conceito da Lei 8.080."
                                    },
                              "E":  {
-                                       "texto":  "A compra particular de antibi�ticos sem receita m�dica nas farm�cias de manipula��o.",
-                                       "exp":  "Incorreto. O uso indiscriminado de antibi�ticos gera resist�ncia e agrava os riscos em sa�de."
+                                       "texto":  "A compra particular de antibióticos sem receita médica nas farmácias de manipulação.",
+                                       "exp":  "Incorreto. O uso indiscriminado de antibióticos gera resistência e agrava os riscos em saúde."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Sa�de n�o � apenas \u0027aus�ncia de doen�a\u0027! Sa�de resulta de saneamento, �gua tratada, renda, moradia digna, alimenta��o e educa��o de qualidade."
+        "comentarioGeral":  "Saúde não é apenas \u0027ausência de doença\u0027! Saúde resulta de saneamento, água tratada, renda, moradia digna, alimentação e educação de qualidade."
     },
     {
         "id":  "sus_20",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "HumanizaSUS (PNH)",
-        "enunciado":  "A Pol�tica Nacional de Humaniza��o (HumanizaSUS), lan�ada pelo Minist�rio da Sa�de em 2003, adota como uma de suas diretrizes centrais nos hospitais p�blicos:",
+        "enunciado":  "A Política Nacional de Humanização (HumanizaSUS), lançada pelo Ministério da Saúde em 2003, adota como uma de suas diretrizes centrais nos hospitais públicos:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "O Acolhimento com classifica��o de risco e a valoriza��o do trabalho dos profissionais de sa�de.",
-                                       "exp":  "Correto! Acolher com base na gravidade cl�nica (e n�o por ordem de chegada simples) e valorizar trabalhadores e usu�rios � o n�cleo da PNH."
+                                       "texto":  "O Acolhimento com classificação de risco e a valorização do trabalho dos profissionais de saúde.",
+                                       "exp":  "Correto! Acolher com base na gravidade clínica (e não por ordem de chegada simples) e valorizar trabalhadores e usuários é o núcleo da PNH."
                                    },
                              "B":  {
-                                       "texto":  "A proibi��o de acompanhantes mesmo para crian�as, gestantes e idosos internados.",
+                                       "texto":  "A proibição de acompanhantes mesmo para crianças, gestantes e idosos internados.",
                                        "exp":  "Incorreto. A PNH estimula a visita aberta e garante por lei o direito a acompanhantes."
                                    },
                              "C":  {
-                                       "texto":  "A elimina��o de ouvidorias e caixas de sugest�es para evitar reclama��es dos pacientes.",
-                                       "exp":  "Incorreto. A PNH fomenta a gest�o participativa e a escuta qualificada dos usu�rios."
+                                       "texto":  "A eliminação de ouvidorias e caixas de sugestáes para evitar reclamações dos pacientes.",
+                                       "exp":  "Incorreto. A PNH fomenta a gestáo participativa e a escuta qualificada dos usuários."
                                    },
                              "D":  {
-                                       "texto":  "A cobran�a de ingressos para parentes que visitam pacientes em leitos de enfermaria.",
-                                       "exp":  "Incorreto. O acesso hospitalar p�blico � inteiramente gratuito."
+                                       "texto":  "A cobrança de ingressos para parentes que visitam pacientes em leitos de enfermaria.",
+                                       "exp":  "Incorreto. O acesso hospitalar público é inteiramente gratuito."
                                    },
                              "E":  {
-                                       "texto":  "A separa��o de alas hospitalares por n�vel de renda e poder aquisitivo do usu�rio.",
-                                       "exp":  "Incorreto. O SUS veda terminantemente discrimina��es por condi��o econ�mica ou social."
+                                       "texto":  "A separação de alas hospitalares por nível de renda e poder aquisitivo do usuário.",
+                                       "exp":  "Incorreto. O SUS veda terminantemente discriminações por condição econômica ou social."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Pilares do HumanizaSUS: Acolhimento, Gest�o Participativa (cogest�o), Ambi�ncia humanizada, Cl�nica Ampliada e Valoriza��o do Trabalhador."
+        "comentarioGeral":  "Pilares do HumanizaSUS: Acolhimento, Gestáo Participativa (cogestáo), Ambiência humanizada, Clínica Ampliada e Valorização do Trabalhador."
     },
     {
         "id":  "sus_21",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "Financiamento do SUS (Emenda Constitucional 29)",
-        "enunciado":  "A Constitui��o Federal estabelece que os entes federativos devem vincular percentuais m�nimos de suas receitas de impostos para a aplica��o em a��es e servi�os p�blicos de sa�de. Para os Estados e Munic�pios, esses percentuais m�nimos s�o, respectivamente:",
+        "enunciado":  "A Constituição Federal estabelece que os entes federativos devem vincular percentuais mínimos de suas receitas de impostos para a aplicação em ações e serviços públicos de saúde. Para os Estados e Municípios, esses percentuais mínimos são, respectivamente:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "12% para os Estados e 15% para os Munic�pios.",
-                                       "exp":  "Correto! Conforme a Lei Complementar n� 141/2012 (decorrente da EC 29), os Estados aplicam no m�nimo 12% e os Munic�pios no m�nimo 15%."
+                                       "texto":  "12% para os Estados e 15% para os Municípios.",
+                                       "exp":  "Correto! Conforme a Lei Complementar nº 141/2012 (decorrente da EC 29), os Estados aplicam no mínimo 12% e os Municípios no mínimo 15%."
                                    },
                              "B":  {
-                                       "texto":  "5% para os Estados e 5% para os Munic�pios.",
-                                       "exp":  "Incorreto. Percentual muito inferior ao piso constitucional obrigat�rio."
+                                       "texto":  "5% para os Estados e 5% para os Municípios.",
+                                       "exp":  "Incorreto. Percentual muito inferior ao piso constitucional obrigatório."
                                    },
                              "C":  {
-                                       "texto":  "25% para os Estados e 25% para os Munic�pios.",
-                                       "exp":  "Incorreto. 25% � o percentual constitucional m�nimo exigido para a Educa��o (art. 212 da CF), n�o para a sa�de."
+                                       "texto":  "25% para os Estados e 25% para os Municípios.",
+                                       "exp":  "Incorreto. 25% é o percentual constitucional mínimo exigido para a Educação (art. 212 da CF), não para a saúde."
                                    },
                              "D":  {
-                                       "texto":  "50% para todos os entes federados sem distin��o regional.",
-                                       "exp":  "Incorreto. Inviabilizaria a manuten��o das demais �reas como seguran�a e infraestrutura."
+                                       "texto":  "50% para todos os entes federados sem distinção regional.",
+                                       "exp":  "Incorreto. Inviabilizaria a manutenção das demais áreas como segurança e infraestrutura."
                                    },
                              "E":  {
-                                       "texto":  "Valor discricion�rio definido anualmente sem qualquer piso obrigat�rio em lei.",
-                                       "exp":  "Incorreto. O piso � constitucionalmente vinculado e o descumprimento gera rejei��o de contas e interven��o."
+                                       "texto":  "Valor discricionário definido anualmente sem qualquer piso obrigatório em lei.",
+                                       "exp":  "Incorreto. O piso é constitucionalmente vinculado e o descumprimento gera rejeição de contas e intervenção."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Macete de Prova: EDUCA��O = 25% para Estados e Munic�pios. SA�DE = 12% para os Estados e 15% para os Munic�pios!"
+        "comentarioGeral":  "Macete de Prova: EDUCAÇÃO = 25% para Estados e Municípios. SAÚDE = 12% para os Estados e 15% para os Municípios!"
     },
     {
         "id":  "sus_22",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Comiss�es Intergestores: CIT e CIB",
-        "enunciado":  "No �mbito estadual, o espa�o permanente de negocia��o, pactua��o e decis�o consensual entre a Secretaria de Estado de Sa�de (SESPA) e as Secretarias Municipais de Sa�de (COSEMS) � a:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Comissóes Intergestores: CIT e CIB",
+        "enunciado":  "No âmbito estadual, o espaço permanente de negociação, pactuação e decisão consensual entre a Secretaria de Estado de Saúde (SESPA) e as Secretarias Municipais de Saúde (COSEMS) é a:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "CIB (Comiss�o Intergestores Bipartite).",
-                                       "exp":  "Correto! A CIB re�ne gestores estaduais e municipais para pactuar o funcionamento do SUS em �mbito estadual."
+                                       "texto":  "CIB (Comissão Intergestores Bipartite).",
+                                       "exp":  "Correto! A CIB reúne gestores estaduais e municipais para pactuar o funcionamento do SUS em âmbito estadual."
                                    },
                              "B":  {
-                                       "texto":  "CIT (Comiss�o Intergestores Tripartite).",
-                                       "exp":  "Incorreto. A CIT atua no plano nacional e re�ne Uni�o (Minist�rio da Sa�de), Estados (CONASS) e Munic�pios (CONASEMS)."
+                                       "texto":  "CIT (Comissão Intergestores Tripartite).",
+                                       "exp":  "Incorreto. A CIT atua no plano nacional e reúne União (Ministério da Saúde), Estados (CONASS) e Municípios (CONASEMS)."
                                    },
                              "C":  {
-                                       "texto":  "CPI da Sa�de P�blica.",
-                                       "exp":  "Incorreto. CPI � comiss�o parlamentar de inqu�rito do Poder Legislativo para investigar il�citos."
+                                       "texto":  "CPI da Saúde Pública.",
+                                       "exp":  "Incorreto. CPI é comissão parlamentar de inquérito do Poder Legislativo para investigar ilícitos."
                                    },
                              "D":  {
-                                       "texto":  "C�mara de Arbitragem Internacional.",
-                                       "exp":  "Incorreto. N�o comp�e a estrutura institucional do SUS."
+                                       "texto":  "Câmara de Arbitragem Internacional.",
+                                       "exp":  "Incorreto. Não compõe a estrutura institucional do SUS."
                                    },
                              "E":  {
-                                       "texto":  "Junta Comercial do Estado do Par�.",
-                                       "exp":  "Incorreto. �rg�o de registro mercantil de empresas, alheio � gest�o da sa�de."
+                                       "texto":  "Junta Comercial do Estado do Pará.",
+                                       "exp":  "Incorreto. Órgão de registro mercantil de empresas, alheio é gestáo da saúde."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "CIB = Bipartite (Estado + Munic�pios). CIT = Tripartite (Uni�o + Estados + Munic�pios). S�o foros de pactua��o t�cnica e financeira da gest�o do SUS."
+        "comentarioGeral":  "CIB = Bipartite (Estado + Municípios). CIT = Tripartite (União + Estados + Municípios). São foros de pactuação técnica e financeira da gestáo do SUS."
     },
     {
         "id":  "sus_23",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Princ�pio da Descentraliza��o",
-        "enunciado":  "O princ�pio organizativo do SUS que redistribui o poder de decis�o e os recursos financeiros para o ente federativo mais pr�ximo da popula��o (com dire��o �nica em cada esfera de governo) denomina-se:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Princípio da Descentralização",
+        "enunciado":  "O princípio organizativo do SUS que redistribui o poder de decisão e os recursos financeiros para o ente federativo mais próximo da população (com direção única em cada esfera de governo) denomina-se:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Concentra��o tecnocr�tica.",
-                                       "exp":  "Incorreto. Concentra��o � o oposto da descentraliza��o democr�tica."
+                                       "texto":  "Concentração tecnocrítica.",
+                                       "exp":  "Incorreto. Concentração é o oposto da descentralização democrítica."
                                    },
                              "B":  {
-                                       "texto":  "Descentraliza��o pol�tico-administrativa.",
-                                       "exp":  "Correto! A descentraliza��o aproxima a gest�o do usu�rio, conferindo autonomia a estados e munic�pios."
+                                       "texto":  "Descentralização político-administrativa.",
+                                       "exp":  "Correto! A descentralização aproxima a gestáo do usuário, conferindo autonomia a estados e municípios."
                                    },
                              "C":  {
-                                       "texto":  "Segrega��o comunit�ria.",
-                                       "exp":  "Incorreto. Termo preconceituoso e incompat�vel com o direito social."
+                                       "texto":  "Segregação comunitária.",
+                                       "exp":  "Incorreto. Termo preconceituoso e incompatével com o direito social."
                                    },
                              "D":  {
-                                       "texto":  "Centraliza��o ministerial.",
-                                       "exp":  "Incorreto. A CF rejeitou o modelo centralizador do antigo INAMPS pr�-1988."
+                                       "texto":  "Centralização ministerial.",
+                                       "exp":  "Incorreto. A CF rejeitou o modelo centralizador do antigo INAMPS pré-1988."
                                    },
                              "E":  {
-                                       "texto":  "Delega��o discricion�ria revog�vel.",
-                                       "exp":  "Incorreto. A descentraliza��o do SUS � mandamento constitucional obrigat�rio, n�o mera concess�o."
+                                       "texto":  "Delegação discricionária revogável.",
+                                       "exp":  "Incorreto. A descentralização do SUS é mandamento constitucional obrigatório, não mera concessão."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Descentraliza��o com dire��o �nica em cada esfera: Minist�rio da Sa�de (Uni�o), Secretaria de Estado de Sa�de (Estado) e Secretaria Municipal de Sa�de (Munic�pio)."
+        "comentarioGeral":  "Descentralização com direção única em cada esfera: Ministério da Saúde (União), Secretaria de Estado de Saúde (Estado) e Secretaria Municipal de Saúde (Município)."
     },
     {
         "id":  "sus_24",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Decreto 7.508/2011: Mapa da Sa�de",
-        "enunciado":  "De acordo com o Decreto Federal n� 7.508/2011, o \u0027Mapa da Sa�de\u0027 � conceituado como:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Decreto 7.508/2011: Mapa da Saúde",
+        "enunciado":  "De acordo com o Decreto Federal nº 7.508/2011, o \u0027Mapa da Saúde\u0027 é conceituado como:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Descri��o geogr�fica da distribui��o de leitos particulares destinados a turismo internacional.",
-                                       "exp":  "Incorreto. N�o tem rela��o com turismo m�dico privado."
+                                       "texto":  "Descrição geográfica da distribuição de leitos particulares destinados a turismo internacional.",
+                                       "exp":  "Incorreto. Não tem relação com turismo médico privado."
                                    },
                              "B":  {
-                                       "texto":  "Descri��o geogr�fica da distribui��o de recursos humanos e de a��es e servi�os de sa�de ofertados pelo SUS e pela iniciativa privada, considerando-se a capacidade instalada e as necessidades de sa�de.",
-                                       "exp":  "Correto! O Mapa da Sa�de identifica os vazios assistenciais e orienta onde construir novos servi�os na Regi�o."
+                                       "texto":  "Descrição geográfica da distribuição de recursos humanos e de ações e serviços de saúde ofertados pelo SUS e pela iniciativa privada, considerando-se a capacidade instalada e as necessidades de saúde.",
+                                       "exp":  "Correto! O Mapa da Saúde identifica os vazios assistenciais e orienta onde construir novos serviços na Região."
                                    },
                              "C":  {
-                                       "texto":  "Guia tur�stico com indica��es de restaurantes naturais e praias de Bel�m.",
+                                       "texto":  "Guia turístico com indicações de restaurantes naturais e praias de Belém.",
                                        "exp":  "Incorreto. Conceito absurdo e incorreto."
                                    },
                              "D":  {
-                                       "texto":  "Planta baixa arquitet�nica da sala de cirurgia card�aca da FHCGV.",
-                                       "exp":  "Incorreto. Planta de engenharia hospitalar n�o se confunde com o Mapa da Sa�de."
+                                       "texto":  "Planta baixa arquitetônica da sala de cirurgia cardíaca da FHCGV.",
+                                       "exp":  "Incorreto. Planta de engenharia hospitalar não se confunde com o Mapa da Saúde."
                                    },
                              "E":  {
-                                       "texto":  "Carta de navega��o fluvial exclusiva para a Marinha do Brasil.",
-                                       "exp":  "Incorreto. Documento de tr�fego aquavi�rio, sem rela��o com a sa�de p�blica."
+                                       "texto":  "Carta de navegação fluvial exclusiva para a Marinha do Brasil.",
+                                       "exp":  "Incorreto. Documento de tráfego aquaviário, sem relação com a saúde pública."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "O Mapa da Sa�de (art. 2�, III do Dec. 7.508/11) orienta o planejamento regional, mostrando exatamente onde faltam hospitais, m�dicos e ambulat�rios."
+        "comentarioGeral":  "O Mapa da Saúde (art. 2ª, III do Dec. 7.508/11) orienta o planejamento regional, mostrando exatamente onde faltam hospitais, médicos e ambulatórios."
     },
     {
         "id":  "sus_25",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Redes de Aten��o � Sa�de (RAS)",
-        "enunciado":  "As Redes de Aten��o � Sa�de (RAS) s�o arranjos organizativos de a��es e servi�os de sa�de de diferentes densidades tecnol�gicas, integrados por meio de sistemas de apoio t�cnico, log�stico e de gest�o. O objetivo principal da RAS �:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Redes de Atenção é Saúde (RAS)",
+        "enunciado":  "As Redes de Atenção é Saúde (RAS) são arranjos organizativos de ações e serviços de saúde de diferentes densidades tecnológicas, integrados por meio de sistemas de apoio técnico, logístico e de gestáo. O objetivo principal da RAS é:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Superar a fragmenta��o do cuidado e garantir a integralidade da aten��o cont�nua ao paciente.",
-                                       "exp":  "Correto! A RAS conecta o postinho, a UPA e o hospital terci�rio (como o Gaspar Vianna) de forma fluida."
+                                       "texto":  "Superar a fragmentação do cuidado e garantir a integralidade da atenção contínua ao paciente.",
+                                       "exp":  "Correto! A RAS conecta o postinho, a UPA e o hospital terciário (como o Gaspar Vianna) de forma fluida."
                                    },
                              "B":  {
-                                       "texto":  "Isolar os pacientes com doen�as mentais em asilos fechados sem contato comunit�rio.",
-                                       "exp":  "Incorreto. A Rede de Aten��o Psicossocial (RAPS) busca a reinser��o social e a desinstitucionaliza��o."
+                                       "texto":  "Isolar os pacientes com doenças mentais em asilos fechados sem contato comunitário.",
+                                       "exp":  "Incorreto. A Rede de Atenção Psicossocial (RAPS) busca a reinserção social e a desinstitucionalização."
                                    },
                              "C":  {
-                                       "texto":  "Reduzir o atendimento ao p�blico em 90% para cortar gastos p�blicos.",
-                                       "exp":  "Incorreto. O objetivo � ampliar o acesso e melhorar a resolutividade do atendimento."
+                                       "texto":  "Reduzir o atendimento ao público em 90% para cortar gastos públicos.",
+                                       "exp":  "Incorreto. O objetivo é ampliar o acesso e melhorar a resolutividade do atendimento."
                                    },
                              "D":  {
-                                       "texto":  "Substituir m�dicos e enfermeiros por aplicativos virtuais pagos.",
-                                       "exp":  "Incorreto. A tecnologia apoia a equipe, mas o atendimento em sa�de � centrado nas pessoas."
+                                       "texto":  "Substituir médicos e enfermeiros por aplicativos virtuais pagos.",
+                                       "exp":  "Incorreto. A tecnologia apoia a equipe, mas o atendimento em saúde é centrado nas pessoas."
                                    },
                              "E":  {
-                                       "texto":  "Cobrar ingressos de entrada em hospitais p�blicos estaduais.",
-                                       "exp":  "Incorreto. O SUS � gratuito e universal."
+                                       "texto":  "Cobrar ingressos de entrada em hospitais públicos estaduais.",
+                                       "exp":  "Incorreto. O SUS é gratuito e universal."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "A RAS substitui o modelo antigo onde cada hospital trabalhava como uma \u0027ilha isolada\u0027, criando uma rede integrada de aten��o cont�nua."
+        "comentarioGeral":  "A RAS substitui o modelo antigo onde cada hospital trabalhava como uma \u0027ilha isolada\u0027, criando uma rede integrada de atenção contínua."
     },
     {
         "id":  "sus_26",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
         "topico":  "Protocolo de Manchester e Triagem",
-        "enunciado":  "Nos servi�os de urg�ncia e emerg�ncia hospitalar, a sistem�tica de triagem que classifica os pacientes por cores de acordo com a gravidade cl�nica (vermelho: emerg�ncia imediata; amarelo: urgente; verde: pouco urgente; azul: n�o urgente) denomina-se:",
+        "enunciado":  "Nos serviços de urgência e emergência hospitalar, a sistemética de triagem que classifica os pacientes por cores de acordo com a gravidade clínica (vermelho: emergência imediata; amarelo: urgente; verde: pouco urgente; azul: não urgente) denomina-se:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Sistema de Classifica��o de Risco de Manchester.",
-                                       "exp":  "Correto! O Protocolo de Manchester � amplamente adotado no SUS para priorizar o atendimento pela gravidade e risco de morte."
+                                       "texto":  "Sistema de Classificação de Risco de Manchester.",
+                                       "exp":  "Correto! O Protocolo de Manchester é amplamente adotado no SUS para priorizar o atendimento pela gravidade e risco de morte."
                                    },
                              "B":  {
-                                       "texto":  "Sorteio aleat�rio por ordem de matr�cula escolar.",
-                                       "exp":  "Incorreto. Atendimento de urg�ncia n�o pode ser realizado por sorteio."
+                                       "texto":  "Sorteio aleatério por ordem de matrícula escolar.",
+                                       "exp":  "Incorreto. Atendimento de urgência não pode ser realizado por sorteio."
                                    },
                              "C":  {
-                                       "texto":  "Triagem por poder financeiro declarat�rio.",
-                                       "exp":  "Incorreto. Totalmente vedado e discriminat�rio."
+                                       "texto":  "Triagem por poder financeiro declaratério.",
+                                       "exp":  "Incorreto. Totalmente vedado e discriminatério."
                                    },
                              "D":  {
-                                       "texto":  "Escala de Glasgow para sele��o de compras de almoxarifado.",
-                                       "exp":  "Incorreto. A escala de Glasgow mede o n�vel de consci�ncia neurol�gica do indiv�duo, n�o materiais."
+                                       "texto":  "Escala de Glasgow para seleção de compras de almoxarifado.",
+                                       "exp":  "Incorreto. A escala de Glasgow mede o nível de consciência neurológica do indivíduo, não materiais."
                                    },
                              "E":  {
-                                       "texto":  "Fila cronol�gica simples por chegada sem crit�rio de gravidade.",
-                                       "exp":  "Incorreto. A fila simples � perigosa porque um paciente infartando morreria esperando quem chegou antes com gripe."
+                                       "texto":  "Fila cronológica simples por chegada sem critério de gravidade.",
+                                       "exp":  "Incorreto. A fila simples é perigosa porque um paciente infartando morreria esperando quem chegou antes com gripe."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "A classifica��o de risco substitui a ordem de chegada pura pela gravidade cl�nica do paciente, garantindo que o risco de vida seja atendido no primeiro segundo."
+        "comentarioGeral":  "A classificação de risco substitui a ordem de chegada pura pela gravidade clínica do paciente, garantindo que o risco de vida seja atendido no primeiro segundo."
     },
     {
         "id":  "sus_27",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Doa��o e Transplante de �rg�os (Lei 9.434/97)",
-        "enunciado":  "O Hospital de Cl�nicas Gaspar Vianna � refer�ncia no Par� em nefrologia e transplantes renais. No Brasil, de acordo com a legisla��o vigente, a doa��o de �rg�os e tecidos ap�s a morte encef�lica depende de:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Doação e Transplante de Órgãos (Lei 9.434/97)",
+        "enunciado":  "O Hospital de Clínicas Gaspar Vianna é referência no Pará em nefrologia e transplantes renais. No Brasil, de acordo com a legislação vigente, a doação de Órgãos e tecidos após a morte encefálica depende de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Autoriza��o expressa de c�njuge ou parente de maior idade at� o segundo grau.",
-                                       "exp":  "Correto! A legisla��o brasileira vigente adota o consentimento familiar: a fam�lia autoriza a doa��o."
+                                       "texto":  "Autorização expressa de cônjuge ou parente de maior idade até o segundo grau.",
+                                       "exp":  "Correto! A legislação brasileira vigente adota o consentimento familiar: a família autoriza a doação."
                                    },
                              "B":  {
-                                       "texto":  "Doa��o presumida obrigat�ria autom�tica sem qualquer consulta � fam�lia.",
-                                       "exp":  "Incorreto. O modelo de doa��o presumida foi revogado h� anos no Brasil."
+                                       "texto":  "Doação presumida obrigatória automética sem qualquer consulta é família.",
+                                       "exp":  "Incorreto. O modelo de doação presumida foi revogado há anos no Brasil."
                                    },
                              "C":  {
-                                       "texto":  "Pagamento pr�vio de recompensa financeira aos familiares do doador.",
-                                       "exp":  "Incorreto. A compra e venda de �rg�os humanos � crime federal grav�ssimo (art. 199, � 4� da CF)."
+                                       "texto":  "Pagamento prévio de recompensa financeira aos familiares do doador.",
+                                       "exp":  "Incorreto. A compra e venda de Órgãos humanos é crime federal gravíssimo (art. 199, § 4º da CF)."
                                    },
                              "D":  {
-                                       "texto":  "Vontade expressa do m�dico legista independentemente dos parentes.",
-                                       "exp":  "Incorreto. O legista n�o tem o poder de doar �rg�os sem concord�ncia dos familiares legais."
+                                       "texto":  "Vontade expressa do médico legista independentemente dos parentes.",
+                                       "exp":  "Incorreto. O legista não tem o poder de doar Órgãos sem concordância dos familiares legais."
                                    },
                              "E":  {
-                                       "texto":  "Autoriza��o formal de juiz de direito em audi�ncia p�blica com jurados.",
-                                       "exp":  "Incorreto. N�o se exige processo judicial para a doa��o com consentimento da fam�lia."
+                                       "texto":  "Autorização formal de juiz de direito em audiência pública com jurados.",
+                                       "exp":  "Incorreto. Não se exige processo judicial para a doação com consentimento da família."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "No Brasil, a doa��o de �rg�os p�s-morte depende exclusivamente da autoriza��o da fam�lia (c�njuge ou parentes at� 2� grau). Por isso, quem quer doar deve avisar sua fam�lia em vida!"
+        "comentarioGeral":  "No Brasil, a doação de Órgãos pós-morte depende exclusivamente da autorização da família (cônjuge ou parentes até 2º grau). Por isso, quem quer doar deve avisar sua família em vida!"
     },
     {
         "id":  "sus_28",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Sa�de Mental no SUS e Reforma Psiqui�trica (Lei 10.216/01)",
-        "enunciado":  "Sendo a FHCGV refer�ncia estadual em assist�ncia psiqui�trica no Par�, a Lei Federal n� 10.216/2001 (Lei da Reforma Psiqui�trica) estabelece que o tratamento da pessoa com transtorno mental deve ser realizado prioritariamente em:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Saúde Mental no SUS e Reforma Psiquiátrica (Lei 10.216/01)",
+        "enunciado":  "Sendo a FHCGV referência estadual em assistência psiquiátrica no Pará, a Lei Federal nº 10.216/2001 (Lei da Reforma Psiquiátrica) estabelece que o tratamento da pessoa com transtorno mental deve ser realizado prioritariamente em:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Ambiente comunit�rio e em servi�os de base territorial (como CAPS e resid�ncias terap�uticas), visando � sua reinser��o social.",
-                                       "exp":  "Correto! O modelo asilar de interna��o perp�tua foi superado em prol da rede aberta e humanizada de aten��o psicossocial."
+                                       "texto":  "Ambiente comunitário e em serviços de base territorial (como CAPS e residências terapêuticas), visando é sua reinserção social.",
+                                       "exp":  "Correto! O modelo asilar de internação perpétua foi superado em prol da rede aberta e humanizada de atenção psicossocial."
                                    },
                              "B":  {
-                                       "texto":  "Hosp�cios isolados em �reas rurais com interna��o perp�tua e perda dos direitos civis.",
+                                       "texto":  "Hospécios isolados em áreas rurais com internação perpétua e perda dos direitos civis.",
                                        "exp":  "Incorreto. A reforma baniu o modelo manicomial excludente."
                                    },
                              "C":  {
-                                       "texto":  "Pres�dios de seguran�a m�xima e col�nias penais.",
-                                       "exp":  "Incorreto. Transtorno mental � quest�o de sa�de p�blica, n�o mat�ria de execu��o penal de seguran�a."
+                                       "texto":  "Presódios de segurança máxima e colônias penais.",
+                                       "exp":  "Incorreto. Transtorno mental é questáo de saúde pública, não matéria de execução penal de segurança."
                                    },
                              "D":  {
-                                       "texto":  "Leitos particulares de hospitais no exterior financiados com dinheiro p�blico.",
-                                       "exp":  "Incorreto. O cuidado deve ser prestado no territ�rio do usu�rio pela rede do SUS."
+                                       "texto":  "Leitos particulares de hospitais no exterior financiados com dinheiro público.",
+                                       "exp":  "Incorreto. O cuidado deve ser prestado no território do usuário pela rede do SUS."
                                    },
                              "E":  {
-                                       "texto":  "Isolamento total sem contato com a fam�lia ou amigos.",
-                                       "exp":  "Incorreto. A manuten��o dos la�os familiares e sociais � diretriz expressa da lei."
+                                       "texto":  "Isolamento total sem contato com a família ou amigos.",
+                                       "exp":  "Incorreto. A manutenção dos laços familiares e sociais é diretriz expressa da lei."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "A Lei 10.216/2001 redirecionou o modelo assistencial em sa�de mental no Brasil: prioriza servi�os abertos e comunit�rios (CAPS), reservando a interna��o apenas para crises agudas graves."
+        "comentarioGeral":  "A Lei 10.216/2001 redirecionou o modelo assistencial em saúde mental no Brasil: prioriza serviços abertos e comunitários (CAPS), reservando a internação apenas para crises agudas graves."
     },
     {
         "id":  "sus_29",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Subsistema de Sa�de Ind�gena (Lei 9.836/99)",
-        "enunciado":  "O Subsistema de Aten��o � Sa�de Ind�gena, integrado ao SUS, foi estruturado para atender �s popula��es tradicionais e povos origin�rios por meio de:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Subsistema de Saúde Indígena (Lei 9.836/99)",
+        "enunciado":  "O Subsistema de Atenção é Saúde Indígena, integrado ao SUS, foi estruturado para atender às populações tradicionais e povos originários por meio de:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "DSEI (Distritos Sanit�rios Especiais Ind�genas), respeitando as especificidades culturais, lingu�sticas e epidemiol�gicas de cada etnia.",
-                                       "exp":  "Correto! Os DSEIs organizam a aten��o b�sica nas aldeias de forma descentralizada e intercultural."
+                                       "texto":  "DSEI (Distritos Sanitários Especiais Indígenas), respeitando as especificidades culturais, linguísticas e epidemiológicas de cada etnia.",
+                                       "exp":  "Correto! Os DSEIs organizam a atenção básica nas aldeias de forma descentralizada e intercultural."
                                    },
                              "B":  {
-                                       "texto":  "Obriga��o de ren�ncia �s l�nguas maternas e costumes tradicionais para ter acesso a rem�dios.",
-                                       "exp":  "Incorreto. O SUS respeita e valoriza a medicina tradicional e a diversidade cultural ind�gena."
+                                       "texto":  "Obrigação de renúncia às línguas maternas e costumes tradicionais para ter acesso a remédios.",
+                                       "exp":  "Incorreto. O SUS respeita e valoriza a medicina tradicional e a diversidade cultural indígena."
                                    },
                              "C":  {
-                                       "texto":  "Cobran�a de consultas em barras de ouro garimpadas.",
-                                       "exp":  "Incorreto. O atendimento � gratuito, p�blico e universal."
+                                       "texto":  "Cobrança de consultas em barras de ouro garimpadas.",
+                                       "exp":  "Incorreto. O atendimento é gratuito, público e universal."
                                    },
                              "D":  {
-                                       "texto":  "Exclus�o total das aldeias de qualquer campanha de vacina��o do SUS.",
-                                       "exp":  "Incorreto. Os povos ind�genas constituem grupo priorit�rio nos planos nacionais de vacina��o."
+                                       "texto":  "Exclusão total das aldeias de qualquer campanha de vacinação do SUS.",
+                                       "exp":  "Incorreto. Os povos indígenas constituem grupo prioritário nos planos nacionais de vacinação."
                                    },
                              "E":  {
-                                       "texto":  "Atendimento unicamente por m�dicos militares estrangeiros sem tradutores comunit�rios.",
-                                       "exp":  "Incorreto. Atuam equipes multidisciplinares e Agentes Ind�genas de Sa�de (AIS) locais."
+                                       "texto":  "Atendimento unicamente por médicos militares estrangeiros sem tradutores comunitários.",
+                                       "exp":  "Incorreto. Atuam equipes multidisciplinares e Agentes Indígenas de Saúde (AIS) locais."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "A Sa�de Ind�gena � gerida no plano federal pela SESAI e opera por meio de 34 Distritos Sanit�rios Especiais Ind�genas (DSEIs) em todo o Brasil."
+        "comentarioGeral":  "A Saúde Indígena é gerida no plano federal pela SESAI e opera por meio de 34 Distritos Sanitários Especiais Indígenas (DSEIs) em todo o Brasil."
     },
     {
         "id":  "sus_30",
         "disciplina":  "sus",
-        "materia_nome":  "Pol�ticas de Sa�de P�blica (SUS)",
-        "topico":  "Sistemas de Informa��o em Sa�de (DATASUS)",
-        "enunciado":  "No Minist�rio da Sa�de, o sistema informatizado oficial utilizado para registrar as notifica��es compuls�rias de doen�as transmiss�veis e agravos epidemiol�gicos (como dengue, tuberculose, covid-19 e hansen�ase) � o:",
+        "materia_nome":  "Políticas de Saúde Pública (SUS)",
+        "topico":  "Sistemas de Informação em Saúde (DATASUS)",
+        "enunciado":  "No Ministério da Saúde, o sistema informatizado oficial utilizado para registrar as notificações compulsórias de doenças transmissóveis e agravos epidemiológicos (como dengue, tuberculose, covid-19 e hanseníase) é o:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "SINAN (Sistema de Informa��o de Agravos de Notifica��o).",
-                                       "exp":  "Correto! O SINAN � alimentado principalmente pela notifica��o compuls�ria de doen�as para subsidiar a vigil�ncia epidemiol�gica."
+                                       "texto":  "SINAN (Sistema de Informação de Agravos de Notificação).",
+                                       "exp":  "Correto! O SINAN é alimentado principalmente pela notificação compulsória de doenças para subsidiar a vigilância epidemiológica."
                                    },
                              "B":  {
-                                       "texto":  "SISU (Sistema de Sele��o Unificada universit�ria).",
+                                       "texto":  "SISU (Sistema de Seleção Unificada universitária).",
                                        "exp":  "Incorreto. O SISU seleciona estudantes para vagas em universidades federais pelo ENEM."
                                    },
                              "C":  {
-                                       "texto":  "CAD�NICO (Cadastro �nico de Programas Sociais).",
-                                       "exp":  "Incorreto. O Cad�nico identifica fam�lias de baixa renda para benef�cios sociais como o Bolsa Fam�lia."
+                                       "texto":  "CADÚNICO (Cadastro único de Programas Sociais).",
+                                       "exp":  "Incorreto. O CadÚnico identifica famílias de baixa renda para benefícios sociais como o Bolsa Família."
                                    },
                              "D":  {
-                                       "texto":  "RENACH (Registro Nacional de Carteiras de Habilita��o).",
-                                       "exp":  "Incorreto. Sistema do tr�nsito para motoristas e CNHs."
+                                       "texto":  "RENACH (Registro Nacional de Carteiras de Habilitação).",
+                                       "exp":  "Incorreto. Sistema do trânsito para motoristas e CNHs."
                                    },
                              "E":  {
-                                       "texto":  "SPED (Sistema P�blico de Escritura��o Digital).",
+                                       "texto":  "SPED (Sistema Público de Escrituração Digital).",
                                        "exp":  "Incorreto. Sistema da Receita Federal para notas fiscais e contabilidade de empresas."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Principais sistemas do SUS: SINAN (doen�as de notifica��o), SIM (mortalidade), SINASC (nascidos vivos), SIH/SUS (interna��es) e SIA/SUS (ambulat�rio)."
+        "comentarioGeral":  "Principais sistemas do SUS: SINAN (doenças de notificação), SIM (mortalidade), SINASC (nascidos vivos), SIH/SUS (internações) e SIA/SUS (ambulatério)."
     },
     {
         "id":  "port_01",
@@ -2251,7 +2251,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "portugues",
         "materia_nome":  "Língua Portuguesa",
         "topico":  "Colocação Pronominal: Próclise",
-        "enunciado":  "A colocação do pronome oblíquo átono antes do verbo (próclise) é OBRIGAT�“RIA na seguinte situação:",
+        "enunciado":  "A colocação do pronome oblíquo átono antes do verbo (próclise) é OBRIGATÓRIA na seguinte situação:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "\u0027Entregou-se o relatório ao diretor sem ressalvas.\u0027",
@@ -2306,7 +2306,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Haver (existir/acontecer) N�ƒO tem sujeito e N�ƒO vai para o plural! \u0027Havia problemas\u0027, \u0027Houve acidentes\u0027, \u0027Vai haver festas\u0027."
+        "comentarioGeral":  "Haver (existir/acontecer) NÃO tem sujeito e NÃO vai para o plural! \u0027Havia problemas\u0027, \u0027Houve acidentes\u0027, \u0027Vai haver festas\u0027."
     },
     {
         "id":  "port_15",
@@ -2467,24 +2467,24 @@ const BANCO_QUESTOES = [
         "id":  "port_20",
         "disciplina":  "portugues",
         "materia_nome":  "Língua Portuguesa",
-        "topico":  "Concordância Nominal: �‰ Proibido / �‰ Necessário",
+        "topico":  "Concordância Nominal: É Proibido / É Necessário",
         "enunciado":  "Em relação às expressões \u0027é proibido\u0027, \u0027é necessário\u0027 e \u0027é permitido\u0027, assinale a frase redigida de forma CORRETA:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "�‰ proibida entrada de pessoas estranhas sem autorização.",
-                                       "exp":  "Incorreto. Como o substantivo \u0027entrada\u0027 não tem artigo determinante antes dele, a expressão fica no masculino neutro: \u0027�‰ proibido entrada\u0027."
+                                       "texto":  "É proibida entrada de pessoas estranhas sem autorização.",
+                                       "exp":  "Incorreto. Como o substantivo \u0027entrada\u0027 não tem artigo determinante antes dele, a expressão fica no masculino neutro: \u0027É proibido entrada\u0027."
                                    },
                              "B":  {
-                                       "texto":  "�‰ proibida A entrada de pessoas estranhas sem autorização.",
-                                       "exp":  "Correto! Quando o substantivo feminino é precedido de artigo definido (\u0027A entrada\u0027), o adjetivo concorda: \u0027�‰ proibidA a entrada\u0027."
+                                       "texto":  "É proibida A entrada de pessoas estranhas sem autorização.",
+                                       "exp":  "Correto! Quando o substantivo feminino é precedido de artigo definido (\u0027A entrada\u0027), o adjetivo concorda: \u0027É proibidA a entrada\u0027."
                                    },
                              "C":  {
-                                       "texto":  "�‰ necessário paciência para lidar com processos burocráticos.",
+                                       "texto":  "É necessário paciência para lidar com processos burocráticos.",
                                        "exp":  "Correto gramaticalmente também (sem artigo = masculino neutro), mas vejamos qual a melhor opção."
                                    },
                              "D":  {
-                                       "texto":  "�‰ permitida circulação de pacientes desacompanhados na UTI.",
-                                       "exp":  "Incorreto. Sem artigo, deve ser \u0027�‰ permitido circulação\u0027."
+                                       "texto":  "É permitida circulação de pacientes desacompanhados na UTI.",
+                                       "exp":  "Incorreto. Sem artigo, deve ser \u0027É permitido circulação\u0027."
                                    },
                              "E":  {
                                        "texto":  "A paciência é necessário para os momentos de crise no serviço.",
@@ -2492,7 +2492,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Com artigo definido = CONCORDA: \u0027�‰ proibidA A entrada\u0027. Sem artigo definido = N�ƒO CONCORDA: \u0027�‰ proibidO entrada\u0027."
+        "comentarioGeral":  "Com artigo definido = CONCORDA: \u0027É proibidA A entrada\u0027. Sem artigo definido = NÃO CONCORDA: \u0027É proibidO entrada\u0027."
     },
     {
         "id":  "port_21",
@@ -2565,11 +2565,11 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "Dayana aspira a vaga de Auxiliar Administrativo na Fundação Gaspar Vianna.",
-                                       "exp":  "Incorreto. Falta a preposição \u0027a\u0027. O correto seria \u0027aspira �€ vaga\u0027."
+                                       "exp":  "Incorreto. Falta a preposição \u0027a\u0027. O correto seria \u0027aspira à vaga\u0027."
                                    },
                              "B":  {
                                        "texto":  "Dayana aspira à aprovação no concurso com mérito e disciplina.",
-                                       "exp":  "Correto! \u0027Aspirar\u0027 a algo exige a preposição \u0027a\u0027. Preposição \u0027a\u0027 + artigo \u0027a\u0027 = crase obrigatória: \u0027aspira �€ aprovação\u0027."
+                                       "exp":  "Correto! \u0027Aspirar\u0027 a algo exige a preposição \u0027a\u0027. Preposição \u0027a\u0027 + artigo \u0027a\u0027 = crase obrigatória: \u0027aspira à aprovação\u0027."
                                    },
                              "C":  {
                                        "texto":  "A faxineira aspirou ao pó dos tapetes do gabinete.",
@@ -2585,7 +2585,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Aspirar ar/perfume/pó = direto (\u0027aspirar o ar\u0027). Aspirar cargo/sucesso (almejar) = indireto com \u0027A\u0027 (\u0027aspirar AO cargo / �€ posse\u0027)."
+        "comentarioGeral":  "Aspirar ar/perfume/pó = direto (\u0027aspirar o ar\u0027). Aspirar cargo/sucesso (almejar) = indireto com \u0027A\u0027 (\u0027aspirar AO cargo / à posse\u0027)."
     },
     {
         "id":  "port_24",
@@ -2596,7 +2596,7 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "As novas rotinas do hospital visam a melhoria contínua da atenção ao usuário.",
-                                       "exp":  "Incorreto. Falta o acento grave indicativo de crase: \u0027visam �€ melhoria\u0027."
+                                       "exp":  "Incorreto. Falta o acento grave indicativo de crase: \u0027visam à melhoria\u0027."
                                    },
                              "B":  {
                                        "texto":  "O projeto institucional visa ao aprimoramento dos serviços hospitalares.",
@@ -2654,7 +2654,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "portugues",
         "materia_nome":  "Língua Portuguesa",
         "topico":  "Regência Verbal: Verbo Preferir",
-        "enunciado":  "O verbo PREFERIR é bitransitivo: quem prefere, prefere uma coisa A outra. �‰ proibido pela norma culta o uso de \u0027do que\u0027 ou de termos intensificadores (\u0027mais\u0027, \u0027mil vezes\u0027). Assinale a frase correta:",
+        "enunciado":  "O verbo PREFERIR é bitransitivo: quem prefere, prefere uma coisa A outra. É proibido pela norma culta o uso de \u0027do que\u0027 ou de termos intensificadores (\u0027mais\u0027, \u0027mil vezes\u0027). Assinale a frase correta:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Dayana prefere mais estudar à noite do que pela manhã.",
@@ -2693,7 +2693,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "O Auxiliar Administrativo começou a organizar as fichas cadastrais do arquivo.",
-                                       "exp":  "Correto! �‰ terminantemente PROIBIDO usar crase antes de verbos (\u0027começou a organizar\u0027)."
+                                       "exp":  "Correto! É terminantemente PROIBIDO usar crase antes de verbos (\u0027começou a organizar\u0027)."
                                    },
                              "C":  {
                                        "texto":  "Entregamos as requisições de exames à enfermeira-chefe do plantão.",
@@ -2716,7 +2716,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "portugues",
         "materia_nome":  "Língua Portuguesa",
         "topico":  "Crase: Casos Obrigatórios",
-        "enunciado":  "Assinale a frase em que o uso do acento indicador de crase é OBRIGAT�“RIO:",
+        "enunciado":  "Assinale a frase em que o uso do acento indicador de crase é OBRIGATÓRIO:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Fui a pé até a farmácia central do hospital.",
@@ -2759,7 +2759,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "O servidor solicitou dispensa a diretora de recursos humanos.",
-                                       "exp":  "Incorreto. Falta a crase obrigatória (\u0027solicitou dispensa �€ diretora\u0027)."
+                                       "exp":  "Incorreto. Falta a crase obrigatória (\u0027solicitou dispensa à diretora\u0027)."
                                    },
                              "D":  {
                                        "texto":  "Dirigiu-se a cavalo ao posto avançado de saúde.",
@@ -2808,8 +2808,8 @@ const BANCO_QUESTOES = [
         "id":  "leg_01",
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
-        "topico":  "Lei 5.810/94 - �‚mbito de Aplicação do RJU",
-        "enunciado":  "A Lei Estadual nº 5.810/1994 institui o Regime Jurídico �šnico dos servidores públicos civis do Estado do Pará. O seu regime aplica-se obrigatoriamente aos servidores de quais entidades estaduais?",
+        "topico":  "Lei 5.810/94 - âmbito de Aplicação do RJU",
+        "enunciado":  "A Lei Estadual nº 5.810/1994 institui o Regime Jurídico único dos servidores públicos civis do Estado do Pará. O seu regime aplica-se obrigatoriamente aos servidores de quais entidades estaduais?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Apenas aos servidores dos órgãos da Administração Direta do Poder Executivo.",
@@ -2840,7 +2840,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
         "topico":  "Lei 5.810/94 - Provimento Originário",
-        "enunciado":  "No Regime Jurídico �šnico do Pará (Lei 5.810/94), a investidura em cargo público ocorre com a posse, mas o provimento originário dá-se por meio de:",
+        "enunciado":  "No Regime Jurídico único do Pará (Lei 5.810/94), a investidura em cargo público ocorre com a posse, mas o provimento originário dá-se por meio de:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Promoção funcional.",
@@ -2848,7 +2848,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "Nomeação.",
-                                       "exp":  "Correto! A nomeação é a �šNICA forma de provimento originário (inicial) prevista na Lei 5.810/94 e na Constituição."
+                                       "exp":  "Correto! A nomeação é a ÚNICA forma de provimento originário (inicial) prevista na Lei 5.810/94 e na Constituição."
                                    },
                              "C":  {
                                        "texto":  "Reintegração.",
@@ -2933,23 +2933,23 @@ const BANCO_QUESTOES = [
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
         "topico":  "Lei 5.810/94 - Estágio Probatório e Fatores de Avaliação",
-        "enunciado":  "Ao entrar em exercício em cargo de provimento efetivo, a servidora Dayana cumprirá estágio probatório de 3 (três) anos. Dentre os fatores avaliados no estágio probatório segundo a Lei 5.810/94, N�ƒO se inclui:",
+        "enunciado":  "Ao entrar em exercício em cargo de provimento efetivo, a servidora Dayana cumprirá estágio probatório de 3 (três) anos. Dentre os fatores avaliados no estágio probatório segundo a Lei 5.810/94, NÃO se inclui:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Assiduidade e pontualidade.",
-                                       "exp":  "Incorreto como resposta, pois a assiduidade e a pontualidade S�ƒO expressamente avaliadas."
+                                       "exp":  "Incorreto como resposta, pois a assiduidade e a pontualidade SÃO expressamente avaliadas."
                                    },
                              "B":  {
                                        "texto":  "Disciplina e capacidade de iniciativa.",
-                                       "exp":  "Incorreto como resposta, pois disciplina e iniciativa S�ƒO fatores avaliados."
+                                       "exp":  "Incorreto como resposta, pois disciplina e iniciativa SÃO fatores avaliados."
                                    },
                              "C":  {
                                        "texto":  "Produtividade e responsabilidade.",
-                                       "exp":  "Incorreto como resposta, pois produtividade e responsabilidade S�ƒO fatores de avaliação estatutária."
+                                       "exp":  "Incorreto como resposta, pois produtividade e responsabilidade SÃO fatores de avaliação estatutária."
                                    },
                              "D":  {
                                        "texto":  "Filiação político-partidária e adesão ideológica à gestão do governo.",
-                                       "exp":  "Correto! �‰ vedado qualquer critério político-partidário ou ideológico; a avaliação de desempenho é estritamente técnica, ética e funcional."
+                                       "exp":  "Correto! É vedado qualquer critério político-partidário ou ideológico; a avaliação de desempenho é estritamente técnica, ética e funcional."
                                    },
                              "E":  {
                                        "texto":  "Eficiência e idoneidade moral.",
@@ -3108,7 +3108,7 @@ const BANCO_QUESTOES = [
                                    },
                              "E":  {
                                        "texto":  "Ato discricionário do Governador do Estado.",
-                                       "exp":  "Incorreto. �‰ direito subjetivo do servidor estável amparado pelo ordenamento."
+                                       "exp":  "Incorreto. É direito subjetivo do servidor estável amparado pelo ordenamento."
                                    }
                          },
         "correta":  "A",
@@ -3174,14 +3174,14 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "E",
-        "comentarioGeral":  "Pegadinha clássica: Remoção, redistribuição e cessão N�ƒO são formas de vacância de cargo! O servidor continua no seu cargo, apenas muda de local."
+        "comentarioGeral":  "Pegadinha clássica: Remoção, redistribuição e cessão NÃO são formas de vacância de cargo! O servidor continua no seu cargo, apenas muda de local."
     },
     {
         "id":  "leg_13",
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
         "topico":  "Lei 5.810/94 - Vencimento vs Remuneração",
-        "enunciado":  "De acordo com os conceitos estabelecidos na Lei 5.810/94, diferenciam-se \u0027Vencimento\u0027 e \u0027Remuneração\u0027. �‰ correto afirmar que:",
+        "enunciado":  "De acordo com os conceitos estabelecidos na Lei 5.810/94, diferenciam-se \u0027Vencimento\u0027 e \u0027Remuneração\u0027. É correto afirmar que:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Vencimento e remuneração são sinônimos perfeitos sem qualquer distinção técnica.",
@@ -3216,7 +3216,7 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "O servidor pode acumular integralmente os adicionais de insalubridade e periculosidade sobre a mesma jornada.",
-                                       "exp":  "Incorreto. �‰ vedada a cumulação dos dois adicionais; o servidor deve optar por um deles."
+                                       "exp":  "Incorreto. É vedada a cumulação dos dois adicionais; o servidor deve optar por um deles."
                                    },
                              "B":  {
                                        "texto":  "O servidor que fizer jus aos adicionais de insalubridade e de periculosidade deverá optar por um deles.",
@@ -3224,7 +3224,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "O adicional de insalubridade é concedido de forma definitiva e vitalícia, mesmo após cessar o contato com o risco.",
-                                       "exp":  "Incorreto. �‰ vantagem propter laborem: cessando o risco ou risco eliminado por EPI, cessa o pagamento."
+                                       "exp":  "Incorreto. É vantagem propter laborem: cessando o risco ou risco eliminado por EPI, cessa o pagamento."
                                    },
                              "D":  {
                                        "texto":  "A servidora gestante é obrigada a continuar em setor de alto risco radiológico sem remanejamento.",
@@ -3232,11 +3232,11 @@ const BANCO_QUESTOES = [
                                    },
                              "E":  {
                                        "texto":  "O adicional incide sobre todas as gratificações de chefia recebidas pelo servidor.",
-                                       "exp":  "Incorreto. �‰ calculado sobre a base legal fixada no estatuto, sem efeito cascata."
+                                       "exp":  "Incorreto. É calculado sobre a base legal fixada no estatuto, sem efeito cascata."
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Insalubridade x Periculosidade: N�ƒO se acumulam! O servidor escolhe um dos dois. Além disso, cessou a exposição ao perigo/agente, o adicional é cortado."
+        "comentarioGeral":  "Insalubridade x Periculosidade: NÃO se acumulam! O servidor escolhe um dos dois. Além disso, cessou a exposição ao perigo/agente, o adicional é cortado."
     },
     {
         "id":  "leg_15",
@@ -3267,7 +3267,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Férias no RJU Pará: 30 dias após 12 meses de efetivo exercício. �‰ vedada a acumulação por mais de dois anos consecutivos (máximo 2 períodos acumulados por necessidade de serviço)."
+        "comentarioGeral":  "Férias no RJU Pará: 30 dias após 12 meses de efetivo exercício. É vedada a acumulação por mais de dois anos consecutivos (máximo 2 períodos acumulados por necessidade de serviço)."
     },
     {
         "id":  "leg_16",
@@ -3344,15 +3344,15 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "O servidor continuará recebendo sua remuneração integral depositada pelo Estado.",
-                                       "exp":  "Incorreto. A licença para tratar de interesses particulares é estritamente SEM REMUNERA�‡�ƒO."
+                                       "exp":  "Incorreto. A licença para tratar de interesses particulares é estritamente SEM REMUNERAÇÃO."
                                    },
                              "C":  {
-                                       "texto":  "�‰ concedida a critério da administração (ato discricionário), pelo prazo de até 3 anos consecutivos, sem remuneração.",
+                                       "texto":  "É concedida a critério da administração (ato discricionário), pelo prazo de até 3 anos consecutivos, sem remuneração.",
                                        "exp":  "Correto! Exige estabilidade, não tem remuneração, prazo máximo de até 3 anos e fica condicionada à conveniência e interesse da administração."
                                    },
                              "D":  {
-                                       "texto":  "�‰ direito potestativo incondicional que a chefia não pode negar em hipótese alguma.",
-                                       "exp":  "Incorreto. �‰ ato discricionário da administração, que pode indeferir se houver carência de pessoal."
+                                       "texto":  "É direito potestativo incondicional que a chefia não pode negar em hipótese alguma.",
+                                       "exp":  "Incorreto. É ato discricionário da administração, que pode indeferir se houver carência de pessoal."
                                    },
                              "E":  {
                                        "texto":  "O tempo de afastamento é computado para fins de aposentadoria por tempo de serviço.",
@@ -3414,7 +3414,7 @@ const BANCO_QUESTOES = [
                                    },
                              "D":  {
                                        "texto":  "A de dois cargos puramente administrativos de nível médio ou fundamental.",
-                                       "exp":  "Correto! �‰ TERMINANTEMENTE PROIBIDA a acumulação de dois cargos de Auxiliar Administrativo ou técnico-administrativos gerais."
+                                       "exp":  "Correto! É TERMINANTEMENTE PROIBIDA a acumulação de dois cargos de Auxiliar Administrativo ou técnico-administrativos gerais."
                                    },
                              "E":  {
                                        "texto":  "A percepção simultânea de proventos de aposentadoria de cargo acumulável na ativa.",
@@ -3422,7 +3422,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "D",
-        "comentarioGeral":  "Cargos acumuláveis permitidos (com compatibilidade de horário): 1) 2 de professor; 2) 1 de professor + 1 técnico/científico; 3) 2 de profissionais da saúde regulamentada. Cargos meramente administrativos N�ƒO se acumulam!"
+        "comentarioGeral":  "Cargos acumuláveis permitidos (com compatibilidade de horário): 1) 2 de professor; 2) 1 de professor + 1 técnico/científico; 3) 2 de profissionais da saúde regulamentada. Cargos meramente administrativos NÃO se acumulam!"
     },
     {
         "id":  "leg_21",
@@ -3468,7 +3468,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "Valer-se de sua função para lograr proveito pessoal ou de outrem, em detrimento da dignidade da função pública.",
-                                       "exp":  "Correto! �‰ vedado utilizar o cargo ou facilidades do serviço em benefício próprio ou de terceiros."
+                                       "exp":  "Correto! É vedado utilizar o cargo ou facilidades do serviço em benefício próprio ou de terceiros."
                                    },
                              "C":  {
                                        "texto":  "Participar de comissões sindicais fora do horário de expediente.",
@@ -3553,7 +3553,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "legislacao",
         "materia_nome":  "Legislação do Estado do Pará",
         "topico":  "Lei 5.810/94 - Suspensão Disciplinar",
-        "enunciado":  "A penalidade de suspensão no Regime Jurídico �šnico do Pará é aplicada em caso de reincidência em faltas punidas com repreensão ou violação de proibições que não tipifiquem demissão. O prazo máximo legal da suspensão é de:",
+        "enunciado":  "A penalidade de suspensão no Regime Jurídico único do Pará é aplicada em caso de reincidência em faltas punidas com repreensão ou violação de proibições que não tipifiquem demissão. O prazo máximo legal da suspensão é de:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "15 (quinze) dias.",
@@ -3715,7 +3715,7 @@ const BANCO_QUESTOES = [
                                        "exp":  "Incorreto. A fundação de direito público adota o regime estatutário para seus servidores concursados."
                                    },
                              "B":  {
-                                       "texto":  "Regime Jurídico �šnico Estatutário dos Servidores Públicos Civis do Estado do Pará (Lei Estadual nº 5.810/1994).",
+                                       "texto":  "Regime Jurídico único Estatutário dos Servidores Públicos Civis do Estado do Pará (Lei Estadual nº 5.810/1994).",
                                        "exp":  "Correto! O Edital nº 01/SEPLAD-FHCGV e a Lei 6.304/2000 consagram o regime estatutário (Lei 5.810/94), assegurando estabilidade funcional após 3 anos."
                                    },
                              "C":  {
@@ -3737,20 +3737,20 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_01",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
-        "topico":  "Conceitos Fundamentais: �‰tica vs Moral",
-        "enunciado":  "A distinção teórica entre �‰tica e Moral é tema recorrente em concursos da banca Consulplan. Sobre esses conceitos, assinale a proposição filosoficamente CORRETA:",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
+        "topico":  "Conceitos Fundamentais: Ética vs Moral",
+        "enunciado":  "A distinção teórica entre Ética e Moral é tema recorrente em concursos da banca Consulplan. Sobre esses conceitos, assinale a proposição filosoficamente CORRETA:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Moral é a ciência teórica e universal; �‰tica é o conjunto passageiro de regras de uma tribo específica.",
-                                       "exp":  "Incorreto. A definição está invertida: a �‰tica é a reflexão teórica/filosófica e a Moral refere-se aos costumes de uma sociedade."
+                                       "texto":  "Moral é a ciência teórica e universal; Ética é o conjunto passageiro de regras de uma tribo específica.",
+                                       "exp":  "Incorreto. A definição está invertida: a Ética é a reflexão teórica/filosófica e a Moral refere-se aos costumes de uma sociedade."
                                    },
                              "B":  {
-                                       "texto":  "�‰tica é a reflexão crítica e filosófica sobre os princípios que orientam as ações humanas; Moral é o conjunto de costumes, normas e valores práticos vigentes em determinada sociedade.",
-                                       "exp":  "Correto! �‰tica vem do grego \u0027ethos\u0027 (caráter, reflexão teórica e universal); Moral vem do latim \u0027mos/moris\u0027 (costume, convenção prática, histórica e cultural)."
+                                       "texto":  "Ética é a reflexão crítica e filosófica sobre os princípios que orientam as ações humanas; Moral é o conjunto de costumes, normas e valores práticos vigentes em determinada sociedade.",
+                                       "exp":  "Correto! Ética vem do grego \u0027ethos\u0027 (caráter, reflexão teórica e universal); Moral vem do latim \u0027mos/moris\u0027 (costume, convenção prática, histórica e cultural)."
                                    },
                              "C":  {
-                                       "texto":  "�‰tica e Moral são termos rigorosamente sinônimos e não admitem diferenciação epistemológica.",
+                                       "texto":  "Ética e Moral são termos rigorosamente sinônimos e não admitem diferenciação epistemológica.",
                                        "exp":  "Incorreto. Embora no senso comum sejam usados de forma parecida, na teoria ética e no concurso a distinção é mandatória."
                                    },
                              "D":  {
@@ -3763,13 +3763,13 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "�‰tica = Teórica, reflexiva, permanente e universal (por que fazer?). Moral = Prática, comportamental, histórica e cultural (o que fazer?)."
+        "comentarioGeral":  "Ética = Teórica, reflexiva, permanente e universal (por que fazer?). Moral = Prática, comportamental, histórica e cultural (o que fazer?)."
     },
     {
         "id":  "eti_02",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
-        "topico":  "A �‰tica, os Valores e a Lei",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
+        "topico":  "A Ética, os Valores e a Lei",
         "enunciado":  "Um célebre aforismo jurídico de Paulo (jurisconsulto romano) ensina: \u0027Non omne quod licet honestum est\u0027 (Nem tudo o que é lícito é honesto). No contexto da Administração Pública, esse princípio significa que:",
         "alternativas":  {
                              "A":  {
@@ -3799,7 +3799,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_03",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Princípios Constitucionais da Administração (Art. 37, CF)",
         "enunciado":  "A Administração Pública direta e indireta de qualquer dos Poderes da União, dos Estados, do DF e dos Municípios obedecerá aos princípios expressos no caput do art. 37 da Constituição Federal, sintetizados no célebre mnemônico LIMPE. Esses princípios são:",
         "alternativas":  {
@@ -3830,7 +3830,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_04",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Princípio da Impessoalidade e Atendimento no Hospital",
         "enunciado":  "Na recepção do Hospital Gaspar Vianna, uma paciente que é vizinha da servidora pede para ter sua ficha de consulta adiantada na frente dos demais usuários que aguardam na fila há duas horas. A postura ética e legal exigida da servidora fundamenta-se no princípio da:",
         "alternativas":  {
@@ -3861,7 +3861,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_05",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Conflito de Interesses e Recebimento de Vantagens",
         "enunciado":  "Um representante comercial de fornecedores de insumos hospitalares oferece a um servidor do setor de suprimentos um pacote de viagens de lazer com tudo pago, em troca de agilidade na emissão de atestados de recebimento. Nessa situação, o servidor público deve:",
         "alternativas":  {
@@ -3887,14 +3887,14 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "�‰tica profissional: é expressamente vedado ao servidor público solicitar, exigir ou aceitar qualquer tipo de ajuda financeira, gratificação, presente ou vantagem indevida."
+        "comentarioGeral":  "Ética profissional: é expressamente vedado ao servidor público solicitar, exigir ou aceitar qualquer tipo de ajuda financeira, gratificação, presente ou vantagem indevida."
     },
     {
         "id":  "eti_06",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Diferença entre Brinde e Presente",
-        "enunciado":  "No âmbito das normas de ética no serviço público, estabelece-se clara distinção entre \u0027brinde\u0027 institucional e \u0027presente\u0027. �‰ considerado brinde admitido (sem caracterizar vantagem indevida):",
+        "enunciado":  "No âmbito das normas de ética no serviço público, estabelece-se clara distinção entre \u0027brinde\u0027 institucional e \u0027presente\u0027. É considerado brinde admitido (sem caracterizar vantagem indevida):",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Um notebook de última geração doado a um único servidor após a assinatura do contrato.",
@@ -3923,7 +3923,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_07",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Sigilo Funcional e Prontuários Médicos",
         "enunciado":  "No exercício de suas funções na administração hospitalar da FHCGV, a servidora Dayana tem acesso rotineiro a dados clínicos e prontuários médicos de pacientes. Sobre o sigilo funcional e a proteção dessas informações, é dever ético da servidora:",
         "alternativas":  {
@@ -3932,7 +3932,7 @@ const BANCO_QUESTOES = [
                                        "exp":  "Incorreto. Violação frontal do segredo profissional e do direito constitucional à intimidade."
                                    },
                              "B":  {
-                                       "texto":  "Guardar absoluto sigilo profissional, acessando e utilizando prontuários estritamente para o cumprimento de suas atribuições legais e em conformidade com a LGPD e o Código de �‰tica.",
+                                       "texto":  "Guardar absoluto sigilo profissional, acessando e utilizando prontuários estritamente para o cumprimento de suas atribuições legais e em conformidade com a LGPD e o Código de Ética.",
                                        "exp":  "Correto! Os dados de saúde são sensíveis (LGPD art. 5º, II); o dever de sigilo funcional é indeclinável e a quebra injustificada acarreta punição administrativa e criminal."
                                    },
                              "C":  {
@@ -3954,7 +3954,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_08",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Assédio Moral no Trabalho",
         "enunciado":  "O assédio moral no ambiente corporativo e público caracteriza-se como uma das maiores agressões à dignidade e integridade humana do servidor. Configura-se tipicamente como assédio moral:",
         "alternativas":  {
@@ -3985,8 +3985,8 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_09",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
-        "topico":  "�‰tica e Responsabilidade Social na Saúde",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
+        "topico":  "Ética e Responsabilidade Social na Saúde",
         "enunciado":  "A responsabilidade social das instituições públicas de saúde hospitalar manifesta-se através de práticas sustentáveis e éticas com a comunidade. Constitui exemplo de responsabilidade social:",
         "alternativas":  {
                              "A":  {
@@ -4016,7 +4016,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_10",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Qualidade no Atendimento: Comunicabilidade e Linguagem",
         "enunciado":  "Ao orientar um usuário simples e idoso na triagem da FHCGV, a postura de COMUNICABILIDADE eficiente e cidadã exige que o servidor:",
         "alternativas":  {
@@ -4047,7 +4047,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_11",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Cortesia, Urbanidade e Presteza",
         "enunciado":  "Cortesia e urbanidade são atributos essenciais do servidor público no atendimento aos cidadãos. Esses atributos manifestam-se na prática por meio de:",
         "alternativas":  {
@@ -4078,7 +4078,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_12",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Apresentação Pessoal e Identificação Funcional",
         "enunciado":  "A correta identificação funcional por meio de crachá visível e a apresentação pessoal adequada do servidor nas dependências do hospital representam:",
         "alternativas":  {
@@ -4109,7 +4109,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_13",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Eficiência, Eficácia e Efetividade",
         "enunciado":  "Na teoria da administração pública e gestão da qualidade, os conceitos de Eficiência, Eficácia e Efetividade possuem significados distintos. Assinale a correlação CORRETA:",
         "alternativas":  {
@@ -4140,9 +4140,9 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_14",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Discrição e Conduta com Pacientes Vulneráveis",
-        "enunciado":  "No ambiente hospitalar, chegam frequentemente pacientes fragilizados por perdas, diagnósticos graves ou vulnerabilidade socioeconômica extrema. A atitude de DISCRE�‡�ƒO e CONDUTA �‰TICA recomendada ao Auxiliar Administrativo consiste em:",
+        "enunciado":  "No ambiente hospitalar, chegam frequentemente pacientes fragilizados por perdas, diagnósticos graves ou vulnerabilidade socioeconômica extrema. A atitude de DISCREÇÃO e CONDUTA ÉTICA recomendada ao Auxiliar Administrativo consiste em:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Fazer comentários em voz alta para que todos no saguão fiquem cientes da situação do paciente.",
@@ -4171,7 +4171,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_15",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Tolerância e Resolução Pacífica de Conflitos na Recepção",
         "enunciado":  "Um acompanhante muito exaltado aborda o guichê de atendimento reclamando asperamente da espera. O servidor que demonstra inteligência emocional e tolerância deve:",
         "alternativas":  {
@@ -4202,16 +4202,16 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_16",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Acolhimento com Classificação de Risco (PNH)",
         "enunciado":  "A Política Nacional de Humanização (HumanizaSUS) preconiza o \u0027Acolhimento\u0027 como diretriz ética e operacional essencial nos serviços de saúde. O acolhimento:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "�‰ uma triagem burocrática realizada apenas por seguranças na portaria do hospital.",
+                                       "texto":  "É uma triagem burocrática realizada apenas por seguranças na portaria do hospital.",
                                        "exp":  "Incorreto. Acolhimento é atitude ética e clínica multiprofissional, não mera triagem policialesca."
                                    },
                              "B":  {
-                                       "texto":  "�‰ um processo contínuo de escuta, responsabilização e vínculo que envolve toda a equipe de saúde desde a chegada do usuário, priorizando o atendimento pela gravidade clínica (classificação de risco) e não por privilégios.",
+                                       "texto":  "É um processo contínuo de escuta, responsabilização e vínculo que envolve toda a equipe de saúde desde a chegada do usuário, priorizando o atendimento pela gravidade clínica (classificação de risco) e não por privilégios.",
                                        "exp":  "Correto! O acolhimento é postura ética de recepção ao cidadão, articulando escuta sensível com critérios clínicos objetivos de classificação de risco."
                                    },
                              "C":  {
@@ -4224,7 +4224,7 @@ const BANCO_QUESTOES = [
                                    },
                              "E":  {
                                        "texto":  "Aplica-se unicamente aos pacientes particulares conveniados.",
-                                       "exp":  "Incorreto. O HumanizaSUS é política pública integral do Sistema �šnico de Saúde."
+                                       "exp":  "Incorreto. O HumanizaSUS é política pública integral do Sistema único de Saúde."
                                    }
                          },
         "correta":  "B",
@@ -4233,7 +4233,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_17",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Dimensões da Qualidade em Serviços (Parasuraman e Zeithaml)",
         "enunciado":  "No modelo SERVQUAL de gestão da qualidade em prestação de serviços (Parasuraman, Zeithaml e Berry), a dimensão que reflete o cuidado individualizado, a atenção personalizada e a capacidade de colocar-se no lugar do cliente é denominada:",
         "alternativas":  {
@@ -4264,9 +4264,9 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_18",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Fatores Determinantes da Qualidade em Serviços Hospitalares",
-        "enunciado":  "Em um hospital público de alta complexidade como o Gaspar Vianna, a percepção de qualidade pelo usuário N�ƒO é influenciada apenas pelo procedimento cirúrgico, mas por uma cadeia de fatores determinantes. Assinale o fator primordial para a qualidade administrativa percebida:",
+        "enunciado":  "Em um hospital público de alta complexidade como o Gaspar Vianna, a percepção de qualidade pelo usuário NÃO é influenciada apenas pelo procedimento cirúrgico, mas por uma cadeia de fatores determinantes. Assinale o fator primordial para a qualidade administrativa percebida:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "A pontualidade, clareza das orientações recebidas e rapidez na localização de prontuários e agendamentos.",
@@ -4295,7 +4295,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_19",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Cliente Interno e Fornecedor Interno",
         "enunciado":  "Na gestão moderna da qualidade, cada setor de uma organização atua simultaneamente como cliente e fornecedor de outros setores internos. Em um hospital, quando o setor de Almoxarifado entrega pontualmente seringas e medicamentos conferidos para o Posto de Enfermagem, a Enfermagem atua como:",
         "alternativas":  {
@@ -4312,8 +4312,8 @@ const BANCO_QUESTOES = [
                                        "exp":  "Incorreto. O fornecedor externo é a empresa que vendeu as seringas ao hospital."
                                    },
                              "D":  {
-                                       "texto":  "�“rgão regulador independente da fundação.",
-                                       "exp":  "Incorreto. �‰ um departamento assistencial interno."
+                                       "texto":  "Órgão regulador independente da fundação.",
+                                       "exp":  "Incorreto. É um departamento assistencial interno."
                                    },
                              "E":  {
                                        "texto":  "Auditores fiscais da Receita Estadual.",
@@ -4326,7 +4326,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_20",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Normatização Técnica e POP (Procedimento Operacional Padrão)",
         "enunciado":  "A adoção de Procedimentos Operacionais Padrão (POPs) e normas técnicas na administração hospitalar visa prioritariamente:",
         "alternativas":  {
@@ -4357,9 +4357,9 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_21",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Comunicação Interpessoal: O Estilo Assertivo",
-        "enunciado":  "No relacionamento interpessoal e trabalho em equipe, a COMUNICA�‡�ƒO ASSERTIVA distingue-se da agressiva e da passiva porque:",
+        "enunciado":  "No relacionamento interpessoal e trabalho em equipe, a COMUNICAÇÃO ASSERTIVA distingue-se da agressiva e da passiva porque:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "A comunicação assertiva impõe a vontade pessoal através de intimidação e gritos para não ser contestada.",
@@ -4379,7 +4379,7 @@ const BANCO_QUESTOES = [
                                    },
                              "E":  {
                                        "texto":  "A comunicação assertiva só pode ser exercida por servidores com mais de 20 anos de carreira.",
-                                       "exp":  "Incorreto. �‰ habilidade comportamental acessível a qualquer profissional."
+                                       "exp":  "Incorreto. É habilidade comportamental acessível a qualquer profissional."
                                    }
                          },
         "correta":  "C",
@@ -4388,7 +4388,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_22",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Empatia e Escuta Ativa",
         "enunciado":  "A habilidade de \u0027escuta ativa\u0027 em conjunto com a \u0027empatia\u0027 no ambiente de trabalho hospitalar manifesta-se quando o profissional:",
         "alternativas":  {
@@ -4419,7 +4419,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_23",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Comportamento Receptivo vs Comportamento Defensivo",
         "enunciado":  "Ao receber uma sugestão de melhoria ou um feedback construtivo da chefia sobre uma falha na organização do arquivo, um servidor apresenta COMPORTAMENTO RECEPTIVO quando:",
         "alternativas":  {
@@ -4450,7 +4450,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_24",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Feedback Construtivo e Desenvolvimento da Equipe",
         "enunciado":  "Para que um feedback entre servidores de uma equipe hospitalar seja verdadeiramente construtivo e promova o desenvolvimento profissional, ele deve ser:",
         "alternativas":  {
@@ -4481,7 +4481,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_25",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Gestão de Conflitos: Abordagem Colaborativa (Ganha-Ganha)",
         "enunciado":  "No modelo de gestão de conflitos de Thomas-Kilmann, a abordagem que busca atender plenamente aos interesses de ambas as partes divergentes, estimulando a cooperação mútua para criar uma solução integradora e inovadora, é denominada:",
         "alternativas":  {
@@ -4507,12 +4507,12 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Estilos de Conflito (Thomas-Kilmann): Competição (Ganha-Perde), Acomodação (Perde-Ganha), Evitação (Fuga), Concessão/Compromisso (Meio-termo) e COLABORA�‡�ƒO (Ganha-Ganha)."
+        "comentarioGeral":  "Estilos de Conflito (Thomas-Kilmann): Competição (Ganha-Perde), Acomodação (Perde-Ganha), Evitação (Fuga), Concessão/Compromisso (Meio-termo) e COLABORAÇÃO (Ganha-Ganha)."
     },
     {
         "id":  "eti_26",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Motivação e Clima Organizacional",
         "enunciado":  "O clima organizacional reflete a percepção coletiva dos trabalhadores sobre o ambiente de trabalho e as relações humanas na instituição. Um clima organizacional positivo no hospital contribui diretamente para:",
         "alternativas":  {
@@ -4543,9 +4543,9 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_27",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Liderança Servidora e Trabalho Multiprofissional",
-        "enunciado":  "Em um ambiente hospitalar de alta complexidade onde convivem médicos, enfermeiros, psicólogos, assistentes sociais e auxiliares administrativos, o modelo de LIDERAN�‡A mais condizente com a ética pública e o trabalho multiprofissional é a liderança:",
+        "enunciado":  "Em um ambiente hospitalar de alta complexidade onde convivem médicos, enfermeiros, psicólogos, assistentes sociais e auxiliares administrativos, o modelo de LIDERANÇA mais condizente com a ética pública e o trabalho multiprofissional é a liderança:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "Autocrática, onde o líder impõe decisões pelo medo e centraliza todas as informações.",
@@ -4574,7 +4574,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_28",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Transparência e Lei de Acesso à Informação (Lei 12.527/11)",
         "enunciado":  "A Lei Federal nº 12.527/2011 (Lei de Acesso à Informação - LAI) consagra a publicidade como preceito geral e o sigilo como exceção. Em relação ao atendimento aos cidadãos que solicitam dados públicos da FHCGV, é dever do servidor:",
         "alternativas":  {
@@ -4600,12 +4600,12 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Lei de Acesso à Informação (LAI): A publicidade é a REGRA; o sigilo é a EXCE�‡�ƒO! Nunca exija que o cidadão justifique por que quer uma informação pública."
+        "comentarioGeral":  "Lei de Acesso à Informação (LAI): A publicidade é a REGRA; o sigilo é a EXCEÇÃO! Nunca exija que o cidadão justifique por que quer uma informação pública."
     },
     {
         "id":  "eti_29",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Atendimento Prioritário e Respeito à Diversidade",
         "enunciado":  "De acordo com a Lei Federal nº 10.048/2000 e o Estatuto da Pessoa com Deficiência, no atendimento em repartições e hospitais públicos têm direito à prioridade legal de atendimento presencial:",
         "alternativas":  {
@@ -4636,7 +4636,7 @@ const BANCO_QUESTOES = [
     {
         "id":  "eti_30",
         "disciplina":  "etica",
-        "materia_nome":  "�‰tica e Qualidade no Serviço Público",
+        "materia_nome":  "Ética e Qualidade no Serviço Público",
         "topico":  "Uso Consciente dos Recursos Públicos e Sustentabilidade",
         "enunciado":  "O dever ético do servidor público abrange zelar pela economia e pelo patrimônio público, combatendo ativamente o desperdício de insumos. Essa conduta ética manifesta-se no cotidiano administrativo da servidora Dayana ao:",
         "alternativas":  {
@@ -4662,14 +4662,14 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Zelo e Sustentabilidade: O recurso público vem do suor dos impostos pagos pelo povo. Economizar água, energia e insumos é DEVER �‰TICO de todo servidor!"
+        "comentarioGeral":  "Zelo e Sustentabilidade: O recurso público vem do suor dos impostos pagos pelo povo. Economizar água, energia e insumos é DEVER ÉTICO de todo servidor!"
     },
     {
         "id":  "rlm_01",
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
         "topico":  "Conceito de Proposição Lógica",
-        "enunciado":  "Na lógica proposicional, uma proposição é uma sentença declarativa à qual se pode atribuir um único valor lógico: ou Verdadeiro (V) ou Falso (F), sem ambiguidade. Assinale a alternativa que apresenta uma PROPOSI�‡�ƒO L�“GICA VÁLIDA:",
+        "enunciado":  "Na lógica proposicional, uma proposição é uma sentença declarativa à qual se pode atribuir um único valor lógico: ou Verdadeiro (V) ou Falso (F), sem ambiguidade. Assinale a alternativa que apresenta uma PROPOSIÇÃO LÓGICA VÁLIDA:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "\u0027Que dia maravilhoso para realizar a prova em Belém!\u0027",
@@ -4681,7 +4681,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "\u0027Dayana Maia foi aprovada em 1º lugar no concurso da FHCGV.\u0027",
-                                       "exp":  "Correto! �‰ uma sentença declarativa, possui sujeito e predicado com verbo, e pode ser valorada objetivamente como Verdadeira ou Falsa."
+                                       "exp":  "Correto! É uma sentença declarativa, possui sujeito e predicado com verbo, e pode ser valorada objetivamente como Verdadeira ou Falsa."
                                    },
                              "D":  {
                                        "texto":  "\u0027Organize imediatamente todas as pastas do almoxarifado!\u0027",
@@ -4693,7 +4693,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "N�ƒO são proposições: Frases interrogativas (?), exclamativas (!), imperativas (ordens), sentenças abertas (variáveis sem valor) e paradoxos."
+        "comentarioGeral":  "NÃO são proposições: Frases interrogativas (?), exclamativas (!), imperativas (ordens), sentenças abertas (variáveis sem valor) e paradoxos."
     },
     {
         "id":  "rlm_02",
@@ -4765,7 +4765,7 @@ const BANCO_QUESTOES = [
         "enunciado":  "Na tabela-verdade da proposição condicional \u0027Se chover em Belém, então o trânsito da Almirante Barroso ficará lento\u0027 (P -\u003e Q), a proposição composta só será FALSA na seguinte hipótese:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "Se chover (P é Verdadeiro) e o trânsito N�ƒO ficar lento (Q é Falso).",
+                                       "texto":  "Se chover (P é Verdadeiro) e o trânsito NÃO ficar lento (Q é Falso).",
                                        "exp":  "Correto! O famoso caso da \u0027Vera Fischer é Falsa\u0027: na condicional (P -\u003e Q), o único caso que resulta em Falso é V -\u003e F = F."
                                    },
                              "B":  {
@@ -4828,7 +4828,7 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "\u0027Se Dayana não estuda todo dia, então ela não é aprovada\u0027.",
-                                       "exp":  "Incorreto. Essa é a proposição inversa (~P -\u003e ~Q), que N�ƒO é equivalente à condicional original."
+                                       "exp":  "Incorreto. Essa é a proposição inversa (~P -\u003e ~Q), que NÃO é equivalente à condicional original."
                                    },
                              "B":  {
                                        "texto":  "\u0027Se Dayana não é aprovada no concurso da FHCGV, então ela não estuda todo dia\u0027.",
@@ -4840,7 +4840,7 @@ const BANCO_QUESTOES = [
                                    },
                              "D":  {
                                        "texto":  "\u0027Dayana estuda todo dia e não é aprovada\u0027.",
-                                       "exp":  "Incorreto. Essa é a NEGA�‡�ƒO da condicional, e não sua equivalência."
+                                       "exp":  "Incorreto. Essa é a NEGAÇÃO da condicional, e não sua equivalência."
                                    },
                              "E":  {
                                        "texto":  "\u0027Dayana é aprovada se e somente se não estudar todo dia\u0027.",
@@ -4848,7 +4848,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Equivalência nº 1 da Condicional (Contrapositiva): \u0027Se P, então Q\u0027 \u003c=\u003e \u0027Se N�ƒO Q, então N�ƒO P\u0027 (Cruza e nega tudo!)."
+        "comentarioGeral":  "Equivalência nº 1 da Condicional (Contrapositiva): \u0027Se P, então Q\u0027 \u003c=\u003e \u0027Se NÃO Q, então NÃO P\u0027 (Cruza e nega tudo!)."
     },
     {
         "id":  "rlm_07",
@@ -4885,16 +4885,16 @@ const BANCO_QUESTOES = [
         "id":  "rlm_08",
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
-        "topico":  "Negação da Condicional (Regra do MAN�‰)",
-        "enunciado":  "Para negar uma proposição condicional do tipo \u0027Se P, então Q\u0027, aplica-se a consagrada regra do MAN�‰: Mantém a primeira E Nega a segunda [P ^ ~Q]. Logo, a negação lógica de \u0027Se o paciente tem febre, então ele toma o medicamento\u0027 é:",
+        "topico":  "Negação da Condicional (Regra do MANÉ)",
+        "enunciado":  "Para negar uma proposição condicional do tipo \u0027Se P, então Q\u0027, aplica-se a consagrada regra do MANÉ: Mantém a primeira E Nega a segunda [P ^ ~Q]. Logo, a negação lógica de \u0027Se o paciente tem febre, então ele toma o medicamento\u0027 é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "\u0027Se o paciente não tem febre, então ele não toma o medicamento\u0027.",
                                        "exp":  "Incorreto. Não se nega condicional mantendo o conectivo \u0027Se... então\u0027."
                                    },
                              "B":  {
-                                       "texto":  "\u0027O paciente tem febre E ele N�ƒO toma o medicamento\u0027.",
-                                       "exp":  "Correto! Regra do MAN�‰: MANT�‰M a 1ª (\u0027O paciente tem febre\u0027) + conectivo \u0027E\u0027 + NEGA a 2ª (\u0027ele N�ƒO toma o medicamento\u0027)."
+                                       "texto":  "\u0027O paciente tem febre E ele NÃO toma o medicamento\u0027.",
+                                       "exp":  "Correto! Regra do MANÉ: MANTÉM a 1ª (\u0027O paciente tem febre\u0027) + conectivo \u0027E\u0027 + NEGA a 2ª (\u0027ele NÃO toma o medicamento\u0027)."
                                    },
                              "C":  {
                                        "texto":  "\u0027O paciente não tem febre OU ele toma o medicamento\u0027.",
@@ -4910,7 +4910,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A negação de \u0027Se P, então Q\u0027 NUNCA tem \u0027Se... então\u0027! Regra do MAN�‰: Mantém a primeira E Nega a segunda (P ^ ~Q)."
+        "comentarioGeral":  "A negação de \u0027Se P, então Q\u0027 NUNCA tem \u0027Se... então\u0027! Regra do MANÉ: Mantém a primeira E Nega a segunda (P ^ ~Q)."
     },
     {
         "id":  "rlm_09",
@@ -4951,7 +4951,7 @@ const BANCO_QUESTOES = [
         "enunciado":  "Pela 2ª Lei de De Morgan, a negação da disjunção inclusiva [~(P v Q)] consiste em negar ambas as proposições e substituir o conectivo \u0027OU\u0027 pelo \u0027E\u0027 [~P ^ ~Q]. Sendo assim, a negação de \u0027Hoje é feriado OU haverá atendimento ambulatorial\u0027 é:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "\u0027Hoje N�ƒO é feriado E N�ƒO haverá atendimento ambulatorial\u0027.",
+                                       "texto":  "\u0027Hoje NÃO é feriado E NÃO haverá atendimento ambulatorial\u0027.",
                                        "exp":  "Correto! Nega a primeira (\u0027Hoje não é feriado\u0027), troca o \u0027OU\u0027 por \u0027E\u0027, e nega a segunda (\u0027não haverá atendimento ambulatorial\u0027)."
                                    },
                              "B":  {
@@ -4979,15 +4979,15 @@ const BANCO_QUESTOES = [
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
         "topico":  "Quantificadores Lógicos: Negação de \u0027TODO\u0027",
-        "enunciado":  "A proposição categórica \u0027Todo servidor público da fundação é pontual\u0027 utiliza o quantificador universal afirmativo. A NEGA�‡�ƒO lógica dessa afirmação é:",
+        "enunciado":  "A proposição categórica \u0027Todo servidor público da fundação é pontual\u0027 utiliza o quantificador universal afirmativo. A NEGAÇÃO lógica dessa afirmação é:",
         "alternativas":  {
                              "A":  {
                                        "texto":  "\u0027Nenhum servidor público da fundação é pontual\u0027.",
-                                       "exp":  "Incorreto. Erro clássico de concurso: o oposto/contrário de \u0027Todo\u0027 N�ƒO é \u0027Nenhum\u0027!"
+                                       "exp":  "Incorreto. Erro clássico de concurso: o oposto/contrário de \u0027Todo\u0027 NÃO é \u0027Nenhum\u0027!"
                                    },
                              "B":  {
-                                       "texto":  "\u0027Pelo menos um servidor público da fundação N�ƒO é pontual\u0027 (ou \u0027Existe algum servidor que não é pontual\u0027).",
-                                       "exp":  "Correto! Para quebrar a regra de que \u0027Todo A é B\u0027, basta que exista UM �šNICO elemento que não seja (Regra do PEA: Pelo menos um / Existe / Algum ... N�ƒO é)."
+                                       "texto":  "\u0027Pelo menos um servidor público da fundação NÃO é pontual\u0027 (ou \u0027Existe algum servidor que não é pontual\u0027).",
+                                       "exp":  "Correto! Para quebrar a regra de que \u0027Todo A é B\u0027, basta que exista UM ÚNICO elemento que não seja (Regra do PEA: Pelo menos um / Existe / Algum ... NÃO é)."
                                    },
                              "C":  {
                                        "texto":  "\u0027Todos os servidores públicos são impontuais\u0027.",
@@ -5003,7 +5003,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "CUIDADO: A negação de TODO N�ƒO é NENHUM! A negação de TODO é: Pelo menos um N�ƒO / Algum N�ƒO / Existe um que N�ƒO (Regra do PEA + N�ƒO)."
+        "comentarioGeral":  "CUIDADO: A negação de TODO NÃO é NENHUM! A negação de TODO é: Pelo menos um NÃO / Algum NÃO / Existe um que NÃO (Regra do PEA + NÃO)."
     },
     {
         "id":  "rlm_12",
@@ -5096,7 +5096,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Problemas de Verdades e Mentiras: procure sempre duas afirmações CONTRADIT�“RIAS! Se Bruno e Carlos se contradizem, a única verdade está entre eles. Logo, Ana mente com certeza!"
+        "comentarioGeral":  "Problemas de Verdades e Mentiras: procure sempre duas afirmações CONTRADITÓRIAS! Se Bruno e Carlos se contradizem, a única verdade está entre eles. Logo, Ana mente com certeza!"
     },
     {
         "id":  "rlm_15",
@@ -5107,7 +5107,7 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "Enfermeira.",
-                                       "exp":  "Incorreto. A premissa 1 afirma textualmente que Dayana N�ƒO é Enfermeira."
+                                       "exp":  "Incorreto. A premissa 1 afirma textualmente que Dayana NÃO é Enfermeira."
                                    },
                              "B":  {
                                        "texto":  "Assistente Social.",
@@ -5142,7 +5142,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "95.",
-                                       "exp":  "Correto! O padrão é: cada termo é o dobro do anterior mais 1 (termo �— 2 + 1): 2�—2+1=5; 5�—2+1=11; 11�—2+1=23; 23�—2+1=47; logo, 47�—2 + 1 = 94 + 1 = 95!"
+                                       "exp":  "Correto! O padrão é: cada termo é o dobro do anterior mais 1 (termo — 2 + 1): 2—2+1=5; 5—2+1=11; 11—2+1=23; 23—2+1=47; logo, 47—2 + 1 = 94 + 1 = 95!"
                                    },
                              "C":  {
                                        "texto":  "96.",
@@ -5158,7 +5158,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Padrão da sequência: dobro mais um (�—2 + 1) ou sequência das diferenças dobrando (+3, +6, +12, +24, +48). 47 + 48 = 95!"
+        "comentarioGeral":  "Padrão da sequência: dobro mais um (—2 + 1) ou sequência das diferenças dobrando (+3, +6, +12, +24, +48). 47 + 48 = 95!"
     },
     {
         "id":  "rlm_17",
@@ -5196,7 +5196,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
         "topico":  "Princípio da Regressão ou Reversão",
-        "enunciado":  "Um servidor do protocolo recebeu uma quantidade X de processos. Pela manhã, ele despachou a metade do total e mais 4 processos. �€ tarde, ele despachou a metade do que restou e mais 2 processos. No final do dia, restou apenas 1 processo em sua mesa. Qual era a quantidade inicial X de processos?",
+        "enunciado":  "Um servidor do protocolo recebeu uma quantidade X de processos. Pela manhã, ele despachou a metade do total e mais 4 processos. à tarde, ele despachou a metade do que restou e mais 2 processos. No final do dia, restou apenas 1 processo em sua mesa. Qual era a quantidade inicial X de processos?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "18.",
@@ -5204,7 +5204,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "20.",
-                                       "exp":  "Correto! Pelo Princípio da Reversão (de trás para frente com operações inversas): Restou 1. Antes de despachar 2, tinha 1 + 2 = 3. Esse 3 era a metade restante da tarde, logo antes tinha 3 �— 2 = 6 processos. Na manhã, antes de despachar 4, tinha 6 + 4 = 10. Esse 10 era a metade do total inicial, logo o total inicial era 10 �— 2 = 20 processos!"
+                                       "exp":  "Correto! Pelo Princípio da Reversão (de trás para frente com operações inversas): Restou 1. Antes de despachar 2, tinha 1 + 2 = 3. Esse 3 era a metade restante da tarde, logo antes tinha 3 — 2 = 6 processos. Na manhã, antes de despachar 4, tinha 6 + 4 = 10. Esse 10 era a metade do total inicial, logo o total inicial era 10 — 2 = 20 processos!"
                                    },
                              "C":  {
                                        "texto":  "24.",
@@ -5227,7 +5227,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
         "topico":  "Conjuntos e Diagrama de Venn (2 Conjuntos)",
-        "enunciado":  "Em um setor hospitalar com 80 servidores, uma pesquisa revelou que 50 utilizam o sistema eletrônico de ponto, 45 utilizam o sistema informatizado de faturamento e 25 servidores utilizam AMBOS os sistemas. Quantos servidores desse setor N�ƒO utilizam nenhum desses dois sistemas?",
+        "enunciado":  "Em um setor hospitalar com 80 servidores, uma pesquisa revelou que 50 utilizam o sistema eletrônico de ponto, 45 utilizam o sistema informatizado de faturamento e 25 servidores utilizam AMBOS os sistemas. Quantos servidores desse setor NÃO utilizam nenhum desses dois sistemas?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "5.",
@@ -5258,7 +5258,7 @@ const BANCO_QUESTOES = [
         "disciplina":  "rlm",
         "materia_nome":  "Raciocínio Lógico-Matemático",
         "topico":  "Conjuntos e Diagrama de Venn (3 Conjuntos)",
-        "enunciado":  "Em uma triagem médica de 100 pacientes com sintomas respiratórios: 60 têm febre, 50 têm tosse e 40 têm dor de garganta. Além disso, 25 têm febre e tosse, 20 têm febre e dor de garganta, 15 têm tosse e dor de garganta, e 10 pacientes apresentam OS TR�ŠS sintomas simultaneamente. Quantos pacientes N�ƒO apresentam nenhum desses três sintomas?",
+        "enunciado":  "Em uma triagem médica de 100 pacientes com sintomas respiratórios: 60 têm febre, 50 têm tosse e 40 têm dor de garganta. Além disso, 25 têm febre e tosse, 20 têm febre e dor de garganta, 15 têm tosse e dor de garganta, e 10 pacientes apresentam OS TRÊS sintomas simultaneamente. Quantos pacientes NÃO apresentam nenhum desses três sintomas?",
         "alternativas":  {
                              "A":  {
                                        "texto":  "0 (todos têm pelo menos um sintoma).",
@@ -5301,7 +5301,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "R$ 2.400,00.",
-                                       "exp":  "Correto! Soma das partes proporcionais: 4 + 2 = 6 partes. Valor de cada parte (constante k): 3.600 / 6 = R$ 600,00. Dayana tem 4 anos: 4 �— 600 = R$ 2.400,00 (e Pedro: 2 �— 600 = R$ 1.200,00)!"
+                                       "exp":  "Correto! Soma das partes proporcionais: 4 + 2 = 6 partes. Valor de cada parte (constante k): 3.600 / 6 = R$ 600,00. Dayana tem 4 anos: 4 — 600 = R$ 2.400,00 (e Pedro: 2 — 600 = R$ 1.200,00)!"
                                    },
                              "D":  {
                                        "texto":  "R$ 2.800,00.",
@@ -5313,7 +5313,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Divisão proporcional: Ache a constante K! K = Total / Soma dos fatores = 3.600 / (4+2) = 600. Parte de Dayana = 4 �— 600 = R$ 2.400,00."
+        "comentarioGeral":  "Divisão proporcional: Ache a constante K! K = Total / Soma dos fatores = 3.600 / (4+2) = 600. Parte de Dayana = 4 — 600 = R$ 2.400,00."
     },
     {
         "id":  "rlm_22",
@@ -5332,7 +5332,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "R$ 1.200,00.",
-                                       "exp":  "Correto! Divisão inversamente proporcional a 2 e 4 é diretamente proporcional aos inversos: 1/2 e 1/4. Multiplicando por 4 para tirar a fração: 2 partes e 1 parte (total 3 partes). Constante k: 1.800 / 3 = 600. Lucas (inverso de 2): 2 �— 600 = R$ 1.200,00!"
+                                       "exp":  "Correto! Divisão inversamente proporcional a 2 e 4 é diretamente proporcional aos inversos: 1/2 e 1/4. Multiplicando por 4 para tirar a fração: 2 partes e 1 parte (total 3 partes). Constante k: 1.800 / 3 = 600. Lucas (inverso de 2): 2 — 600 = R$ 1.200,00!"
                                    },
                              "D":  {
                                        "texto":  "R$ 1.400,00.",
@@ -5363,7 +5363,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "18 minutos.",
-                                       "exp":  "Correto! Grandezas diretamente proporcionais (mais etiquetas = mais tempo): 150/6 = 450/T =\u003e 150T = 450 �— 6 = 2.700 =\u003e T = 2.700 / 150 = 18 minutos (ou triplicou as etiquetas de 150 para 450, triplica o tempo de 6 para 18 minutos)!"
+                                       "exp":  "Correto! Grandezas diretamente proporcionais (mais etiquetas = mais tempo): 150/6 = 450/T =\u003e 150T = 450 — 6 = 2.700 =\u003e T = 2.700 / 150 = 18 minutos (ou triplicou as etiquetas de 150 para 450, triplica o tempo de 6 para 18 minutos)!"
                                    },
                              "D":  {
                                        "texto":  "24 minutos.",
@@ -5375,7 +5375,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Regra de três simples direta: se triplicou a quantidade de etiquetas (150 �— 3 = 450), o tempo gasto também triplica: 6 min �— 3 = 18 minutos!"
+        "comentarioGeral":  "Regra de três simples direta: se triplicou a quantidade de etiquetas (150 — 3 = 450), o tempo gasto também triplica: 6 min — 3 = 18 minutos!"
     },
     {
         "id":  "rlm_24",
@@ -5390,7 +5390,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "6 horas.",
-                                       "exp":  "Correto! Grandezas INVERSAMENTE proporcionais (mais servidores = menos tempo): Servidores �— Horas = Constante. 3 �— 12 = 36. Com 6 servidores: 6 �— H = 36 =\u003e H = 36 / 6 = 6 horas (dobrou o número de pessoas de 3 para 6, o tempo cai pela metade de 12 para 6 horas)!"
+                                       "exp":  "Correto! Grandezas INVERSAMENTE proporcionais (mais servidores = menos tempo): Servidores — Horas = Constante. 3 — 12 = 36. Com 6 servidores: 6 — H = 36 =\u003e H = 36 / 6 = 6 horas (dobrou o número de pessoas de 3 para 6, o tempo cai pela metade de 12 para 6 horas)!"
                                    },
                              "C":  {
                                        "texto":  "4 horas.",
@@ -5425,7 +5425,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "960 fichas.",
-                                       "exp":  "Correto! Método do Processo e Produto: Produto = Fichas. Processo = Digitadores �— Horas �— Dias. (4 �— 6 �— 5) / 240 = (6 �— 8 �— 10) / X =\u003e 120 / 240 = 480 / X =\u003e 1/2 = 480/X =\u003e X = 480 �— 2 = 960 fichas!"
+                                       "exp":  "Correto! Método do Processo e Produto: Produto = Fichas. Processo = Digitadores — Horas — Dias. (4 — 6 — 5) / 240 = (6 — 8 — 10) / X =\u003e 120 / 240 = 480 / X =\u003e 1/2 = 480/X =\u003e X = 480 — 2 = 960 fichas!"
                                    },
                              "D":  {
                                        "texto":  "1.200 fichas.",
@@ -5437,7 +5437,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Método do Processo/Produto: [Trabalhadores �— Horas �— Dias] / Produto = constante! (4�—6�—5)/240 = (6�—8�—10)/X =\u003e 120/240 = 480/X =\u003e X = 960 fichas!"
+        "comentarioGeral":  "Método do Processo/Produto: [Trabalhadores — Horas — Dias] / Produto = constante! (4—6—5)/240 = (6—8—10)/X =\u003e 120/240 = 480/X =\u003e X = 960 fichas!"
     },
     {
         "id":  "rlm_26",
@@ -5447,7 +5447,7 @@ const BANCO_QUESTOES = [
         "enunciado":  "Para criar a senha de acesso ao sistema de prontuários da FHCGV, a servidora Dayana deve escolher uma combinação de 3 letras distintas seguidas de 2 algarismos distintos. Considerando o alfabeto de 26 letras e os 10 algarismos (0 a 9), o número total de senhas possíveis é calculado por:",
         "alternativas":  {
                              "A":  {
-                                       "texto":  "26 �— 25 �— 24 �— 10 �— 9",
+                                       "texto":  "26 — 25 — 24 — 10 — 9",
                                        "exp":  "Correto! Princípio Multiplicativo: 1ª letra (26 opções), 2ª letra distinta (25), 3ª letra distinta (24), 1º dígito (10) e 2º dígito distinto (9). Multiplicando todas as etapas independentes."
                                    },
                              "B":  {
@@ -5455,7 +5455,7 @@ const BANCO_QUESTOES = [
                                        "exp":  "Incorreto. Não se somam as etapas na formação de senhas com múltiplos caracteres (regra da soma é apenas para escolhas excludentes)."
                                    },
                              "C":  {
-                                       "texto":  "26³ �— 10²",
+                                       "texto":  "26³ — 10²",
                                        "exp":  "Incorreto. Essa seria a fórmula se os caracteres pudessem ser REPETIDOS. O enunciado exigiu letras e algarismos distintos."
                                    },
                              "D":  {
@@ -5463,12 +5463,12 @@ const BANCO_QUESTOES = [
                                        "exp":  "Incorreto. Expressão fatorial sem cabimento conceitual."
                                    },
                              "E":  {
-                                       "texto":  "26 �— 3 + 10 �— 2",
+                                       "texto":  "26 — 3 + 10 — 2",
                                        "exp":  "Incorreto. Erro crasso de contagem."
                                    }
                          },
         "correta":  "A",
-        "comentarioGeral":  "Princípio Multiplicativo: Se são caracteres DISTINTOS, as opções diminuem a cada posição: 26 �— 25 �— 24 letras �— 10 �— 9 dígitos = 1.404.000 senhas!"
+        "comentarioGeral":  "Princípio Multiplicativo: Se são caracteres DISTINTOS, as opções diminuem a cada posição: 26 — 25 — 24 letras — 10 — 9 dígitos = 1.404.000 senhas!"
     },
     {
         "id":  "rlm_27",
@@ -5479,11 +5479,11 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "24.",
-                                       "exp":  "Incorreto. 8 �— 3 = 24 não reflete agrupamento de comissões."
+                                       "exp":  "Incorreto. 8 — 3 = 24 não reflete agrupamento de comissões."
                                    },
                              "B":  {
                                        "texto":  "56.",
-                                       "exp":  "Correto! Em comissões a ordem dos membros N�ƒO importa (Ana, Beto e Carla é a mesma comissão que Beto, Carla e Ana), logo usamos Combinação Simples: C(8, 3) = (8 �— 7 �— 6) / (3 �— 2 �— 1) = 336 / 6 = 56 maneiras distintas!"
+                                       "exp":  "Correto! Em comissões a ordem dos membros NÃO importa (Ana, Beto e Carla é a mesma comissão que Beto, Carla e Ana), logo usamos Combinação Simples: C(8, 3) = (8 — 7 — 6) / (3 — 2 — 1) = 336 / 6 = 56 maneiras distintas!"
                                    },
                              "C":  {
                                        "texto":  "336.",
@@ -5499,7 +5499,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "A ordem importa? N�ƒO (é comissão/grupo) =\u003e COMBINA�‡�ƒO: C(8,3) = (8�—7�—6)/(3�—2�—1) = 56. Se a ordem importasse (presidente, tesoureiro) seria Arranjo (336)."
+        "comentarioGeral":  "A ordem importa? NÃO (é comissão/grupo) =\u003e COMBINAÇÃO: C(8,3) = (8—7—6)/(3—2—1) = 56. Se a ordem importasse (presidente, tesoureiro) seria Arranjo (336)."
     },
     {
         "id":  "rlm_28",
@@ -5518,7 +5518,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "45% (9/20).",
-                                       "exp":  "Incorreto. O número 1 N�ƒO é primo (tem apenas 1 divisor)."
+                                       "exp":  "Incorreto. O número 1 NÃO é primo (tem apenas 1 divisor)."
                                    },
                              "D":  {
                                        "texto":  "50% (10/20).",
@@ -5545,7 +5545,7 @@ const BANCO_QUESTOES = [
                                    },
                              "B":  {
                                        "texto":  "51.",
-                                       "exp":  "Correto! Fórmula do termo geral da PA: an = a1 + (n - 1) �— r. Primeiro termo (a1) = 15; razão (r) = 19 - 15 = 4; termo desejado (n) = 10. a10 = 15 + (10 - 1) �— 4 = 15 + 9 �— 4 = 15 + 36 = 51 pacientes!"
+                                       "exp":  "Correto! Fórmula do termo geral da PA: an = a1 + (n - 1) — r. Primeiro termo (a1) = 15; razão (r) = 19 - 15 = 4; termo desejado (n) = 10. a10 = 15 + (10 - 1) — 4 = 15 + 9 — 4 = 15 + 36 = 51 pacientes!"
                                    },
                              "C":  {
                                        "texto":  "55.",
@@ -5561,7 +5561,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "B",
-        "comentarioGeral":  "Termo geral da PA: an = a1 + (n - 1) �— r =\u003e a10 = 15 + (9 �— 4) = 15 + 36 = 51 pacientes no 10º dia!"
+        "comentarioGeral":  "Termo geral da PA: an = a1 + (n - 1) — r =\u003e a10 = 15 + (9 — 4) = 15 + 36 = 51 pacientes no 10º dia!"
     },
     {
         "id":  "rlm_30",
@@ -5572,7 +5572,7 @@ const BANCO_QUESTOES = [
         "alternativas":  {
                              "A":  {
                                        "texto":  "300 bactérias.",
-                                       "exp":  "Incorreto. 300 seria crescimento linear aritmético simples (50 �— 6)."
+                                       "exp":  "Incorreto. 300 seria crescimento linear aritmético simples (50 — 6)."
                                    },
                              "B":  {
                                        "texto":  "1.600 bactérias.",
@@ -5580,7 +5580,7 @@ const BANCO_QUESTOES = [
                                    },
                              "C":  {
                                        "texto":  "3.200 bactérias.",
-                                       "exp":  "Correto! De 8h às 14h transcorreram 6 horas (logo a colônia duplicou 6 vezes). Fórmula da PG: an = a1 �— q^(n-1), ou simplesmente 50 �— 2^6. Como 2^6 = 64, temos: 50 �— 64 = 3.200 bactérias!"
+                                       "exp":  "Correto! De 8h às 14h transcorreram 6 horas (logo a colônia duplicou 6 vezes). Fórmula da PG: an = a1 — q^(n-1), ou simplesmente 50 — 2^6. Como 2^6 = 64, temos: 50 — 64 = 3.200 bactérias!"
                                    },
                              "D":  {
                                        "texto":  "6.400 bactérias.",
@@ -5592,7 +5592,7 @@ const BANCO_QUESTOES = [
                                    }
                          },
         "correta":  "C",
-        "comentarioGeral":  "Crescimento Exponencial / PG: Transcorreram 6 horas. Duplica 6 vezes: 50 �— 2^6 = 50 �— 64 = 3.200 bactérias!"
+        "comentarioGeral":  "Crescimento Exponencial / PG: Transcorreram 6 horas. Duplica 6 vezes: 50 — 2^6 = 50 — 64 = 3.200 bactérias!"
     }
 ];
 
